@@ -20,6 +20,16 @@ public class AppTest
         super( testName );
     }
 
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+    }
+
+    @Override
+    protected void tearDown() throws Exception {
+        super.tearDown();
+    }
+
     /**
      * @return the suite of tests being tested
      */
@@ -34,5 +44,15 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+
+    /**
+     * Test of main method, of class App.
+     */
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        App.main(args);
+        assertTrue(true);
     }
 }
