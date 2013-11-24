@@ -5,6 +5,9 @@
  */
 package com.carlos.avisamedelcoche;
 
+import javax.mail.Transport;
+import javax.mail.internet.MimeMessage;
+
 /**
  *
  * @author Pakno
@@ -18,7 +21,8 @@ class Avisador {
     }
 
     private static void enviarEmail(String emailUsuario) {
-        
+     MimeMessage mensaje;   
+     Transport transporte;
     }
 
 }
