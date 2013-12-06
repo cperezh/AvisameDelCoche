@@ -5,18 +5,23 @@
  */
 package com.carlos.avisamedelcoche;
 
+import javax.mail.MessagingException;
+
 /**
  *
  * @author Pakno
  */
 public class Sistema {
 
-    public static void avisarDeReparacion() {
+    public static void avisarDeReparacion() throws MessagingException {
 
         EstadoCoche estadoCoche = Comprobador.comprobarEstadoCoche();
 
         if (Comprobador.esNecesariaReparacion(estadoCoche)) {
-            Avisador.avisarUsuario();
+            
+            Mensaje mensaje = Comprobador.componerMensaje(estadoCoche);
+            
+            Avisador.avisarUsuario(mensaje);
         }
 
     }

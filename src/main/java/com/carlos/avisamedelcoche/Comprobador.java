@@ -22,4 +22,10 @@ class Comprobador {
         return true;
     }
 
+    static Mensaje componerMensaje(EstadoCoche estadoCoche) {
+        Mensaje mensaje = new Mensaje();
+        
+        return mensaje;
+    }
+
 }
