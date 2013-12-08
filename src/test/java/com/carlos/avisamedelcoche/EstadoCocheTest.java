@@ -5,7 +5,11 @@
  */
 package com.carlos.avisamedelcoche;
 
+import java.util.ArrayList;
+import java.util.List;
+import junit.framework.Test;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 /**
  *
@@ -15,6 +19,11 @@ public class EstadoCocheTest extends TestCase {
 
     public EstadoCocheTest(String testName) {
         super(testName);
+    }
+
+    public static Test suite() {
+        TestSuite suite = new TestSuite(EstadoCocheTest.class);
+        return suite;
     }
 
     @Override
@@ -41,6 +50,36 @@ public class EstadoCocheTest extends TestCase {
         }
     }
 
-    
+    /**
+     * Test of getEstadoComponentes method, of class EstadoCoche.
+     */
+    public void testGetEstadoComponentes() {
+        System.out.println("getEstadoComponentes");
+        List<EstadoComponente> result = Coche.getEstadoCoche().getEstadoComponentes();
+        assertEquals(true, !result.isEmpty());
+    }
 
+    /**
+     * Test of setEstadoComponentes method, of class EstadoCoche.
+     */
+    public void testSetEstadoComponentes() {
+        System.out.println("setEstadoComponentes");
+        List<EstadoComponente> estadoComponentes = new ArrayList<>();
+        EstadoCoche instance = new EstadoCoche();
+        instance.setEstadoComponentes(estadoComponentes);
+
+        assertEquals(estadoComponentes, instance.getEstadoComponentes());
+
+    }
+
+    /**
+     * Test of setKilometraje method, of class EstadoCoche.
+     */
+    public void testSetKilometraje() {
+        System.out.println("setKilometraje");
+        int kilometraje = 100000;
+        EstadoCoche instance = new EstadoCoche();
+        instance.setKilometraje(kilometraje);
+        assertEquals(kilometraje, instance.getKilometraje());
+    }
 }

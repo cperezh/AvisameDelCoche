@@ -5,21 +5,36 @@
  */
 package com.carlos.avisamedelcoche;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Pakno
  */
 class Coche {
 
-    private EstadoCoche estadoCoche;
+    private static EstadoCoche estadoCoche;
 
-    public Coche() {
+    static {
+        crearCocheDePrueba();
+    }
+
+    private static void crearCocheDePrueba() {
         estadoCoche = new EstadoCoche();
+        estadoCoche.setKilometraje(150000);
 
+        EstadoComponente estadoNeumaticos = new EstadoComponente();
+        estadoNeumaticos.setComponente(Componente.NEUMATICOS);
+        estadoNeumaticos.setUltimaSustitucion(100000);
+
+        ArrayList<EstadoComponente> estadoComponentes = new ArrayList();
+        estadoComponentes.add(estadoNeumaticos);
+
+        estadoCoche.setEstadoComponentes(estadoComponentes);
     }
 
     static EstadoCoche getEstadoCoche() {
-        return new EstadoCoche();
+        return estadoCoche;
     }
 
 }

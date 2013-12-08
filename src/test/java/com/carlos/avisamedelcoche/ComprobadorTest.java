@@ -5,7 +5,10 @@
  */
 package com.carlos.avisamedelcoche;
 
+import junit.framework.Test;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  *
@@ -17,6 +20,11 @@ public class ComprobadorTest extends TestCase {
 
     public ComprobadorTest(String testName) {
         super(testName);
+    }
+
+    public static Test suite() {
+        TestSuite suite = new TestSuite(ComprobadorTest.class);
+        return suite;
     }
 
     @Override
@@ -31,11 +39,11 @@ public class ComprobadorTest extends TestCase {
     }
 
     /**
-     * Test of comprobarEstadoCoche method, of class Comprobador.
+     * Test of recuperarEstadoCoche method, of class Comprobador.
      */
     public void testComprobarEstadoCoche() {
 
-        EstadoCoche result = Comprobador.comprobarEstadoCoche();
+        EstadoCoche result = Comprobador.recuperarEstadoCoche();
 
         if (result == null) {
             fail("Estado coche nulo");
@@ -50,6 +58,27 @@ public class ComprobadorTest extends TestCase {
 
         boolean result = Comprobador.esNecesariaReparacion(estadoCoche);
         assertTrue(true);
+    }
+
+    /**
+     * Test of recuperarEstadoCoche method, of class Comprobador.
+     */
+    public void testRecuperarEstadoCoche() {
+        System.out.println("recuperarEstadoCoche");
+        EstadoCoche expResult = null;
+        EstadoCoche result = Comprobador.recuperarEstadoCoche();
+        assertEquals(150000, result.getKilometraje());
+    }
+
+    /**
+     * Test of componerMensaje method, of class Comprobador.
+     */
+    public void testComponerMensaje() {
+        System.out.println("componerMensaje");
+        EstadoCoche estadoCoche = null;
+        Mensaje expResult = null;
+        Mensaje result = Comprobador.componerMensaje(estadoCoche);
+        assertEquals(true, StringUtils.isNotEmpty(result.getTextoMensaje()));
     }
 
 }

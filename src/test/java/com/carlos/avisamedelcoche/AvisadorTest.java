@@ -5,10 +5,10 @@
  */
 package com.carlos.avisamedelcoche;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.mail.MessagingException;
+import junit.framework.Test;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 /**
  *
@@ -18,6 +18,11 @@ public class AvisadorTest extends TestCase {
 
     public AvisadorTest(String testName) {
         super(testName);
+    }
+
+    public static Test suite() {
+        TestSuite suite = new TestSuite(AvisadorTest.class);
+        return suite;
     }
 
     @Override
@@ -35,7 +40,9 @@ public class AvisadorTest extends TestCase {
      */
     public void testAvisarUsuario() throws MessagingException {
 
-        Avisador.avisarUsuario();
+        Mensaje mensaje = new Mensaje();
+        mensaje.setTextoMensaje("Aviso");
+        Avisador.avisarUsuario(mensaje);
         assertTrue(true);
 
     }

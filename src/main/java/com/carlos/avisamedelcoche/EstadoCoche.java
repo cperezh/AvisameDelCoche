@@ -5,21 +5,35 @@
  */
 package com.carlos.avisamedelcoche;
 
+import java.util.List;
+
 /**
  *
  * @author Pakno
  */
 class EstadoCoche {
 
-    private double kilometraje;
+    int kilometraje;
+    List<EstadoComponente> estadoComponentes;
 
     public EstadoCoche() {
-        this.kilometraje = 150000;
+
     }
 
-    public double getKilometraje() {
+    public List<EstadoComponente> getEstadoComponentes() {
+        return estadoComponentes;
+    }
+
+    public void setEstadoComponentes(List<EstadoComponente> estadoComponentes) {
+        this.estadoComponentes = estadoComponentes;
+    }
+
+    public int getKilometraje() {
         return kilometraje;
     }
 
+    public void setKilometraje(int kilometraje) {
+        this.kilometraje = kilometraje;
+    }
 
 }

@@ -20,17 +20,22 @@ import javax.mail.internet.MimeMessage;
  */
 class Avisador {
 
+    /**
+     * Envía un mensaje al usuario del sistema. Para ello, obtiene su email y le
+     * envía el mensaje que recibe como parametro
+     *
+     * @param mensaje
+     * @throws MessagingException
+     */
     static void avisarUsuario(Mensaje mensaje) throws MessagingException {
         String emailUsuario = Usuario.obtenerEmail();
-        
-        enviarEmail(emailUsuario);
+
+        enviarEmail(emailUsuario, mensaje);
     }
 
-    private static void enviarEmail(String emailUsuario) throws MessagingException {
+    private static void enviarEmail(String emailUsuario, Mensaje mensaje) throws MessagingException {
 
-        String msgText = "This is a message body.\nHere's the second line.";
-
-// create some properties and get the default Session
+        // create some properties and get the default Session
         Properties mailProps = new Properties();
         mailProps.put("mail.smtps.host", "smtp.gmail.com");
         mailProps.put("mail.smtps.port", "465");
@@ -47,7 +52,7 @@ class Avisador {
         msg.setSentDate(new Date());
         // If the desired charset is known, you can use
         // setText(text, charset)
-        msg.setText(msgText);
+        msg.setText(mensaje.getTextoMensaje());
 
         Transport tr = session.getTransport();
         tr.connect("cperezh@gmail.com", "M0t1v377");

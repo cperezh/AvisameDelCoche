@@ -11,7 +11,7 @@ package com.carlos.avisamedelcoche;
  */
 class Comprobador {
 
-    static EstadoCoche comprobarEstadoCoche() {
+    static EstadoCoche recuperarEstadoCoche() {
 
         EstadoCoche estadoCoche = Coche.getEstadoCoche();
 
@@ -24,6 +24,8 @@ class Comprobador {
 
     static Mensaje componerMensaje(EstadoCoche estadoCoche) {
         Mensaje mensaje = new Mensaje();
+        
+        mensaje.setTextoMensaje("Prueba");
         
         return mensaje;
     }

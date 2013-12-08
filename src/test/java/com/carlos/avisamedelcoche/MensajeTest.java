@@ -5,7 +5,9 @@
  */
 package com.carlos.avisamedelcoche;
 
+import junit.framework.Test;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 /**
  *
@@ -15,6 +17,11 @@ public class MensajeTest extends TestCase {
 
     public MensajeTest(String testName) {
         super(testName);
+    }
+
+    public static Test suite() {
+        TestSuite suite = new TestSuite(MensajeTest.class);
+        return suite;
     }
 
     @Override

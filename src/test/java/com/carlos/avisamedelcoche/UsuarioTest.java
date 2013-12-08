@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package com.carlos.avisamedelcoche;
 
 import junit.framework.Test;
@@ -13,38 +14,35 @@ import junit.framework.TestSuite;
  *
  * @author Pakno
  */
-public class CocheTest extends TestCase {
-
-    public CocheTest(String testName) {
+public class UsuarioTest extends TestCase {
+    
+    public UsuarioTest(String testName) {
         super(testName);
     }
 
     public static Test suite() {
-        TestSuite suite = new TestSuite(CocheTest.class);
+        TestSuite suite = new TestSuite(UsuarioTest.class);
         return suite;
     }
-
+    
     @Override
     protected void setUp() throws Exception {
         super.setUp();
     }
-
+    
     @Override
     protected void tearDown() throws Exception {
         super.tearDown();
     }
 
     /**
-     * Test of getEstadoCoche method, of class Coche.
+     * Test of obtenerEmail method, of class Usuario.
      */
-    public void testGetEstadoCoche() {
-        
-        EstadoCoche result = Coche.getEstadoCoche();
-
-        if (result == null) {
-            fail("Estado nulo");
-        }
-
+    public void testObtenerEmail() {
+        System.out.println("obtenerEmail");
+        String expResult = "cperezh@gmail.com";
+        String result = Usuario.obtenerEmail();
+        assertEquals(expResult, result);
     }
-
+    
 }

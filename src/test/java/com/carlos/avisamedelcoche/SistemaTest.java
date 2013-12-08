@@ -6,7 +6,10 @@
 
 package com.carlos.avisamedelcoche;
 
+import javax.mail.MessagingException;
+import junit.framework.Test;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 /**
  *
@@ -16,6 +19,11 @@ public class SistemaTest extends TestCase {
     
     public SistemaTest(String testName) {
         super(testName);
+    }
+
+    public static Test suite() {
+        TestSuite suite = new TestSuite(SistemaTest.class);
+        return suite;
     }
     
     @Override
@@ -31,7 +39,7 @@ public class SistemaTest extends TestCase {
     /**
      * Test of avisarDeReparacion method, of class Sistema.
      */
-    public void testAvisarDeReparacion() {
+    public void testAvisarDeReparacion() throws MessagingException {
         Sistema.avisarDeReparacion();
         assertTrue(true);
    }

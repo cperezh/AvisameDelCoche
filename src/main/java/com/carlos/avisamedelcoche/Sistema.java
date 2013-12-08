@@ -15,7 +15,7 @@ public class Sistema {
 
     public static void avisarDeReparacion() throws MessagingException {
 
-        EstadoCoche estadoCoche = Comprobador.comprobarEstadoCoche();
+        EstadoCoche estadoCoche = Comprobador.recuperarEstadoCoche();
 
         if (Comprobador.esNecesariaReparacion(estadoCoche)) {
             
