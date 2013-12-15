@@ -5,18 +5,17 @@
  */
 package com.carlos.avisamedelcoche;
 
+import java.util.ArrayList;
+import java.util.List;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  *
  * @author Pakno
  */
 public class ComprobadorTest extends TestCase {
-
-    EstadoCoche estadoCoche;
 
     public ComprobadorTest(String testName) {
         super(testName);
@@ -30,7 +29,7 @@ public class ComprobadorTest extends TestCase {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        estadoCoche = new EstadoCoche();
+        inicialiarCoche();
     }
 
     @Override
@@ -38,47 +37,67 @@ public class ComprobadorTest extends TestCase {
         super.tearDown();
     }
 
-    /**
-     * Test of recuperarEstadoCoche method, of class Comprobador.
-     */
-    public void testComprobarEstadoCoche() {
+    private void inicialiarCoche() {
 
-        EstadoCoche result = Comprobador.recuperarEstadoCoche();
-
-        if (result == null) {
-            fail("Estado coche nulo");
-        }
-
-    }
-
-    /**
-     * Test of esNecesariaReparacion method, of class Comprobador.
-     */
-    public void testEsNecesariaReparacion() {
-
-        boolean result = Comprobador.esNecesariaReparacion(estadoCoche);
-        assertTrue(true);
-    }
-
-    /**
-     * Test of recuperarEstadoCoche method, of class Comprobador.
-     */
-    public void testRecuperarEstadoCoche() {
-        System.out.println("recuperarEstadoCoche");
-        EstadoCoche expResult = null;
-        EstadoCoche result = Comprobador.recuperarEstadoCoche();
-        assertEquals(150000, result.getKilometraje());
     }
 
     /**
      * Test of componerMensaje method, of class Comprobador.
      */
     public void testComponerMensaje() {
-        System.out.println("componerMensaje");
-        EstadoCoche estadoCoche = null;
-        Mensaje expResult = null;
-        Mensaje result = Comprobador.componerMensaje(estadoCoche);
-        assertEquals(true, StringUtils.isNotEmpty(result.getTextoMensaje()));
+       
+        Coche coche = new Coche();
+
+        coche.setKilometraje(150000);
+
+        EstadoComponente estadoNeumaticos = new EstadoComponente();
+        estadoNeumaticos.setComponente(Componente.NEUMATICOS);
+        estadoNeumaticos.setUltimaSustitucion(139000);
+
+        EstadoComponente estadoAceiteMotor = new EstadoComponente();
+        estadoAceiteMotor.setComponente(Componente.ACEITE_MOTOR);
+        estadoAceiteMotor.setUltimaSustitucion(145000);
+
+        List<EstadoComponente> estadoComponentes = new ArrayList();
+        estadoComponentes.add(estadoNeumaticos);
+        estadoComponentes.add(estadoAceiteMotor);
+
+        coche.setEstadoComponentes(estadoComponentes);
+        
+        Mensaje mensaje = Comprobador.componerMensaje(estadoComponentes);
+        
+        assertEquals(true, !mensaje.getTextoMensaje().isEmpty());
+    }
+
+    /**
+     * Test of obtenerComponentesNecesitanReparacion method, of class
+     * Comprobador.
+     */
+    public void testObtenerComponentesNecesitanReparacion() {
+        System.out.println("obtenerComponentesNecesitanReparacion");
+
+        Coche coche = new Coche();
+
+        coche.setKilometraje(150000);
+
+        EstadoComponente estadoNeumaticos = new EstadoComponente();
+        estadoNeumaticos.setComponente(Componente.NEUMATICOS);
+        estadoNeumaticos.setUltimaSustitucion(139000);
+
+        EstadoComponente estadoAceiteMotor = new EstadoComponente();
+        estadoAceiteMotor.setComponente(Componente.ACEITE_MOTOR);
+        estadoAceiteMotor.setUltimaSustitucion(145000);
+
+        List<EstadoComponente> estadoComponentes = new ArrayList();
+        estadoComponentes.add(estadoNeumaticos);
+        estadoComponentes.add(estadoAceiteMotor);
+
+        coche.setEstadoComponentes(estadoComponentes);
+
+        List<EstadoComponente> result = Comprobador.obtenerComponentesNecesitanReparacion(coche);
+
+        assertEquals(Componente.NEUMATICOS, result.get(0).getComponente());
+
     }
 
 }

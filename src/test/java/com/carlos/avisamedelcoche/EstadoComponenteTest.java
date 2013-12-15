@@ -79,4 +79,28 @@ public class EstadoComponenteTest extends TestCase {
 
     }
 
+    /**
+     * Test of getUltimaSustitucion method, of class EstadoComponente.
+     */
+    public void testGetUltimaSustitucion() {
+        System.out.println("getUltimaSustitucion");
+        EstadoComponente instance = new EstadoComponente();
+        instance.setUltimaSustitucion(1000);
+        int result = instance.getUltimaSustitucion();
+        assertEquals(1000, result);
+
+    }
+
+    /**
+     * Test of setUltimaSustitucion method, of class EstadoComponente.
+     */
+    public void testSetUltimaSustitucion() {
+        System.out.println("setUltimaSustitucion");
+        int ultimaSustitucion = 2000;
+        EstadoComponente instance = new EstadoComponente();
+        instance.setUltimaSustitucion(ultimaSustitucion);
+        int result = instance.getUltimaSustitucion();
+        assertEquals(2000, result);
+    }
+
 }

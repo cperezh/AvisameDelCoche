@@ -5,7 +5,7 @@
  */
 package com.carlos.avisamedelcoche;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,28 +13,27 @@ import java.util.ArrayList;
  */
 class Coche {
 
-    private static EstadoCoche estadoCoche;
+    private int kilometraje;
+    private List<EstadoComponente> estadoComponentes;
 
-    static {
-        crearCocheDePrueba();
+    Coche() {
+
     }
 
-    private static void crearCocheDePrueba() {
-        estadoCoche = new EstadoCoche();
-        estadoCoche.setKilometraje(150000);
-
-        EstadoComponente estadoNeumaticos = new EstadoComponente();
-        estadoNeumaticos.setComponente(Componente.NEUMATICOS);
-        estadoNeumaticos.setUltimaSustitucion(100000);
-
-        ArrayList<EstadoComponente> estadoComponentes = new ArrayList();
-        estadoComponentes.add(estadoNeumaticos);
-
-        estadoCoche.setEstadoComponentes(estadoComponentes);
+    public int getKilometraje() {
+        return kilometraje;
     }
 
-    static EstadoCoche getEstadoCoche() {
-        return estadoCoche;
+    public void setKilometraje(int _kilometraje) {
+        kilometraje = _kilometraje;
+    }
+
+    public List<EstadoComponente> getEstadoComponentes() {
+        return estadoComponentes;
+    }
+
+    public void setEstadoComponentes(List<EstadoComponente> _estadoComponentes) {
+        estadoComponentes = _estadoComponentes;
     }
 
 }

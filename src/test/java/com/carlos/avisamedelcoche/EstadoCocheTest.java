@@ -51,15 +51,6 @@ public class EstadoCocheTest extends TestCase {
     }
 
     /**
-     * Test of getEstadoComponentes method, of class EstadoCoche.
-     */
-    public void testGetEstadoComponentes() {
-        System.out.println("getEstadoComponentes");
-        List<EstadoComponente> result = Coche.getEstadoCoche().getEstadoComponentes();
-        assertEquals(true, !result.isEmpty());
-    }
-
-    /**
      * Test of setEstadoComponentes method, of class EstadoCoche.
      */
     public void testSetEstadoComponentes() {

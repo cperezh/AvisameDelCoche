@@ -12,7 +12,7 @@ package com.carlos.avisamedelcoche;
  */
 public class Mensaje {
     
-    String textoMensaje;
+    private String textoMensaje = "";
 
     public String getTextoMensaje() {
         return textoMensaje;

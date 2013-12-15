@@ -1,5 +1,6 @@
 package com.carlos.avisamedelcoche;
 
+import javax.mail.MessagingException;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -48,8 +49,9 @@ public class AppTest
 
     /**
      * Test of main method, of class App.
+     * @throws javax.mail.MessagingException
      */
-    public void testMain() {
+    public void testMain() throws MessagingException {
         System.out.println("main");
         String[] args = null;
         App.main(args);

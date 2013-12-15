@@ -15,9 +15,9 @@ package com.carlos.avisamedelcoche;
 public enum Componente {
 
     NEUMATICOS(10000),
-    ACEITE_MOTOR(90000);
+    ACEITE_MOTOR(5000);
 
-    int limiteKilometros;
+    private int limiteKilometros;
 
     private Componente(int _limiteKilometros) {
         this.limiteKilometros = _limiteKilometros;

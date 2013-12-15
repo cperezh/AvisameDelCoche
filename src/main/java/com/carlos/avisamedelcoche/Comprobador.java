@@ -5,28 +5,60 @@
  */
 package com.carlos.avisamedelcoche;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Pakno
  */
 class Comprobador {
 
-    static EstadoCoche recuperarEstadoCoche() {
+    /**
+     * La reparación de un componente es necesaria si ha alcanzado el límite de
+     * kilómetros que se pueden hacer con él.
+     *
+     * Para calcularlo, restamos el kilometraje actual del coche menos el
+     * kilometraje de la sustitución del componente. Si es mayor que el límite
+     * de uso del componente, es necesario sustituir el componente.
+     *
+     * @param estadoComponentes
+     * @return
+     */
+    static List<EstadoComponente> obtenerComponentesNecesitanReparacion(Coche coche) {
 
-        EstadoCoche estadoCoche = Coche.getEstadoCoche();
+        int kilometrosUsoComponente;
+        List<EstadoComponente> estadoComponentesNecesitanReparacion = new ArrayList<>();
 
-        return estadoCoche;
+        for (EstadoComponente estadoComponente : coche.getEstadoComponentes()) {
+            
+            kilometrosUsoComponente = coche.getKilometraje() - estadoComponente.getUltimaSustitucion();
+            
+            if (kilometrosUsoComponente > estadoComponente.getComponente().getLimiteKilometros()){
+                estadoComponentesNecesitanReparacion.add(estadoComponente);
+            }
+        }
+        
+        return estadoComponentesNecesitanReparacion;
     }
 
-    static boolean esNecesariaReparacion(EstadoCoche estadoCoche) {
-        return true;
-    }
-
-    static Mensaje componerMensaje(EstadoCoche estadoCoche) {
+    static Mensaje componerMensaje(List<EstadoComponente> estadoComponentes) {
+        
         Mensaje mensaje = new Mensaje();
+        String textoParcial = "";
+        String nuevalinea = System.getProperty("line.separator");
         
-        mensaje.setTextoMensaje("Prueba");
+        for (EstadoComponente estadoComponente : estadoComponentes) {
+            
+            textoParcial = mensaje.getTextoMensaje().concat(estadoComponente.getComponente().name());
+            
+            textoParcial = textoParcial.concat(nuevalinea);
+                    
+            mensaje.setTextoMensaje(textoParcial);
+        }
         
+        mensaje.setTextoMensaje(textoParcial);
+
         return mensaje;
     }
 

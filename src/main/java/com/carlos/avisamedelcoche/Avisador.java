@@ -48,7 +48,7 @@ class Avisador {
         msg.setFrom(new InternetAddress(emailUsuario));
         InternetAddress[] address = {new InternetAddress(emailUsuario)};
         msg.setRecipients(Message.RecipientType.TO, address);
-        msg.setSubject("JavaMail APIs Test");
+        msg.setSubject("Avisame del coche - Lista de repacion");
         msg.setSentDate(new Date());
         // If the desired charset is known, you can use
         // setText(text, charset)

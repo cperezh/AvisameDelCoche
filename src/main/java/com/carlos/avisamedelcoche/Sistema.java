@@ -5,6 +5,7 @@
  */
 package com.carlos.avisamedelcoche;
 
+import java.util.List;
 import javax.mail.MessagingException;
 
 /**
@@ -13,13 +14,15 @@ import javax.mail.MessagingException;
  */
 public class Sistema {
 
-    public static void avisarDeReparacion() throws MessagingException {
+    static void avisarDeReparacion(Coche coche) throws MessagingException {
 
-        EstadoCoche estadoCoche = Comprobador.recuperarEstadoCoche();
+        List<EstadoComponente> estadoComponentesNecesitanRaparacion;
 
-        if (Comprobador.esNecesariaReparacion(estadoCoche)) {
+        estadoComponentesNecesitanRaparacion = Comprobador.obtenerComponentesNecesitanReparacion(coche);
+
+        if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
             
-            Mensaje mensaje = Comprobador.componerMensaje(estadoCoche);
+            Mensaje mensaje = Comprobador.componerMensaje(estadoComponentesNecesitanRaparacion);
             
             Avisador.avisarUsuario(mensaje);
         }

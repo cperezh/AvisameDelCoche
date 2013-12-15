@@ -37,6 +37,7 @@ public class AvisadorTest extends TestCase {
 
     /**
      * Test of avisarUsuario method, of class Avisador.
+     * @throws javax.mail.MessagingException
      */
     public void testAvisarUsuario() throws MessagingException {
 
