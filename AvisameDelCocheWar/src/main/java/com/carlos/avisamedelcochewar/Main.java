@@ -17,6 +17,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -37,6 +38,7 @@ public class Main extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
+        Logger.getLogger(Main.class.getName()).info("Entrando");
         Coche coche = crearCocheDePrueba();
         Sistema.avisarDeReparacion(coche);
 

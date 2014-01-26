@@ -6,9 +6,9 @@
 package com.carlos.avisamedelcoche;
 
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.mail.MessagingException;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -26,9 +26,11 @@ public class Sistema {
             
             Mensaje mensaje = Comprobador.componerMensaje(estadoComponentesNecesitanRaparacion);
             try {
+                BasicConfigurator.configure();
+                Logger.getLogger(Sistema.class.getName()).info("Entrando");
                 Avisador.avisarUsuario(mensaje);
             } catch (MessagingException ex) {
-                Logger.getLogger(Sistema.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Sistema.class.getName()).info("El info");
             }
         }
 
