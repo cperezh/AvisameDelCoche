@@ -6,6 +6,8 @@
 package com.carlos.avisamedelcoche;
 
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.mail.MessagingException;
 
 /**
@@ -14,7 +16,7 @@ import javax.mail.MessagingException;
  */
 public class Sistema {
 
-    static void avisarDeReparacion(Coche coche) throws MessagingException {
+    public static void avisarDeReparacion(Coche coche)  {
 
         List<EstadoComponente> estadoComponentesNecesitanRaparacion;
 
@@ -23,8 +25,11 @@ public class Sistema {
         if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
             
             Mensaje mensaje = Comprobador.componerMensaje(estadoComponentesNecesitanRaparacion);
-            
-            Avisador.avisarUsuario(mensaje);
+            try {
+                Avisador.avisarUsuario(mensaje);
+            } catch (MessagingException ex) {
+                Logger.getLogger(Sistema.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
 
     }

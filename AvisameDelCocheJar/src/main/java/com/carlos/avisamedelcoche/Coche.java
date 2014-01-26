@@ -11,12 +11,12 @@ import java.util.List;
  *
  * @author Pakno
  */
-class Coche {
+public class Coche {
 
     private int kilometraje;
     private List<EstadoComponente> estadoComponentes;
 
-    Coche() {
+    public Coche() {
 
     }
 
