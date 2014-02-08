@@ -1,6 +1,0 @@
-[2014-01-26 12:05:34,032] INFO (Main.java:41) - Entrando
-[2014-01-26 12:05:34,041] INFO (Sistema.java:28) - Entrando
-[2014-01-26 12:07:21,505] INFO (Main.java:41) - Entrando
-[2014-01-26 12:07:21,513] INFO (Sistema.java:28) - Entrando
-[2014-01-26 12:10:10,828] INFO (com.carlos.avisamedelcochewar.Main.processRequest(Main.java:41)) - Entrando
-[2014-01-26 12:10:10,836] INFO (com.carlos.avisamedelcoche.Sistema.avisarDeReparacion(Sistema.java:28)) - Entrando
