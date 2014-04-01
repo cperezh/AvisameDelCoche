@@ -46,10 +46,6 @@ public class Main extends HttpServlet {
 
         Logger.getLogger(Main.class.getName()).info("Entrando");
         
-        UserService userService = UserServiceFactory.getUserService();
-        User user = userService.getCurrentUser();
-
-        
         Coche coche = crearCocheDePrueba();
         Sistema.avisarDeReparacion(coche);
 
@@ -61,7 +57,7 @@ public class Main extends HttpServlet {
             out.println("<title>Servlet Main</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hello " +user.getNickname() + "</h1>");
+            out.println("<h1>Ejecutado</h1>");
             out.println("</body>");
             out.println("</html>");
         }
