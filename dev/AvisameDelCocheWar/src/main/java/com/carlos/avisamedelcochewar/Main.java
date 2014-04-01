@@ -5,19 +5,25 @@
  */
 package com.carlos.avisamedelcochewar;
 
-import com.carlos.avisamedelcoche.Coche;
-import com.carlos.avisamedelcoche.Componente;
-import com.carlos.avisamedelcoche.EstadoComponente;
-import com.carlos.avisamedelcoche.Sistema;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import org.apache.log4j.Logger;
+
+import com.carlos.avisamedelcoche.Coche;
+import com.carlos.avisamedelcoche.Componente;
+import com.carlos.avisamedelcoche.EstadoComponente;
+import com.carlos.avisamedelcoche.Sistema;
+import com.google.appengine.api.users.User;
+import com.google.appengine.api.users.UserService;
+import com.google.appengine.api.users.UserServiceFactory;
 
 /**
  *
@@ -39,6 +45,11 @@ public class Main extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         Logger.getLogger(Main.class.getName()).info("Entrando");
+        
+        UserService userService = UserServiceFactory.getUserService();
+        User user = userService.getCurrentUser();
+
+        
         Coche coche = crearCocheDePrueba();
         Sistema.avisarDeReparacion(coche);
 
@@ -50,7 +61,7 @@ public class Main extends HttpServlet {
             out.println("<title>Servlet Main</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Main at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Hello " +user.getNickname() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }

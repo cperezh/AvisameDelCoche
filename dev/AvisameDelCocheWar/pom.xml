@@ -18,5 +18,6 @@
             <artifactId>AvisameDelCocheJar</artifactId>
             <version>${project.version}</version>
         </dependency>
+
     </dependencies>
 </project>
