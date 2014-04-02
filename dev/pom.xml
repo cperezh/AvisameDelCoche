@@ -10,7 +10,9 @@
     <name>AvisameDelCoche</name>
 
     <modules>
-        <module>AvisameDelCocheJar</module>
+        <module>AvisameDelCocheBusiness</module>
+        <module>AvisameDelCocheEJB</module>
+        <module>AvisameDelCocheServices</module>
         <module>AvisameDelCocheWar</module>
     </modules>
 
@@ -35,6 +37,12 @@
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-1.0-sdk</artifactId>
             <version>1.8.9</version>
+        </dependency>
+        <dependency> 
+            <groupId>org.projectlombok</groupId> 
+            <artifactId>lombok</artifactId> 
+            <version>1.12.6</version> 
+            <scope>provided</scope> 
         </dependency>
     </dependencies>
 

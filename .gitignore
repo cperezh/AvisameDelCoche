@@ -3,3 +3,6 @@ dev/AvisameDelCocheWar/.settings/
 *.project
 *.classpath
 dev/.settings/
+/dev/AvisameDelCocheServices/target/
+dev/AvisameDelCocheBusiness/target/
+dev/AvisameDelCocheEJB/.settings/
