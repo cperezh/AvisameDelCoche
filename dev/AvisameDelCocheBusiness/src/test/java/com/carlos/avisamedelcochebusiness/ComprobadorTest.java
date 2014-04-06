@@ -63,7 +63,7 @@ public class ComprobadorTest extends TestCase {
         estadoAceiteMotor.setComponente(Componente.ACEITE_MOTOR);
         estadoAceiteMotor.setUltimaSustitucion(145000);
 
-        List<EstadoComponente> estadoComponentes = new ArrayList();
+        List<EstadoComponente> estadoComponentes = new ArrayList<>();
         estadoComponentes.add(estadoNeumaticos);
         estadoComponentes.add(estadoAceiteMotor);
 
@@ -93,7 +93,7 @@ public class ComprobadorTest extends TestCase {
         estadoAceiteMotor.setComponente(Componente.ACEITE_MOTOR);
         estadoAceiteMotor.setUltimaSustitucion(145000);
 
-        List<EstadoComponente> estadoComponentes = new ArrayList();
+        List<EstadoComponente> estadoComponentes = new ArrayList<>();
         estadoComponentes.add(estadoNeumaticos);
         estadoComponentes.add(estadoAceiteMotor);
 

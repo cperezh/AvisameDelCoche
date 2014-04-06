@@ -1,8 +1,11 @@
-dev/AvisameDelCocheJar/.settings/
-dev/AvisameDelCocheWar/.settings/
 *.project
 *.classpath
 dev/.settings/
 /dev/AvisameDelCocheServices/target/
+*/.settings/
+dev/AvisameDelCocheBusiness/.settings/
 dev/AvisameDelCocheBusiness/target/
 dev/AvisameDelCocheEJB/.settings/
+dev/AvisameDelCocheServices/.settings/
+dev/AvisameDelCocheSpring/.settings/
+dev/AvisameDelCocheWar/.settings/

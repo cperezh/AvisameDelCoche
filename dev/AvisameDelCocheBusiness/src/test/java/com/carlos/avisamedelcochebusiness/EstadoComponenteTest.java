@@ -63,7 +63,6 @@ public class EstadoComponenteTest extends TestCase {
      */
     public void testGetComponente() {
         System.out.println("getComponente");
-        EstadoComponente instance = new EstadoComponente();
         Componente expResult = Componente.ACEITE_MOTOR;
         assertEquals(expResult, Componente.valueOf("ACEITE_MOTOR"));
 
