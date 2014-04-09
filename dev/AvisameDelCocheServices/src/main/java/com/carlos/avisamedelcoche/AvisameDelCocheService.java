@@ -13,7 +13,7 @@ import javax.ejb.Local;
  * @author Carlos
  */
 @Local
-public interface AvisameDelCocheService {
+public interface AvisameDelCocheService{
 
     void avisarDeReparacion(Coche coche);
 }

@@ -15,8 +15,8 @@ import java.util.List;
  */
 public class Coche {
 
-    private int kilometraje;
-    private List<EstadoComponente> estadoComponentes;
+    protected int kilometraje;
+    protected List<EstadoComponente> estadoComponentes;
 
     public Coche() {
 
@@ -47,19 +47,19 @@ public class Coche {
 
     }
 
-    public int getKilometraje() {
+    int getKilometraje() {
         return kilometraje;
     }
 
-    public void setKilometraje(int _kilometraje) {
+    void setKilometraje(int _kilometraje) {
         kilometraje = _kilometraje;
     }
 
-    public List<EstadoComponente> getEstadoComponentes() {
+    List<EstadoComponente> getEstadoComponentes() {
         return estadoComponentes;
     }
 
-    public void setEstadoComponentes(List<EstadoComponente> _estadoComponentes) {
+    void setEstadoComponentes(List<EstadoComponente> _estadoComponentes) {
         estadoComponentes = _estadoComponentes;
     }
 

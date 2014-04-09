@@ -15,31 +15,49 @@ import java.util.List;
 class Comprobador {
 
     /**
-     * La reparacion de un componente es necesaria si ha alcanzado el limite de
-     * kilometros que se pueden hacer con el.
-     *
-     * Para calcularlo, restamos el kilometraje actual del coche menos el
-     * kilometraje de la sustitucion del componente. Si es mayor que el limite
-     * de uso del componente, es necesario sustituir el componente.
+     * Devuelve la lista de componentes del coche que necesitan una reparacion
      *
      * @param estadoComponentes
      * @return
      */
     static List<EstadoComponente> obtenerComponentesNecesitanReparacion(Coche coche) {
 
-        int kilometrosUsoComponente;
         List<EstadoComponente> estadoComponentesNecesitanReparacion = new ArrayList<>();
 
         for (EstadoComponente estadoComponente : coche.getEstadoComponentes()) {
 
-            kilometrosUsoComponente = coche.getKilometraje() - estadoComponente.getUltimaSustitucion();
-
-            if (kilometrosUsoComponente > estadoComponente.getComponente().getLimiteKilometros()) {
+            if (comprobarComponenteNecesitaReparacion(estadoComponente, coche.getKilometraje())) {
                 estadoComponentesNecesitanReparacion.add(estadoComponente);
             }
+
         }
 
         return estadoComponentesNecesitanReparacion;
+    }
+
+    /**
+     * La reparacion de un componente es necesaria si ha alcanzado el limite de
+     * kilometros que se pueden hacer con el.
+     *
+     * Para calcularlo, restamos el kilometraje actual del coche menos el
+     * kilometraje de la sustitucion del componente. Si es mayor que el limite
+     * de uso del componente, es necesario sustituir el componente.
+     * 
+     * @param estadoComponente
+     * @param kilometrajeCoche
+     * @return 
+     */
+    private static boolean comprobarComponenteNecesitaReparacion(EstadoComponente estadoComponente, int kilometrajeCoche) {
+        boolean necesitaReparacion;
+        int kilometrosUsoComponente;
+
+        //Obtengo en numero de kilometros que ha hecho el componente
+        kilometrosUsoComponente = kilometrajeCoche - estadoComponente.getUltimaSustitucion();
+        
+        //Compruebo si es mayor que el limite de vida del componente
+        necesitaReparacion = kilometrosUsoComponente > estadoComponente.getComponente().getLimiteKilometros();
+
+        return necesitaReparacion;
     }
 
     static Mensaje componerMensaje(List<EstadoComponente> estadoComponentes) {
