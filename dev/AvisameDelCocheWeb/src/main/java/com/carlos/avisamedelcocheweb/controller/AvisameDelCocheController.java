@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.carlos.avisamedelcochewar.controller;
+package com.carlos.avisamedelcocheweb.controller;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
@@ -33,6 +33,14 @@ public class AvisameDelCocheController {
         coche = Coche.crearCocheDePrueba();
 
         avisameDelCocheService.avisarDeReparacion(coche);
+
+        return "OK";
+    }
+    
+    @RequestMapping(value="/a",method = RequestMethod.GET)
+    public String avisarDeReparacion2() {
+
+      
 
         return "OK";
     }
