@@ -37,11 +37,4 @@ public class AvisameDelCocheController {
         return "OK";
     }
     
-    @RequestMapping(value="/a",method = RequestMethod.GET)
-    public String avisarDeReparacion2() {
-
-      
-
-        return "OK";
-    }
 }
