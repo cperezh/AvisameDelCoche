@@ -19,8 +19,8 @@ import org.springframework.stereotype.Service;
 public class AvisameDelCocheSpringService implements AvisameDelCocheService{
 
     @Override
-    public void avisarDeReparacion(Coche coche) {
-        AvisameDelCocheFacade.avisarDeReparacion(coche);
+    public void comprobarEstadoVehiculo(Coche coche) {
+        AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
     }
     
 }

@@ -69,7 +69,7 @@ public class SistemaTest extends TestCase {
      */
     public void testAvisarDeReparacion() throws MessagingException {
       
-        AvisameDelCocheFacade.avisarDeReparacion(coche);
+        AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
         assertTrue(true);
    }
 }

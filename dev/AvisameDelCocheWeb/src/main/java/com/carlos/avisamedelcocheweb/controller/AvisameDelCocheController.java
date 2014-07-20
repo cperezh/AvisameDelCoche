@@ -32,7 +32,7 @@ public class AvisameDelCocheController {
 
         coche = Coche.crearCocheDePrueba();
 
-        avisameDelCocheService.avisarDeReparacion(coche);
+        avisameDelCocheService.comprobarEstadoVehiculo(coche);
 
         return "OK";
     }

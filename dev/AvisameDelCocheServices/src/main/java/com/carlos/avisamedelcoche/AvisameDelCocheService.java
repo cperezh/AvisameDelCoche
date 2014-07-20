@@ -15,5 +15,5 @@ import javax.ejb.Local;
 @Local
 public interface AvisameDelCocheService{
 
-    void avisarDeReparacion(Coche coche);
+    void comprobarEstadoVehiculo(Coche coche);
 }

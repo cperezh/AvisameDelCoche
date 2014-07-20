@@ -18,9 +18,9 @@ import javax.ejb.Stateless;
 public class AvisameDelCocheEJB implements AvisameDelCocheService {
 
     @Override
-    public void avisarDeReparacion(Coche coche) {
+    public void comprobarEstadoVehiculo(Coche coche) {
 
-        AvisameDelCocheFacade.avisarDeReparacion(coche);
+        AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
 
     }
 }

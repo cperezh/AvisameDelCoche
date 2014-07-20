@@ -17,7 +17,7 @@ import org.apache.log4j.Logger;
  */
 public class AvisameDelCocheFacade {
 
-    public static void avisarDeReparacion(Coche coche)  {
+    public static void comprobarEstadoVehiculo(Coche coche)  {
 
         List<EstadoComponente> estadoComponentesNecesitanRaparacion;
 
