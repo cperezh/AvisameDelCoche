@@ -8,21 +8,21 @@ package com.carlos.avisamedelcochebusiness;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  *
  * @author Pakno
  */
+@lombok.Data
 public class Coche {
 
+    protected String matricula;
     protected int kilometraje;
     protected List<EstadoComponente> estadoComponentes;
 
     public Coche() {
 
     }
-    
-    
+
     public static Coche crearCocheDePrueba() {
 
         Coche coche = new Coche();
@@ -45,22 +45,6 @@ public class Coche {
 
         return coche;
 
-    }
-
-    int getKilometraje() {
-        return kilometraje;
-    }
-
-    void setKilometraje(int _kilometraje) {
-        kilometraje = _kilometraje;
-    }
-
-    List<EstadoComponente> getEstadoComponentes() {
-        return estadoComponentes;
-    }
-
-    void setEstadoComponentes(List<EstadoComponente> _estadoComponentes) {
-        estadoComponentes = _estadoComponentes;
     }
 
 }

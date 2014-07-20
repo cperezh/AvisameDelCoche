@@ -7,19 +7,21 @@
         <artifactId>AvisameDelCoche</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>AvisameDelCocheEJB</artifactId>
+    
+    <artifactId>AvisameDelCocheDao</artifactId>
     <packaging>jar</packaging>
     
-    <name>AvisameDelCocheEJB</name>
-      
+    <name>AvisameDelCocheDao</name>
+    
     <dependencies>
+        
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>AvisameDelCocheServices</artifactId>
+            <artifactId>AvisameDelCocheBusiness</artifactId>
             <version>${project.version}</version>
         </dependency>
-        
-         <!-- PROVIDED -->
+                
+        <!-- PROVIDED -->
         
         <dependency>
             <groupId>javax</groupId>
