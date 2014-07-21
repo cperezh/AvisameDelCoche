@@ -7,11 +7,13 @@
 package com.carlos.avisamedelcochedao;
 
 import com.carlos.avisamedelcochebusiness.Coche;
+import javax.ejb.Local;
 
 /**
  *
  * @author Carlos
  */
+@Local
 public interface DAOVehiculo {
     Coche buscarVehiculo(String matricula);
 }

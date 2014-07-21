@@ -8,6 +8,8 @@ package com.carlos.avisamedelcocheEJB;
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.AvisameDelCocheFacade;
 import com.carlos.avisamedelcochebusiness.Coche;
+import com.carlos.avisamedelcochedao.DAOVehiculo;
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 /**
@@ -16,10 +18,14 @@ import javax.ejb.Stateless;
  */
 @Stateless
 public class AvisameDelCocheEJB implements AvisameDelCocheService {
+    
+    @EJB(mappedName = "java:module/DAOVehiculoEJB!com.carlos.avisamedelcochedao.DAOVehiculo")
+    DAOVehiculo daoVehiculo;
 
     @Override
     public void comprobarEstadoVehiculo(Coche coche) {
 
+        daoVehiculo.buscarVehiculo("");
         AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
 
     }

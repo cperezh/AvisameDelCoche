@@ -4,8 +4,9 @@
  */
 package com.carlos.avisamedelcochedaoejb;
 
+import com.carlos.avisamedelcochebusiness.Coche;
+import com.carlos.avisamedelcochedao.DAOVehiculo;
 import javax.ejb.Stateless;
-import javax.ejb.LocalBean;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -14,26 +15,17 @@ import javax.persistence.PersistenceContext;
  * @author martin
  */
 @Stateless
-public class DAOVehiculoEJB {
+public class DAOVehiculoEJB implements DAOVehiculo{
 
     @PersistenceContext
     EntityManager entityManager;
 
    
-    
-     @Override
-    public void insertar(Coche coche) {
-        entityManager.persist(coche);
-    }
-
     @Override
-    public Coche buscar(Long id) {
+    public Coche buscarVehiculo(String matricula) {
         
-        Coche movimientoEncontrado = entityManager.find(Coche.class, id);
+        Coche movimientoEncontrado = entityManager.find(Coche.class, matricula);
 
         return movimientoEncontrado;
     }
-
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
 }

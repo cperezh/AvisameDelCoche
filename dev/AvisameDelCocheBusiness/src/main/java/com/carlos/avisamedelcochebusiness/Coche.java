@@ -5,16 +5,21 @@
  */
 package com.carlos.avisamedelcochebusiness;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  *
  * @author Pakno
  */
+@Entity
 @lombok.Data
-public class Coche {
+public class Coche implements Serializable{
 
+    @Id
     protected String matricula;
     protected int kilometraje;
     protected List<EstadoComponente> estadoComponentes;
