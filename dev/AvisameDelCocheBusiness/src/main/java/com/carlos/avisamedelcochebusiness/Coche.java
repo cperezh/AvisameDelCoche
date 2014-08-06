@@ -8,8 +8,10 @@ package com.carlos.avisamedelcochebusiness;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 /**
  *
@@ -21,7 +23,9 @@ public class Coche implements Serializable{
 
     @Id
     protected String matricula;
+    @Column
     protected int kilometraje;
+    @Transient
     protected List<EstadoComponente> estadoComponentes;
 
     public Coche() {

@@ -6,26 +6,39 @@ package com.carlos.avisamedelcochedaoejb;
 
 import com.carlos.avisamedelcochebusiness.Coche;
 import com.carlos.avisamedelcochedao.DAOVehiculo;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaQuery;
 
 /**
  *
  * @author martin
  */
 @Stateless
-public class DAOVehiculoEJB implements DAOVehiculo{
+public class DAOVehiculoEJB implements DAOVehiculo {
 
     @PersistenceContext
     EntityManager entityManager;
 
-   
     @Override
     public Coche buscarVehiculo(String matricula) {
-        
-        Coche movimientoEncontrado = entityManager.find(Coche.class, matricula);
 
-        return movimientoEncontrado;
+        Coche cocheEncontrado = entityManager.find(Coche.class, matricula);
+
+        return cocheEncontrado;
+    }
+
+    public List<Coche> buscarTodos() {
+
+        CriteriaQuery cq = entityManager.getCriteriaBuilder().createQuery();
+
+        cq.select(cq.from(Coche.class));
+
+        Query q = entityManager.createQuery(cq);
+
+        return q.getResultList();
     }
 }

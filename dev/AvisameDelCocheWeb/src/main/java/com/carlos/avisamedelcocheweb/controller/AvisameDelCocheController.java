@@ -30,7 +30,10 @@ public class AvisameDelCocheController {
 
         Coche coche;
 
-        coche = Coche.crearCocheDePrueba();
+        //coche = Coche.crearCocheDePrueba();
+        
+        coche = new Coche();
+        coche.setMatricula("4731DSD");
 
         avisameDelCocheService.comprobarEstadoVehiculo(coche);
 
