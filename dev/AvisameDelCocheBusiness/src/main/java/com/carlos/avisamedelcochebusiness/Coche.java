@@ -11,7 +11,8 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -25,7 +26,8 @@ public class Coche implements Serializable{
     protected String matricula;
     @Column
     protected int kilometraje;
-    @Transient
+    @OneToMany
+    @JoinColumn(name="matricula")
     protected List<EstadoComponente> estadoComponentes;
 
     public Coche() {

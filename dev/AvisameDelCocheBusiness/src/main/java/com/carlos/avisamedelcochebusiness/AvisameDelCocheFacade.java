@@ -28,6 +28,7 @@ public class AvisameDelCocheFacade {
             Mensaje mensaje = Comprobador.componerMensaje(estadoComponentesNecesitanRaparacion);
             
             try {
+                //TODO Configurar el log
                 BasicConfigurator.configure();
                 Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("Entrando");
                 Avisador.avisarUsuario(mensaje);

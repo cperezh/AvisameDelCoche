@@ -12,3 +12,6 @@ dev/AvisameDelCocheWar/.settings/
 /dev/AvisameDelCocheWAR/target/
 dev/AvisameDelCocheSpringService/.settings/
 dev/AvisameDelCocheWAR/src/main/webapp/WEB-INF/lib/
+*.netbeans_automatic_build
+dev/AvisameDelCocheDao/target/
+dev/AvisameDelCocheDaoEJB/target/

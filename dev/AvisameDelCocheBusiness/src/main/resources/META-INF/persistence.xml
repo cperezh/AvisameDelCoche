@@ -4,5 +4,6 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <jta-data-source>jdbc/MySQLDataSource</jta-data-source>
     <class>com.carlos.avisamedelcochebusiness.Coche</class>
+    <properties/>
   </persistence-unit>
 </persistence>

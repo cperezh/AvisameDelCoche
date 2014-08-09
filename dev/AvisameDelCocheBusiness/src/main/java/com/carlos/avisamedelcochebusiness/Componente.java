@@ -17,7 +17,7 @@ public enum Componente {
     NEUMATICOS(10000),
     ACEITE_MOTOR(5000);
 
-    private int limiteKilometros;
+    private final int limiteKilometros;
 
     private Componente(int _limiteKilometros) {
         this.limiteKilometros = _limiteKilometros;
