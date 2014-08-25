@@ -1,3 +1,4 @@
+
 package com.carlos.avisamedelcochespringservice;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
@@ -21,6 +22,16 @@ public class AvisameDelCocheSpringService implements AvisameDelCocheService{
     @Override
     public void comprobarEstadoVehiculo(Coche coche) {
         AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
+    }
+
+    @Override
+    public Coche buscarVehiculo(Coche coche) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void actualizarVehiculo(Coche coche) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

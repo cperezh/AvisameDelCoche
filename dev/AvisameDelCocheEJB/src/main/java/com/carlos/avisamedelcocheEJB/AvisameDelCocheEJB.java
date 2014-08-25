@@ -30,4 +30,18 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
         AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
 
     }
+
+    @Override
+    public void actualizarVehiculo(Coche coche) {
+       
+        daoVehiculo.actualizarVehiculo(coche);
+    }
+
+    @Override
+    public Coche buscarVehiculo(Coche coche) {
+       
+        coche = daoVehiculo.buscarVehiculo(coche.getMatricula());
+       
+       return coche;
+    }
 }

@@ -41,4 +41,14 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 
         return q.getResultList();
     }
+
+    @Override
+    public void actualizarVehiculo(Coche coche) {
+        entityManager.merge(coche);
+    }
+
+    @Override
+    public void insertarVehiculo(Coche coche) {
+        entityManager.persist(coche);
+    }
 }

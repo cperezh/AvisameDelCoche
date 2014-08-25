@@ -15,3 +15,4 @@ dev/AvisameDelCocheWAR/src/main/webapp/WEB-INF/lib/
 *.netbeans_automatic_build
 dev/AvisameDelCocheDao/target/
 dev/AvisameDelCocheDaoEJB/target/
+/dev/AvisameDelCocheHTML/nbproject/private/

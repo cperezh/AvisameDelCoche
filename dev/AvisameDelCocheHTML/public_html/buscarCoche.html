@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+
+            function buscar()
+            {
+                var xmlhttp;
+
+                xmlhttp = new XMLHttpRequest();
+
+                var formElement = document.getElementById("buscarCocheForm");
+
+                xmlhttp.onreadystatechange = obtenerResultadoBusqueda;
+                xmlhttp.open(formElement.method, formElement.action, true);
+                xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                xmlhttp.send($("#buscarCocheForm").serialize());
+            }
+
+            function obtenerResultadoBusqueda() {
+                if (this.readyState === this.DONE) {
+                    if (this.status === 200) {
+                        // success!
+                        var coche = $.evalJSON(this.responseText);
+
+                        document.getElementById("resultado").innerHTML = this.coche;
+                    }
+                    else {
+                        // something went wrong
+                        document.getElementById("error").innerHTML = this.responseText;
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="buscarCocheForm" action="http://localhost:8081/AvisameDelCocheWeb/main/avisadorDelCoche" method="post">
+            <input type="text" id="matricula" name="matricula">
+            <input type="button" value="Buscar" onclick="buscar()">
+        </form>
+        <div id="resultado"></div>
+        <div id="error"></div>
+    </body>
+</html>

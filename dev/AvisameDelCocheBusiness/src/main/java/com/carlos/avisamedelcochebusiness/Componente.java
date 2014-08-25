@@ -5,6 +5,8 @@
  */
 package com.carlos.avisamedelcochebusiness;
 
+import java.io.Serializable;
+
 /**
  * Describe componentes de un coche. Cada componente tiene un vida útil antes
  * del cambio, que es lo que indice la propiedad limiteKilometros de cada
@@ -12,7 +14,7 @@ package com.carlos.avisamedelcochebusiness;
  *
  * @author Pakno
  */
-public enum Componente {
+public enum Componente implements Serializable{
 
     NEUMATICOS(10000),
     ACEITE_MOTOR(5000);

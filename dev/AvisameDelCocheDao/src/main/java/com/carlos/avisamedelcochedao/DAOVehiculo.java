@@ -15,5 +15,10 @@ import javax.ejb.Local;
  */
 @Local
 public interface DAOVehiculo {
+    
     Coche buscarVehiculo(String matricula);
+    
+    void actualizarVehiculo(Coche coche);
+    
+    void insertarVehiculo(Coche coche);
 }

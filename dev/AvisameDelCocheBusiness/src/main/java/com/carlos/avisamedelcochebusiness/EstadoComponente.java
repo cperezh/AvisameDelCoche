@@ -15,7 +15,7 @@ import javax.persistence.Id;
  * @author Pakno
  */
 @Entity
-class EstadoComponente implements Serializable {
+public class EstadoComponente implements Serializable {
 
     @Id
     private Componente componente;

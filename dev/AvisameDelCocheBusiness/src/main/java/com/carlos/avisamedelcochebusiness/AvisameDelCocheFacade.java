@@ -31,6 +31,7 @@ public class AvisameDelCocheFacade {
                 //TODO Configurar el log
                 BasicConfigurator.configure();
                 Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("Entrando");
+                Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("Mensaje: "+mensaje.getTextoMensaje());
                 Avisador.avisarUsuario(mensaje);
             } catch (MessagingException ex) {
                 Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("El info");
