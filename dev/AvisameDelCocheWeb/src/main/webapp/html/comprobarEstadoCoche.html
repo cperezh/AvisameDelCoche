@@ -6,49 +6,68 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Avísame del Coche</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
 
-            function buscar()
+            var capaResultado;
+
+            function inicializar() {
+                $("#resultados").hide();
+            }
+
+            function comprobarEstado()
             {
                 var xmlhttp;
+
+                inicializar();
 
                 xmlhttp = new XMLHttpRequest();
 
                 var formElement = document.getElementById("buscarCocheForm");
 
-                xmlhttp.onreadystatechange = obtenerResultadoBusqueda;
+                xmlhttp.onreadystatechange = obtenerResultadoComprobarEstado;
                 xmlhttp.open(formElement.method, formElement.action, true);
                 xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 xmlhttp.send($("#buscarCocheForm").serialize());
             }
 
-            function obtenerResultadoBusqueda() {
+            function obtenerResultadoComprobarEstado() {
                 if (this.readyState === this.DONE) {
                     if (this.status === 200) {
                         // success!
-                        var coche = $.evalJSON(this.responseText);
+                        var coche = $.parseJSON(this.responseText);
 
-                        document.getElementById("resultado").innerHTML = this.coche;
+                        muestraResultado(coche);
                     }
                     else {
                         // something went wrong
-                        document.getElementById("error").innerHTML = this.responseText;
+                        capaResultado.innerHTML = this.responseText;
                     }
                 }
+                else {
+                    capaResultado.innerHTML = capaResultado.innerHTML + ".";
+                }
+            }
+
+            function muestraResultado(coche) {
+
+                $("#resultado").empty();
+                $("#resultado").append(coche.matricula);
+                $("#resultados").show();
             }
         </script>
     </head>
     <body>
-        <form id="buscarCocheForm" action="http://localhost:8081/AvisameDelCocheWeb/main/avisadorDelCoche" method="post">
+        <form id="buscarCocheForm" action="../main/avisadorDelCoche" method="post">
             <input type="text" id="matricula" name="matricula">
-            <input type="button" value="Buscar" onclick="buscar()">
+            <input type="button" value="Comprobar estado" onclick="comprobarEstado()">
         </form>
-        <div id="resultado"></div>
-        <div id="error"></div>
+        <div id="resultados" hidden>
+            <div id="resultado" ></div><div><input type="button" value="Kilometraje" onclick="comprobarEstado()"></div>
+        </div>
     </body>
 </html>

@@ -29,10 +29,7 @@ public class AvisameDelCocheController {
     @ResponseBody
     public Coche avisarDeReparacion(@ModelAttribute Coche coche) {
 
-        //coche.setMatricula("4731DSD");
-
-        //avisameDelCocheService.comprobarEstadoVehiculo(coche);
-        coche = avisameDelCocheService.buscarVehiculo(coche);
+        avisameDelCocheService.comprobarEstadoVehiculo(coche);
 
         return coche;
     }

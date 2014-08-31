@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello Charles</h2>
+    <h2><a href="html/comprobarEstadoCoche.html">Comprobar estado coche</a></h2>
 </body>
 </html>
