@@ -19,15 +19,22 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author Carlos
  */
 @Controller
-
-public class AvisameDelCocheController {
+@RequestMapping("/comprobarEstadoVehiculo")
+public class ComprobarEstadoVehiculoController {
 
     @EJB(mappedName = "java:module/AvisameDelCocheEJB!com.carlos.avisamedelcoche.AvisameDelCocheService")
     AvisameDelCocheService avisameDelCocheService;
+   
+    @RequestMapping("/init")
+    public void init(){
+       
+    }
+    
+    
 
-    @RequestMapping("/avisadorDelCoche")
+    @RequestMapping("/comprobar")
     @ResponseBody
-    public Coche avisarDeReparacion(@ModelAttribute Coche coche) {
+    public Coche comprobarEstadoVehiculo(@ModelAttribute Coche coche) {
 
         avisameDelCocheService.comprobarEstadoVehiculo(coche);
 
