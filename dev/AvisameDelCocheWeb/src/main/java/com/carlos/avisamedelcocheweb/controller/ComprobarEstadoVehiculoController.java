@@ -24,17 +24,24 @@ public class ComprobarEstadoVehiculoController {
 
     @EJB(mappedName = "java:module/AvisameDelCocheEJB!com.carlos.avisamedelcoche.AvisameDelCocheService")
     AvisameDelCocheService avisameDelCocheService;
-   
-    @RequestMapping("/init")
-    public void init(){
-       
-    }
-    
-    
 
-    @RequestMapping("/comprobar")
+    @RequestMapping("/init")
+    public void init() {
+
+    }
+
+    @RequestMapping("/buscar")
     @ResponseBody
-    public Coche comprobarEstadoVehiculo(@ModelAttribute Coche coche) {
+    public Coche buscarCoche(@ModelAttribute Coche coche) {
+
+        coche = avisameDelCocheService.buscarVehiculo(coche);
+
+        return coche;
+    }
+
+    @RequestMapping("/comprobarEstado")
+    @ResponseBody
+    public Coche comprobarEstado(@ModelAttribute Coche coche) {
 
         avisameDelCocheService.comprobarEstadoVehiculo(coche);
 
@@ -50,13 +57,13 @@ public class ComprobarEstadoVehiculoController {
         //coche = Coche.crearCocheDePrueba();
         coche = new Coche();
         coche.setMatricula("4731DSD");
-        
+
         coche = avisameDelCocheService.buscarVehiculo(coche);
-        
+
         coche.setKilometraje(190000);
-       ((EstadoComponente)(coche.getEstadoComponentes().get(0))).setUltimaSustitucion(100000);
-       
-       avisameDelCocheService.actualizarVehiculo(coche);
+        ((EstadoComponente) (coche.getEstadoComponentes().get(0))).setUltimaSustitucion(100000);
+
+        avisameDelCocheService.actualizarVehiculo(coche);
 
         return coche;
     }

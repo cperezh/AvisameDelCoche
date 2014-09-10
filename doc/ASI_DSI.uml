@@ -25,11 +25,12 @@
 <XPD:ATTR name="#OwnedViews" type="integer">13</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLUseCaseView" guid="XzBuyGSN5UeE9ELwoGZhZwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">clAqua</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">192</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">124</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">149</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">53</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">70</XPD:ATTR>
+<XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkNone</XPD:ATTR>
 <XPD:ATTR name="WordWrap" type="boolean">True</XPD:ATTR>
 <XPD:REF name="Model">ZrLyf/ZV50qAWsjw8pQ+LQAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="qaWz12WV1E6mFcgWCC/98gAA">
@@ -326,7 +327,7 @@
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">266,328;266,176</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">266,328;266,193</XPD:ATTR>
 <XPD:REF name="Model">Voc2UMR8zEGYyP7RVPxHaQAA</XPD:REF>
 <XPD:REF name="Head">XzBuyGSN5UeE9ELwoGZhZwAA</XPD:REF>
 <XPD:REF name="Tail">3ILegQoKQkKrsu+CjeYtvgAA</XPD:REF>
@@ -364,7 +365,7 @@ el usuario actualiza el kilometraje
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">266,252;266,254;292,254</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">266,260;266,254;292,254</XPD:ATTR>
 <XPD:REF name="Head">WVqyWF3dfUWV4OU8Xy7RnwAA</XPD:REF>
 <XPD:REF name="Tail">kCHFC4yG7k2cTB7KzR85KQAA</XPD:REF>
 </XPD:OBJ>
@@ -3478,7 +3479,7 @@ Lista de reparaciones.
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="48eAz1QPvUGuyyfJk28J9AAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">2 : buscador.jsp()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">2 : init.jsp()</XPD:ATTR>
 <XPD:REF name="Model">Z1ogBE1OIUCt4qVU5gwKWgAA</XPD:REF>
 <XPD:REF name="HostEdge">8HmiF8XolUiaociWULr/HQAA</XPD:REF>
 </XPD:OBJ>
@@ -3610,7 +3611,7 @@ Lista de reparaciones.
 <XPD:REF name="Views[3]">lDQyGVw0ZUiKOjZvh3XkugAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[1]" type="UMLStimulus" guid="Z1ogBE1OIUCt4qVU5gwKWgAA">
-<XPD:ATTR name="Name" type="string">buscador.jsp</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">init.jsp</XPD:ATTR>
 <XPD:REF name="Sender">0r4vo0DuM0qqxZv05oyrmQAA</XPD:REF>
 <XPD:REF name="Receiver">PM1lR8BQNkiiL2KiFUbmMgAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="jkvbkfLp6U6yp26baHAu5QAA">

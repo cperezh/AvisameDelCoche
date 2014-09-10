@@ -25,11 +25,12 @@
 <XPD:ATTR name="#OwnedViews" type="integer">13</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLUseCaseView" guid="XzBuyGSN5UeE9ELwoGZhZwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">clAqua</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">192</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">124</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">149</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">53</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">70</XPD:ATTR>
+<XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkNone</XPD:ATTR>
 <XPD:ATTR name="WordWrap" type="boolean">True</XPD:ATTR>
 <XPD:REF name="Model">ZrLyf/ZV50qAWsjw8pQ+LQAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="qaWz12WV1E6mFcgWCC/98gAA">
@@ -326,7 +327,7 @@
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">266,328;266,176</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">266,328;266,193</XPD:ATTR>
 <XPD:REF name="Model">Voc2UMR8zEGYyP7RVPxHaQAA</XPD:REF>
 <XPD:REF name="Head">XzBuyGSN5UeE9ELwoGZhZwAA</XPD:REF>
 <XPD:REF name="Tail">3ILegQoKQkKrsu+CjeYtvgAA</XPD:REF>
@@ -364,7 +365,7 @@ el usuario actualiza el kilometraje
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">266,252;266,254;292,254</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">266,260;266,254;292,254</XPD:ATTR>
 <XPD:REF name="Head">WVqyWF3dfUWV4OU8Xy7RnwAA</XPD:REF>
 <XPD:REF name="Tail">kCHFC4yG7k2cTB7KzR85KQAA</XPD:REF>
 </XPD:OBJ>
@@ -1185,7 +1186,7 @@ Lista de reparaciones.
 <XPD:REF name="DiagramOwner">PJHzVwncskqaxItDubtyiAAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLSequenceDiagramView" guid="Q4CsmHJK9USk63zblaSqcwAA">
 <XPD:REF name="Diagram">kYWXHhsOfkmjKOk+8pIahgAA</XPD:REF>
-<XPD:ATTR name="#OwnedViews" type="integer">6</XPD:ATTR>
+<XPD:ATTR name="#OwnedViews" type="integer">8</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLSeqObjectView" guid="WppxKnRuxk6oOkze3FDLUgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
@@ -1365,6 +1366,24 @@ Lista de reparaciones.
 <XPD:ATTR name="Width" type="integer">14</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">29</XPD:ATTR>
 </XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[6]" type="UMLNoteView" guid="rn0FTuFqJEOUjTSXTpGohQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">200</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">76</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">30</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">AJAX
+</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[7]" type="UMLNoteLinkView" guid="NdqgSpyXEEKF3zasgOkeqAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">223,124;223,105</XPD:ATTR>
+<XPD:REF name="Head">rn0FTuFqJEOUjTSXTpGohQAA</XPD:REF>
+<XPD:REF name="Tail">wsqULlPYkEWpHUMNMrtWdwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
