@@ -30,12 +30,16 @@
             }
             
             function comprobarEstado() {
+                
+                //Ocultamos la capa de resultados.
+                $("#resultados").hide();
+                
                 $.ajax({
                     type: "POST",
                     url: "comprobarEstado",
                     data: $("#buscarCocheForm").serialize(),
                     success: muestraResultado
-                })
+                });
             }
 
             function muestraResultado(coche) {

@@ -16,8 +16,17 @@ import java.io.Serializable;
  */
 public enum Componente implements Serializable{
 
-    NEUMATICOS(10000),
-    ACEITE_MOTOR(5000);
+    NEUMATICOS(20000),
+    ACEITE_MOTOR(15000),
+    FILTRO_ACEITE(15000),
+    FILTRO_AIRE(30000),
+    FILTRO_HABITACULO(10000),
+    FILTRO_COMBUSTIBLE(30000),
+    LIQUIDO_FRENOS(30000),
+    PASTILLAS_FRENO(15000),
+    DISCO_FRENO(30000),
+    ALINEAR_DIRECCION(20000);
+    
 
     private final int limiteKilometros;
 
