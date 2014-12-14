@@ -13,14 +13,16 @@
         <meta name="viewport" content="width=device-width">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
-            
+
             $(document).ready(inicializa);
-            
-            function inicializa(){
+
+            function inicializa() {
                 $("#resultados").hide();
+                $("#actualizarKilometraje").hide();
             }
 
-           function buscar() {
+            function buscar() {
+
                 $.ajax({
                     type: "POST",
                     url: "buscar",
@@ -28,12 +30,12 @@
                     success: muestraResultado
                 })
             }
-            
+
             function comprobarEstado() {
-                
+
                 //Ocultamos la capa de resultados.
                 $("#resultados").hide();
-                
+
                 $.ajax({
                     type: "POST",
                     url: "comprobarEstado",
@@ -43,19 +45,51 @@
             }
 
             function muestraResultado(coche) {
-               // $("#cocheSeleccionado").on(click,)
-                $("#resultado").html(coche.matricula);  
+
+                $("#coche").html(coche.matricula);
+                $("#kilometraje").val(coche.kilometraje);
                 $("#resultados").show();
             }
+
+            function actualizarKilometrajeMostrar() {
+                $("#actualizarKilometraje").show();
+            }
+
+            function actualizarKilometraje() {
+
+                //Ocultamos la capa de resultados.
+                $("#actualizarKilometraje").hide();
+                
+                alert($("#actualizarKilometrajeCocheForm").serialize());
+
+                $.ajax({
+                    type: "POST",
+                    url: "actualizarKilometraje",
+                    data: $("#actualizarKilometrajeCocheForm").serialize(),
+                    success: muestraResultado
+                });
+            }
+
         </script>
     </head>
     <body>
-        <form id="buscarCocheForm" action="comprobar" method="post">
+        <form id="buscarCocheForm">
             <input type="text" id="matricula" name="matricula">
             <input type="button" value="Buscar" onclick="buscar()">
         </form>
         <div id="resultados">
-            <div id="resultado" style="float: left"></div><div style="float: left"><input id="cocheSeleccionado" type="button" value="Comprobar estado" onclick="comprobarEstado()"></div>
+            <div id="resultado">
+                <div id="coche"></div>
+                <input type="button" value="Comprobar estado" onclick="comprobarEstado()"/>
+                <input type="button" value="Actualizar kilometraje" onclick="actualizarKilometrajeMostrar()"/>
+                <input id="cocheSeleccionado" type="hidden" value=""/>
+            </div>
+        </div>
+        <div id="actualizarKilometraje">
+            <form id="actualizarKilometrajeCocheForm">
+                <input type="text" id="kilometraje" name="kilometraje">
+                <input type="button" value="actualizar" onclick="actualizarKilometraje()">
+            </form>
         </div>
     </body>
 </html>
