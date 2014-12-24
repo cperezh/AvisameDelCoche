@@ -48,6 +48,8 @@
 
                 $("#coche").html(coche.matricula);
                 $("#kilometraje").val(coche.kilometraje);
+                $("#matricula").val(coche.matricula);
+                $("#kilometros").val(coche.kilometraje);
                 $("#resultados").show();
             }
 
@@ -60,7 +62,9 @@
                 //Ocultamos la capa de resultados.
                 $("#actualizarKilometraje").hide();
                 
-                alert($("#actualizarKilometrajeCocheForm").serialize());
+                $("#kilometraje").val($("#kilometros").val());
+                
+                alert($("#buscarCocheForm").serialize());
 
                 $.ajax({
                     type: "POST",
@@ -75,6 +79,7 @@
     <body>
         <form id="buscarCocheForm">
             <input type="text" id="matricula" name="matricula">
+            <input type="hidden" id="kilometraje" name="kilometraje">
             <input type="button" value="Buscar" onclick="buscar()">
         </form>
         <div id="resultados">
@@ -87,7 +92,7 @@
         </div>
         <div id="actualizarKilometraje">
             <form id="actualizarKilometrajeCocheForm">
-                <input type="text" id="kilometraje" name="kilometraje">
+                <input type="text" id="kilometros" name="kilometraje">
                 <input type="button" value="actualizar" onclick="actualizarKilometraje()">
             </form>
         </div>
