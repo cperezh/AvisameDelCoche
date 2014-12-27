@@ -44,6 +44,7 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 
     @Override
     public void actualizarVehiculo(Coche coche) {
+
         entityManager.merge(coche);
     }
 

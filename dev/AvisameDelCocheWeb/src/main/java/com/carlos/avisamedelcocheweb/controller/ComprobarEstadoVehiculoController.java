@@ -51,7 +51,8 @@ public class ComprobarEstadoVehiculoController {
     @RequestMapping("/actualizarKilometraje")
     @ResponseBody
     public Coche actualizarKilometraje(@ModelAttribute Coche coche){
-        avisameDelCocheService.actualizarVehiculo(coche);
+        
+        avisameDelCocheService.actualizarKilometraje(coche);
         
         return coche;
     }

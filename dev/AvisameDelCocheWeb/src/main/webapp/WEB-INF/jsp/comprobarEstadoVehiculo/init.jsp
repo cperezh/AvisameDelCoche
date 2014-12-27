@@ -19,6 +19,7 @@
             function inicializa() {
                 $("#resultados").hide();
                 $("#actualizarKilometraje").hide();
+                $("#kilometraje").val(0);
             }
 
             function buscar() {
@@ -69,7 +70,7 @@
                 $.ajax({
                     type: "POST",
                     url: "actualizarKilometraje",
-                    data: $("#actualizarKilometrajeCocheForm").serialize(),
+                    data: $("#buscarCocheForm").serialize(),
                     success: muestraResultado
                 });
             }
@@ -92,7 +93,7 @@
         </div>
         <div id="actualizarKilometraje">
             <form id="actualizarKilometrajeCocheForm">
-                <input type="text" id="kilometros" name="kilometraje">
+                <input type="text" id="kilometros" name="kilometros">
                 <input type="button" value="actualizar" onclick="actualizarKilometraje()">
             </form>
         </div>

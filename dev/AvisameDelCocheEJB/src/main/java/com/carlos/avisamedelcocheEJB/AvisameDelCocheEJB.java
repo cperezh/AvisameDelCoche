@@ -44,4 +44,18 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
        
        return coche;
     }
+
+    @Override
+    public Coche actualizarKilometraje(Coche coche) {
+        
+        Coche cocheOriginal;
+        
+        cocheOriginal = daoVehiculo.buscarVehiculo(coche.getMatricula());
+        
+        cocheOriginal.setKilometraje(coche.getKilometraje());
+        
+        daoVehiculo.actualizarVehiculo(cocheOriginal);
+        
+        return cocheOriginal;
+    }
 }
