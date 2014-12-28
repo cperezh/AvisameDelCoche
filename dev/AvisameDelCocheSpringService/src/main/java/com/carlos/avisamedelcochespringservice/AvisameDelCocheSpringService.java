@@ -33,5 +33,10 @@ public class AvisameDelCocheSpringService implements AvisameDelCocheService{
     public void actualizarVehiculo(Coche coche) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public Coche actualizarKilometraje(Coche coche) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

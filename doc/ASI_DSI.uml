@@ -4188,11 +4188,11 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="DiagramOwner">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLComponentDiagramView" guid="2XmPjm4tb0WE6TcQtzmHJwAA">
 <XPD:REF name="Diagram">q4jMQECWx0unQSs/rQoMbgAA</XPD:REF>
-<XPD:ATTR name="#OwnedViews" type="integer">30</XPD:ATTR>
+<XPD:ATTR name="#OwnedViews" type="integer">38</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLComponentView" guid="b8k8RXaVlE26LdzrWJJq7wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">180</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">232</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">148</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">122</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -4219,7 +4219,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[1]" type="UMLArtifactView" guid="CvuPyMLnY0SDsrxcwQyP/gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">8</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">52</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">148</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">108</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -4228,7 +4228,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="k5IvAaSDj06eoT3ZjzO7WgAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="xgXIk4Arp02KmY7Kz1R23gAA">
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">Cliente</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">ClienteWeb</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="Qh60+x6CF0W3EzXqAvYsxAAA">
 <XPD:ATTR name="Text" type="string">&lt;&lt;artifact&gt;&gt;</XPD:ATTR>
@@ -4250,7 +4250,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">115,170;180,170</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">159,168;232,168</XPD:ATTR>
 <XPD:REF name="Model">zFYBVagJL0uRvWdbcShk1gAA</XPD:REF>
 <XPD:REF name="Head">b8k8RXaVlE26LdzrWJJq7wAA</XPD:REF>
 <XPD:REF name="Tail">CvuPyMLnY0SDsrxcwQyP/gAA</XPD:REF>
@@ -4276,7 +4276,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[3]" type="UMLInterfaceView" guid="SxtUEfQ3AUeRW0KXCLLQ9AAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">392</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">444</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">156</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">103</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -4307,7 +4307,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">301,166;432,166</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">353,166;484,166</XPD:ATTR>
 <XPD:REF name="Model">LKPdc0Op4k6n5Zo4Jwjm/gAA</XPD:REF>
 <XPD:REF name="Head">SxtUEfQ3AUeRW0KXCLLQ9AAA</XPD:REF>
 <XPD:REF name="Tail">b8k8RXaVlE26LdzrWJJq7wAA</XPD:REF>
@@ -4333,7 +4333,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[5]" type="UMLComponentView" guid="/RC8626b0kSMOKuyPJj/ygAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">568</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">620</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">144</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">111</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -4359,7 +4359,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">568,166;453,166</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">620,166;505,166</XPD:ATTR>
 <XPD:REF name="Model">hF5jsBjisU6RP1jAwN+73gAA</XPD:REF>
 <XPD:REF name="Head">SxtUEfQ3AUeRW0KXCLLQ9AAA</XPD:REF>
 <XPD:REF name="Tail">/RC8626b0kSMOKuyPJj/ygAA</XPD:REF>
@@ -4385,7 +4385,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[7]" type="UMLArtifactView" guid="hpo/oT0yDE2w+DrvUAzB4QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">164</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">216</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">28</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">169</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -4416,7 +4416,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">261,148;261,69</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">313,148;313,69</XPD:ATTR>
 <XPD:REF name="Model">WI/TCKg5cEGgxt54TXUTbQAA</XPD:REF>
 <XPD:REF name="Head">hpo/oT0yDE2w+DrvUAzB4QAA</XPD:REF>
 <XPD:REF name="Tail">b8k8RXaVlE26LdzrWJJq7wAA</XPD:REF>
@@ -4482,7 +4482,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="VAZCi09sHkS0mBxrmJXPoQAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1020</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-968</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4490,7 +4490,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="KzU3iVwNrEu3FqRtETDaOwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1020</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-968</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4500,7 +4500,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[9]" type="UMLArtifactView" guid="OVrTYhi0okiOlH2zgvkWDgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">532</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">584</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">28</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">220</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -4530,7 +4530,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[10]" type="UMLArtifactView" guid="9D53w+QIJESgKFzQcZ9R/AAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">340</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">392</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">28</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">190</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -4561,7 +4561,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">444,156;444,69</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">496,156;496,69</XPD:ATTR>
 <XPD:REF name="Model">VNdHojqABU6AAXVoUNJtTwAA</XPD:REF>
 <XPD:REF name="Head">9D53w+QIJESgKFzQcZ9R/AAA</XPD:REF>
 <XPD:REF name="Tail">SxtUEfQ3AUeRW0KXCLLQ9AAA</XPD:REF>
@@ -4627,7 +4627,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="gy3ugWDBhkyUNAYXRMoxjgAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1020</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-968</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4635,7 +4635,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="JEvO683chEaLWKIwWj/r/AAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1020</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-968</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4646,7 +4646,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">634,144;634,69</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">686,144;686,69</XPD:ATTR>
 <XPD:REF name="Model">5nqsgIQgtUOzhIaGnBtMbQAA</XPD:REF>
 <XPD:REF name="Head">OVrTYhi0okiOlH2zgvkWDgAA</XPD:REF>
 <XPD:REF name="Tail">/RC8626b0kSMOKuyPJj/ygAA</XPD:REF>
@@ -4712,7 +4712,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="GiHywSJk00udA2MKuRzh8gAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1020</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-968</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4720,7 +4720,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="hBR7276iSEWBWUoY+MkiQAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1020</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-968</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4730,7 +4730,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[13]" type="UMLComponentView" guid="4Dzp/ZetzEGqoD7eiFqWrQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">568</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">620</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">224</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">110</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -4756,7 +4756,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">568,225;442,225;442,177</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">620,244;494,244;494,177</XPD:ATTR>
 <XPD:REF name="Model">KolwXNLGQku2h43Mavp+hQAA</XPD:REF>
 <XPD:REF name="Head">SxtUEfQ3AUeRW0KXCLLQ9AAA</XPD:REF>
 <XPD:REF name="Tail">4Dzp/ZetzEGqoD7eiFqWrQAA</XPD:REF>
@@ -4782,7 +4782,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[15]" type="UMLArtifactView" guid="8O+FGKoAe0GHI+8W4Pc5dgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">552</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">604</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">316</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">160</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -4813,7 +4813,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">624,268;624,316</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">676,268;676,316</XPD:ATTR>
 <XPD:REF name="Model">s3TmtNKzeE2zxns3j494+QAA</XPD:REF>
 <XPD:REF name="Head">8O+FGKoAe0GHI+8W4Pc5dgAA</XPD:REF>
 <XPD:REF name="Tail">4Dzp/ZetzEGqoD7eiFqWrQAA</XPD:REF>
@@ -4879,7 +4879,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="eBc7AeR46UG0oQOBrdArCQAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4887,7 +4887,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="7uecaYqk90qq4kYyqepuvgAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -4897,7 +4897,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[17]" type="UMLArtifactView" guid="1ZGewDeHsk6RwyiQeSo2bgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">768</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">820</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">28</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">166</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -4927,7 +4927,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[18]" type="UMLInterfaceView" guid="dZahXKhTk0+4pqv5w+XS8wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">816</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">868</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">152</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">81</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -4958,7 +4958,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">678,162;845,162</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">730,162;897,162</XPD:ATTR>
 <XPD:REF name="Model">WKRfWyIBSU+N7xyuSor+PQAA</XPD:REF>
 <XPD:REF name="Head">dZahXKhTk0+4pqv5w+XS8wAA</XPD:REF>
 <XPD:REF name="Tail">/RC8626b0kSMOKuyPJj/ygAA</XPD:REF>
@@ -4985,7 +4985,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">677,229;855,229;855,173</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">729,236;820,236;820,162;897,162</XPD:ATTR>
 <XPD:REF name="Model">7yx3+IZiZkSPp+fYMwAHxgAA</XPD:REF>
 <XPD:REF name="Head">dZahXKhTk0+4pqv5w+XS8wAA</XPD:REF>
 <XPD:REF name="Tail">4Dzp/ZetzEGqoD7eiFqWrQAA</XPD:REF>
@@ -5011,7 +5011,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[21]" type="UMLComponentView" guid="f2injIU9YUCHDdJUhDkB+gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">976</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">1028</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">144</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -5037,7 +5037,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">976,162;866,162</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1028,162;918,162</XPD:ATTR>
 <XPD:REF name="Model">2hYiqeSdRUCkeGminGrkJQAA</XPD:REF>
 <XPD:REF name="Head">dZahXKhTk0+4pqv5w+XS8wAA</XPD:REF>
 <XPD:REF name="Tail">f2injIU9YUCHDdJUhDkB+gAA</XPD:REF>
@@ -5064,7 +5064,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">852,152;852,69</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">904,152;904,69</XPD:ATTR>
 <XPD:REF name="Model">4sqyv3EYnkaqUj/pdwR5EwAA</XPD:REF>
 <XPD:REF name="Head">1ZGewDeHsk6RwyiQeSo2bgAA</XPD:REF>
 <XPD:REF name="Tail">dZahXKhTk0+4pqv5w+XS8wAA</XPD:REF>
@@ -5130,7 +5130,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="93lyK4c+yEqvqGRSuRRE3AAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5138,7 +5138,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="gORLVrD9XES6UocfTqwBYwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5148,7 +5148,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[24]" type="UMLArtifactView" guid="W5Loaj9M9UygPHc1iaYJ2AAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">960</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">1012</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">24</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">185</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -5179,7 +5179,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1048,144;1048,65</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1100,144;1100,65</XPD:ATTR>
 <XPD:REF name="Model">wDU5254oe06xkjIYKu8lDQAA</XPD:REF>
 <XPD:REF name="Head">W5Loaj9M9UygPHc1iaYJ2AAA</XPD:REF>
 <XPD:REF name="Tail">f2injIU9YUCHDdJUhDkB+gAA</XPD:REF>
@@ -5245,7 +5245,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="bZ/AzhSSZ0OkItK88VgMZAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5253,7 +5253,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="OfH8PwP5ZkGeqVRKJjhDkwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5263,7 +5263,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[26]" type="UMLComponentView" guid="A53R1ewCUEuX9niJfJd8xAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">816</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">868</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">292</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
@@ -5289,7 +5289,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">677,256;904,256;904,292</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">729,256;956,256;956,292</XPD:ATTR>
 <XPD:REF name="Model">93KGG8MsLkCp8kTCZKYb5QAA</XPD:REF>
 <XPD:REF name="Head">A53R1ewCUEuX9niJfJd8xAAA</XPD:REF>
 <XPD:REF name="Tail">4Dzp/ZetzEGqoD7eiFqWrQAA</XPD:REF>
@@ -5355,7 +5355,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="zUgW9o3kX0+pyxroO6xp/QAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5363,7 +5363,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="GoFzb+DSwEm40waE521eJwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5373,7 +5373,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[28]" type="UMLArtifactView" guid="Fsc/BZqZrUa7r9Ryaysv2QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">816</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">868</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">384</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">191</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
@@ -5404,7 +5404,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">906,336;906,384</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">958,336;958,384</XPD:ATTR>
 <XPD:REF name="Model">30KWgeBMh0eJXPz+Gznv4QAA</XPD:REF>
 <XPD:REF name="Head">Fsc/BZqZrUa7r9Ryaysv2QAA</XPD:REF>
 <XPD:REF name="Tail">A53R1ewCUEuX9niJfJd8xAAA</XPD:REF>
@@ -5470,7 +5470,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="RWkTS/ulNUSHoc+dJKn1vgAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
@@ -5478,16 +5478,412 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="bP/U3EEdRk2K/zL49yfmZAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
 <XPD:REF name="Model">EvCzdy6pZ0axkamm1GiHcgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
+<XPD:OBJ name="OwnedViews[30]" type="UMLComponentView" guid="zyuVDJ/w2EekuT3vDTHoRAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">236</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">268</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">122</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
+<XPD:ATTR name="WordWrap" type="boolean">True</XPD:ATTR>
+<XPD:REF name="Model">JMONbXeM6UCfjCNz1P8IjAAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="tyxiu38MQkK4jSqgykW5IgAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="hWt2JUu2oE2KGu7ueWJ2FgAA">
+<XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">92</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">EdgeComponent (JAX-WS)</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="ir0lS7lB3Ui4IbHtdpMTxAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="R4S2Iv5joECHZN9mzULeHQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:ATTR name="#OwnedElements" type="integer">26</XPD:ATTR>
+<XPD:OBJ name="ResidentCompartment" type="UMLResidentCompartmentView" guid="fIFldILIJEGIFvTBd1+QigAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">JMONbXeM6UCfjCNz1P8IjAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[31]" type="UMLArtifactView" guid="JoDwngs1mkaOdIt5UCHoEgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">224</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">372</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">160</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
+<XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
+<XPD:REF name="Model">SkxZayDy2UmDvywNOkMqFAAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="5aX8Z6jbzUKVYRjAk+EyWQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="uqM9tZT0REqgfar+Os84fAAA">
+<XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">AvisameDelCocheWS</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="ngjaAwgWmE6sRIypvbuM4gAA">
+<XPD:ATTR name="Text" type="string">&lt;&lt;artifact&gt;&gt;</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="C7QA+pbGCkOSFs842IOMCwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="TulzyASll0aGd6/k83xtFwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">SkxZayDy2UmDvywNOkMqFAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="wHSssZ1pf0mHO86LhlRCXAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">SkxZayDy2UmDvywNOkMqFAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[32]" type="UMLAssociationView" guid="oMEhaZ1xR0+rX+ifDbllywAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">298,312;298,372</XPD:ATTR>
+<XPD:REF name="Model">KHaelkELC0ekLYX3uzqkgQAA</XPD:REF>
+<XPD:REF name="Head">JoDwngs1mkaOdIt5UCHoEgAA</XPD:REF>
+<XPD:REF name="Tail">zyuVDJ/w2EekuT3vDTHoRAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="+eXRFV86tECVFSxLQffrIQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">KHaelkELC0ekLYX3uzqkgQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="z2aau+8qRUKsfjrnmVOyPgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">KHaelkELC0ekLYX3uzqkgQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="KaqJF51wf0+rzBqqDf1OLAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">KHaelkELC0ekLYX3uzqkgQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="OTR+2pwX7EC4C1CNCPyvxgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">sJSfMOP03ECVNbBdXCwZMQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="5B8qT8rHsU+43Tt5aUKxZAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">g0SErilRU0GCX6OPzrxnlAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="504kN2g+Hk+7vmCqCoOQqwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">sJSfMOP03ECVNbBdXCwZMQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="izb6huk0D0+XMeSHmmEaBwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">g0SErilRU0GCX6OPzrxnlAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="zJtgaBlatkCWRCPLnq/NIAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,785398163397448</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">sJSfMOP03ECVNbBdXCwZMQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="jFwcVBI8pUOCabRfOp2MgAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,785398163397448</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">g0SErilRU0GCX6OPzrxnlAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="w5EJ6zLWL0iN0eNbp3FNmwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
+<XPD:REF name="Model">sJSfMOP03ECVNbBdXCwZMQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="G4lO4c2Z/Uqs6TDJqG2KBQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
+<XPD:REF name="Model">g0SErilRU0GCX6OPzrxnlAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[33]" type="UMLDependencyView" guid="Fez7DSK86EKTElU037GliQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">357,288;420,288;420,166;484,166</XPD:ATTR>
+<XPD:REF name="Model">4RXehWPIVk2NM+gIGsLrLQAA</XPD:REF>
+<XPD:REF name="Head">SxtUEfQ3AUeRW0KXCLLQ9AAA</XPD:REF>
+<XPD:REF name="Tail">zyuVDJ/w2EekuT3vDTHoRAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="tnJGoBUDSk6H1LA7KxAh1AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">4RXehWPIVk2NM+gIGsLrLQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="c4UZq4u8DUWRTVQ3+2qdTQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">4RXehWPIVk2NM+gIGsLrLQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="fIUY/XqnVUykvvqzZmHqcgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">4RXehWPIVk2NM+gIGsLrLQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[34]" type="UMLComponentView" guid="xBvqvfC47kaIcbrLqcrw4gAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">40</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">268</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">101</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">45</XPD:ATTR>
+<XPD:ATTR name="WordWrap" type="boolean">True</XPD:ATTR>
+<XPD:REF name="Model">xEqdJb0HLEaGjtpeaYdcRwAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="3nsUJzqfzUKYYfCGQcs1TAAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="2jtXxbgF+kuaEwd4TZDZGgAA">
+<XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">71</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">ClienteWS (JAX-WS)</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="Uo/6w4QXuEeWCrTFtnN0XwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="55cHfcWhJkS1vai6oK31qwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="ResidentCompartment" type="UMLResidentCompartmentView" guid="l9T1j12eL02OLzX3Wb+B6AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">xEqdJb0HLEaGjtpeaYdcRwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[35]" type="UMLAssociationView" guid="nA5Uxyc3YUmrtzx+TwGZBQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">140,290;236,290</XPD:ATTR>
+<XPD:REF name="Model">x+ke2yErG02GShaHQqcCeAAA</XPD:REF>
+<XPD:REF name="Head">zyuVDJ/w2EekuT3vDTHoRAAA</XPD:REF>
+<XPD:REF name="Tail">xBvqvfC47kaIcbrLqcrw4gAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="6JLrYJDKy02KSXpLyYMF3wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">x+ke2yErG02GShaHQqcCeAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="EkhVvTYppkGWmhy5Awv3tgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">x+ke2yErG02GShaHQqcCeAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="o0Gw0/qVOUavoHZ4QESPpAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">x+ke2yErG02GShaHQqcCeAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="FYXTGoawiU+LUIDO8+m4pAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">FnK63s863EagoeO6eh0wOQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="6gs/hcC41EuB++T2J7sSbAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">2TRv7eC1QUOlYIp6c3NciwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="07KN8vR4GUabMspqb4p99wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">FnK63s863EagoeO6eh0wOQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="IrC0NUFkHEOVVnqdDbHfKQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">2TRv7eC1QUOlYIp6c3NciwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="tQZf/Dk46U+wNLJATmcVwwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,785398163397448</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">FnK63s863EagoeO6eh0wOQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="DfBndh5/uEuPUvjxZRzi3wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,785398163397448</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">2TRv7eC1QUOlYIp6c3NciwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="DKwdkuvDn0upy/Aaiqet4wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
+<XPD:REF name="Model">FnK63s863EagoeO6eh0wOQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="lhA0Jj9Qt0OHokDAQQG9QAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-948</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
+<XPD:REF name="Model">2TRv7eC1QUOlYIp6c3NciwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[36]" type="UMLArtifactView" guid="j4DwxnG8fEqSBNt4ZJ2rJQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">4</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">372</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">199</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
+<XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
+<XPD:REF name="Model">XiweUwyLJECGVpoRLTKmpQAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="1JhrtmrZjk+ppqpdoAiZuAAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="dbL9MQD3w06QIgtRkapVYQAA">
+<XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">AvisameDelCocheClienteWS</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="cnvvdDQ0Fk28fOjkvI0/RgAA">
+<XPD:ATTR name="Text" type="string">&lt;&lt;artifact&gt;&gt;</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="u3AWg5+EE0KDP3CyVgJNCQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="wyd6xiiGBUuY3rXMhz6YwwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">XiweUwyLJECGVpoRLTKmpQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="46KFh39aG0OMdFlLrEhTjwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">XiweUwyLJECGVpoRLTKmpQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[37]" type="UMLAssociationView" guid="Gzl1Ir3JVECo8fdPAya79wAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">100,312;100,372</XPD:ATTR>
+<XPD:REF name="Model">L7xIzWC//kKbz5I8FYw65gAA</XPD:REF>
+<XPD:REF name="Head">j4DwxnG8fEqSBNt4ZJ2rJQAA</XPD:REF>
+<XPD:REF name="Tail">xBvqvfC47kaIcbrLqcrw4gAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="Rv9m1OPoG0ai8cfVte9ZVwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">L7xIzWC//kKbz5I8FYw65gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="zYsEalMcwUWoZUCveKpqyQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">L7xIzWC//kKbz5I8FYw65gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="jfdqblucUUKU80YDeod5NQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">L7xIzWC//kKbz5I8FYw65gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="RrwJcxQg3U6hjWSYjqK94QAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">WGVqI7ImLEqDx+kby1QOnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="xIWKVEjehkKSIkI84szHGwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">PND6+9KSdkugS0QS/ptyyQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="JXjYAgk5ZE6/Z6NRzGBzTwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">WGVqI7ImLEqDx+kby1QOnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="sARaDhk2CkOOpIlYPQyEiAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">PND6+9KSdkugS0QS/ptyyQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="nDzHqcl19kCf/6FJrw13qgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-0,785398163397448</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epHead</XPD:ATTR>
+<XPD:REF name="Model">WGVqI7ImLEqDx+kby1QOnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="D8BmDoNioUqXDYIHj+n1XAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">0,785398163397448</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
+<XPD:REF name="Model">PND6+9KSdkugS0QS/ptyyQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="P+UvgXjpO021Mshg6AX0wgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
+<XPD:REF name="Model">WGVqI7ImLEqDx+kby1QOnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="WB/N8h+pgEOV/zOtvsCvdgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">-1000</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">50</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">8</XPD:ATTR>
+<XPD:REF name="Model">PND6+9KSdkugS0QS/ptyyQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedElements" type="integer">34</XPD:ATTR>
 <XPD:OBJ name="OwnedElements[0]" type="UMLPackage" guid="4LPHJGi7wEaLIoqbgYme+wAA">
 <XPD:ATTR name="Name" type="string">Comprobar estado vehículo Business</XPD:ATTR>
 <XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
@@ -7262,7 +7658,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Associations[1]">SU52OceNFEWj0kk7umigtQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[3]" type="UMLArtifact" guid="CcUDZwZKz0CmqO1PkJCF8AAA">
-<XPD:ATTR name="Name" type="string">Cliente</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">ClienteWeb</XPD:ATTR>
 <XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
 <XPD:REF name="Views[0]">CvuPyMLnY0SDsrxcwQyP/gAA</XPD:REF>
@@ -7929,10 +8325,11 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Views[5]">0oMoQh0jiUui0glRWvnv3gAA</XPD:REF>
 <XPD:ATTR name="#ClientDependencies" type="integer">1</XPD:ATTR>
 <XPD:REF name="ClientDependencies[0]">eUmiZtOXb0GcABAXC/UJfQAA</XPD:REF>
-<XPD:ATTR name="#SupplierDependencies" type="integer">3</XPD:ATTR>
+<XPD:ATTR name="#SupplierDependencies" type="integer">4</XPD:ATTR>
 <XPD:REF name="SupplierDependencies[0]">LKPdc0Op4k6n5Zo4Jwjm/gAA</XPD:REF>
 <XPD:REF name="SupplierDependencies[1]">hF5jsBjisU6RP1jAwN+73gAA</XPD:REF>
 <XPD:REF name="SupplierDependencies[2]">KolwXNLGQku2h43Mavp+hQAA</XPD:REF>
+<XPD:REF name="SupplierDependencies[3]">4RXehWPIVk2NM+gIGsLrLQAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Associations[0]">blXR9AETrEiDP71dB/6ZUAAA</XPD:REF>
 <XPD:ATTR name="#Instances" type="integer">2</XPD:ATTR>
@@ -8056,8 +8453,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Participant">jiJP8mbvTkGQIpDjjk8kkwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">4YlwJjIXQE2zdICLMFb3KAAA</XPD:REF>
-<XPD:REF name="Views[1]">HMQtEwIZ+UGDaru7w3AohwAA</XPD:REF>
-<XPD:REF name="Views[2]">DYUYkxZRokyR99j1IIctLgAA</XPD:REF>
+<XPD:REF name="Views[1]">DYUYkxZRokyR99j1IIctLgAA</XPD:REF>
+<XPD:REF name="Views[2]">HMQtEwIZ+UGDaru7w3AohwAA</XPD:REF>
 <XPD:REF name="Views[3]">GoFzb+DSwEm40waE521eJwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="Q1nFn1zQ4ES0Ckbv9niwuwAA">
@@ -8065,8 +8462,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Participant">PaDiWUqphkCzBjhvxN8FRAAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">WEopMZAWbEiPlYWsyTeWJwAA</XPD:REF>
-<XPD:REF name="Views[1]">VijSxgpq+0+rx1yjBUx7RwAA</XPD:REF>
-<XPD:REF name="Views[2]">8ODG1WHoAk+Eh8a+8g0YogAA</XPD:REF>
+<XPD:REF name="Views[1]">8ODG1WHoAk+Eh8a+8g0YogAA</XPD:REF>
+<XPD:REF name="Views[2]">VijSxgpq+0+rx1yjBUx7RwAA</XPD:REF>
 <XPD:REF name="Views[3]">zUgW9o3kX0+pyxroO6xp/QAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -8093,8 +8490,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Participant">PaDiWUqphkCzBjhvxN8FRAAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">OqO/Y6jMfUaUdrzMXPFUFwAA</XPD:REF>
-<XPD:REF name="Views[1]">8ya50DiDDEC5zJzA/sRSnQAA</XPD:REF>
-<XPD:REF name="Views[2]">h+zSDQ+PHEGCX512lb91fgAA</XPD:REF>
+<XPD:REF name="Views[1]">h+zSDQ+PHEGCX512lb91fgAA</XPD:REF>
+<XPD:REF name="Views[2]">8ya50DiDDEC5zJzA/sRSnQAA</XPD:REF>
 <XPD:REF name="Views[3]">bP/U3EEdRk2K/zL49yfmZAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="69A8gxmt/0icmYzXG6oalwAA">
@@ -8102,9 +8499,142 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Participant">F6/KJBFxikSYRtEGlEaGsQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">nPE//+/wl0yi6ANSwnJdjgAA</XPD:REF>
-<XPD:REF name="Views[1]">GuEj511oN0WWRtAJ4wnPgwAA</XPD:REF>
-<XPD:REF name="Views[2]">SqI6D4TmGEmYOQqXEu29XQAA</XPD:REF>
+<XPD:REF name="Views[1]">SqI6D4TmGEmYOQqXEu29XQAA</XPD:REF>
+<XPD:REF name="Views[2]">GuEj511oN0WWRtAJ4wnPgwAA</XPD:REF>
 <XPD:REF name="Views[3]">RWkTS/ulNUSHoc+dJKn1vgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[26]" type="UMLComponent" guid="JMONbXeM6UCfjCNz1P8IjAAA">
+<XPD:ATTR name="Name" type="string">EdgeComponent (JAX-WS)</XPD:ATTR>
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:REF name="Views[0]">zyuVDJ/w2EekuT3vDTHoRAAA</XPD:REF>
+<XPD:REF name="Views[1]">fIFldILIJEGIFvTBd1+QigAA</XPD:REF>
+<XPD:ATTR name="#ClientDependencies" type="integer">1</XPD:ATTR>
+<XPD:REF name="ClientDependencies[0]">4RXehWPIVk2NM+gIGsLrLQAA</XPD:REF>
+<XPD:ATTR name="#Associations" type="integer">2</XPD:ATTR>
+<XPD:REF name="Associations[0]">g0SErilRU0GCX6OPzrxnlAAA</XPD:REF>
+<XPD:REF name="Associations[1]">FnK63s863EagoeO6eh0wOQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[27]" type="UMLArtifact" guid="SkxZayDy2UmDvywNOkMqFAAA">
+<XPD:ATTR name="Name" type="string">AvisameDelCocheWS</XPD:ATTR>
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">JoDwngs1mkaOdIt5UCHoEgAA</XPD:REF>
+<XPD:REF name="Views[1]">TulzyASll0aGd6/k83xtFwAA</XPD:REF>
+<XPD:REF name="Views[2]">wHSssZ1pf0mHO86LhlRCXAAA</XPD:REF>
+<XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
+<XPD:REF name="Associations[0]">sJSfMOP03ECVNbBdXCwZMQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[28]" type="UMLAssociation" guid="KHaelkELC0ekLYX3uzqkgQAA">
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">oMEhaZ1xR0+rX+ifDbllywAA</XPD:REF>
+<XPD:REF name="Views[1]">+eXRFV86tECVFSxLQffrIQAA</XPD:REF>
+<XPD:REF name="Views[2]">z2aau+8qRUKsfjrnmVOyPgAA</XPD:REF>
+<XPD:REF name="Views[3]">KaqJF51wf0+rzBqqDf1OLAAA</XPD:REF>
+<XPD:ATTR name="#Connections" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Connections[0]" type="UMLAssociationEnd" guid="g0SErilRU0GCX6OPzrxnlAAA">
+<XPD:REF name="Association">KHaelkELC0ekLYX3uzqkgQAA</XPD:REF>
+<XPD:REF name="Participant">JMONbXeM6UCfjCNz1P8IjAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">5B8qT8rHsU+43Tt5aUKxZAAA</XPD:REF>
+<XPD:REF name="Views[1]">jFwcVBI8pUOCabRfOp2MgAAA</XPD:REF>
+<XPD:REF name="Views[2]">izb6huk0D0+XMeSHmmEaBwAA</XPD:REF>
+<XPD:REF name="Views[3]">G4lO4c2Z/Uqs6TDJqG2KBQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="sJSfMOP03ECVNbBdXCwZMQAA">
+<XPD:REF name="Association">KHaelkELC0ekLYX3uzqkgQAA</XPD:REF>
+<XPD:REF name="Participant">SkxZayDy2UmDvywNOkMqFAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">OTR+2pwX7EC4C1CNCPyvxgAA</XPD:REF>
+<XPD:REF name="Views[1]">zJtgaBlatkCWRCPLnq/NIAAA</XPD:REF>
+<XPD:REF name="Views[2]">504kN2g+Hk+7vmCqCoOQqwAA</XPD:REF>
+<XPD:REF name="Views[3]">w5EJ6zLWL0iN0eNbp3FNmwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[29]" type="UMLDependency" guid="4RXehWPIVk2NM+gIGsLrLQAA">
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:REF name="Client">JMONbXeM6UCfjCNz1P8IjAAA</XPD:REF>
+<XPD:REF name="Supplier">4VDVwiuBkEuEcsDdJEnWhgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">Fez7DSK86EKTElU037GliQAA</XPD:REF>
+<XPD:REF name="Views[1]">tnJGoBUDSk6H1LA7KxAh1AAA</XPD:REF>
+<XPD:REF name="Views[2]">c4UZq4u8DUWRTVQ3+2qdTQAA</XPD:REF>
+<XPD:REF name="Views[3]">fIUY/XqnVUykvvqzZmHqcgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[30]" type="UMLComponent" guid="xEqdJb0HLEaGjtpeaYdcRwAA">
+<XPD:ATTR name="Name" type="string">ClienteWS (JAX-WS)</XPD:ATTR>
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:REF name="Views[0]">xBvqvfC47kaIcbrLqcrw4gAA</XPD:REF>
+<XPD:REF name="Views[1]">l9T1j12eL02OLzX3Wb+B6AAA</XPD:REF>
+<XPD:ATTR name="#Associations" type="integer">2</XPD:ATTR>
+<XPD:REF name="Associations[0]">2TRv7eC1QUOlYIp6c3NciwAA</XPD:REF>
+<XPD:REF name="Associations[1]">PND6+9KSdkugS0QS/ptyyQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[31]" type="UMLAssociation" guid="x+ke2yErG02GShaHQqcCeAAA">
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">nA5Uxyc3YUmrtzx+TwGZBQAA</XPD:REF>
+<XPD:REF name="Views[1]">6JLrYJDKy02KSXpLyYMF3wAA</XPD:REF>
+<XPD:REF name="Views[2]">EkhVvTYppkGWmhy5Awv3tgAA</XPD:REF>
+<XPD:REF name="Views[3]">o0Gw0/qVOUavoHZ4QESPpAAA</XPD:REF>
+<XPD:ATTR name="#Connections" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Connections[0]" type="UMLAssociationEnd" guid="2TRv7eC1QUOlYIp6c3NciwAA">
+<XPD:REF name="Association">x+ke2yErG02GShaHQqcCeAAA</XPD:REF>
+<XPD:REF name="Participant">xEqdJb0HLEaGjtpeaYdcRwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">6gs/hcC41EuB++T2J7sSbAAA</XPD:REF>
+<XPD:REF name="Views[1]">DfBndh5/uEuPUvjxZRzi3wAA</XPD:REF>
+<XPD:REF name="Views[2]">IrC0NUFkHEOVVnqdDbHfKQAA</XPD:REF>
+<XPD:REF name="Views[3]">lhA0Jj9Qt0OHokDAQQG9QAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="FnK63s863EagoeO6eh0wOQAA">
+<XPD:REF name="Association">x+ke2yErG02GShaHQqcCeAAA</XPD:REF>
+<XPD:REF name="Participant">JMONbXeM6UCfjCNz1P8IjAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">FYXTGoawiU+LUIDO8+m4pAAA</XPD:REF>
+<XPD:REF name="Views[1]">tQZf/Dk46U+wNLJATmcVwwAA</XPD:REF>
+<XPD:REF name="Views[2]">07KN8vR4GUabMspqb4p99wAA</XPD:REF>
+<XPD:REF name="Views[3]">DKwdkuvDn0upy/Aaiqet4wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[32]" type="UMLArtifact" guid="XiweUwyLJECGVpoRLTKmpQAA">
+<XPD:ATTR name="Name" type="string">AvisameDelCocheClienteWS</XPD:ATTR>
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">j4DwxnG8fEqSBNt4ZJ2rJQAA</XPD:REF>
+<XPD:REF name="Views[1]">wyd6xiiGBUuY3rXMhz6YwwAA</XPD:REF>
+<XPD:REF name="Views[2]">46KFh39aG0OMdFlLrEhTjwAA</XPD:REF>
+<XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
+<XPD:REF name="Associations[0]">WGVqI7ImLEqDx+kby1QOnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[33]" type="UMLAssociation" guid="L7xIzWC//kKbz5I8FYw65gAA">
+<XPD:REF name="Namespace">zzRSBunrY0uBXjyMC77LNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">Gzl1Ir3JVECo8fdPAya79wAA</XPD:REF>
+<XPD:REF name="Views[1]">Rv9m1OPoG0ai8cfVte9ZVwAA</XPD:REF>
+<XPD:REF name="Views[2]">zYsEalMcwUWoZUCveKpqyQAA</XPD:REF>
+<XPD:REF name="Views[3]">jfdqblucUUKU80YDeod5NQAA</XPD:REF>
+<XPD:ATTR name="#Connections" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Connections[0]" type="UMLAssociationEnd" guid="PND6+9KSdkugS0QS/ptyyQAA">
+<XPD:REF name="Association">L7xIzWC//kKbz5I8FYw65gAA</XPD:REF>
+<XPD:REF name="Participant">xEqdJb0HLEaGjtpeaYdcRwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">xIWKVEjehkKSIkI84szHGwAA</XPD:REF>
+<XPD:REF name="Views[1]">D8BmDoNioUqXDYIHj+n1XAAA</XPD:REF>
+<XPD:REF name="Views[2]">sARaDhk2CkOOpIlYPQyEiAAA</XPD:REF>
+<XPD:REF name="Views[3]">WB/N8h+pgEOV/zOtvsCvdgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="WGVqI7ImLEqDx+kby1QOnQAA">
+<XPD:REF name="Association">L7xIzWC//kKbz5I8FYw65gAA</XPD:REF>
+<XPD:REF name="Participant">XiweUwyLJECGVpoRLTKmpQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">RrwJcxQg3U6hjWSYjqK94QAA</XPD:REF>
+<XPD:REF name="Views[1]">nDzHqcl19kCf/6FJrw13qgAA</XPD:REF>
+<XPD:REF name="Views[2]">JXjYAgk5ZE6/Z6NRzGBzTwAA</XPD:REF>
+<XPD:REF name="Views[3]">P+UvgXjpO021Mshg6AX0wgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -8119,12 +8649,12 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="DiagramOwner">bFM8UBEQsk++lTfbaLoShAAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLDeploymentDiagramView" guid="vcf0Xs/hDU6XY/zPEiWxsQAA">
 <XPD:REF name="Diagram">04eVXXJmcUK4sk7g+pey7QAA</XPD:REF>
-<XPD:ATTR name="#OwnedViews" type="integer">15</XPD:ATTR>
+<XPD:ATTR name="#OwnedViews" type="integer">17</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLArtifactView" guid="MC7No0if40mshRNOqEeQXAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">216</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">136</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">220</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">256</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">190</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8153,8 +8683,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[1]" type="UMLArtifactView" guid="MSF0puhLjkq5zSx7KOa72wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">337</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">43</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">341</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">163</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">161</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8183,8 +8713,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[2]" type="UMLArtifactView" guid="/GaiMXpMIE6vBEqHONaq4wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">428</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">135</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">432</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">255</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">191</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8213,8 +8743,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[3]" type="UMLArtifactView" guid="LC7yKkzQ3U2Ba6+z52yXJwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">8</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">135</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">16</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">256</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">169</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8244,7 +8774,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">92,135;92,60;337,60</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">96,256;96,192;341,192</XPD:ATTR>
 <XPD:REF name="Model">apJcTBRftkGlxIg21xb2EgAA</XPD:REF>
 <XPD:REF name="Head">MSF0puhLjkq5zSx7KOa72wAA</XPD:REF>
 <XPD:REF name="Tail">LC7yKkzQ3U2Ba6+z52yXJwAA</XPD:REF>
@@ -8271,7 +8801,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">348,84;348,136</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">352,204;352,256</XPD:ATTR>
 <XPD:REF name="Model">aHXvbmdsF0GUGssYBMz0SgAA</XPD:REF>
 <XPD:REF name="Head">MC7No0if40mshRNOqEeQXAAA</XPD:REF>
 <XPD:REF name="Tail">MSF0puhLjkq5zSx7KOa72wAA</XPD:REF>
@@ -8297,8 +8827,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[6]" type="UMLArtifactView" guid="mTF9ACHHA0ybs9L89Lv0KQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">307</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">224</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">311</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">344</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">220</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8328,7 +8858,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">96,176;96,252;307,252</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">100,297;100,372;311,372</XPD:ATTR>
 <XPD:REF name="Model">myyqfxxL3keuTqsUgmv2dQAA</XPD:REF>
 <XPD:REF name="Head">mTF9ACHHA0ybs9L89Lv0KQAA</XPD:REF>
 <XPD:REF name="Tail">LC7yKkzQ3U2Ba6+z52yXJwAA</XPD:REF>
@@ -8355,7 +8885,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">372,224;372,177</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">376,344;376,297</XPD:ATTR>
 <XPD:REF name="Model">r3YNXCalR0uxDiMZ3MwIGgAA</XPD:REF>
 <XPD:REF name="Head">MC7No0if40mshRNOqEeQXAAA</XPD:REF>
 <XPD:REF name="Tail">mTF9ACHHA0ybs9L89Lv0KQAA</XPD:REF>
@@ -8381,8 +8911,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[9]" type="UMLArtifactView" guid="rNraNk51VE+Zp3pS0plrwgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">648</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">135</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">652</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">255</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">166</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8412,7 +8942,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">497,56;644,56</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">501,176;648,176</XPD:ATTR>
 <XPD:REF name="Model">FkayzXFDOEC2xS+RvdieBwAA</XPD:REF>
 <XPD:REF name="Head">E9os1GBm20mZ55GWvJfHlQAA</XPD:REF>
 <XPD:REF name="Tail">MSF0puhLjkq5zSx7KOa72wAA</XPD:REF>
@@ -8438,8 +8968,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[11]" type="UMLArtifactView" guid="E9os1GBm20mZ55GWvJfHlQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">644</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">43</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">648</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">163</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">185</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
@@ -8469,7 +8999,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">728,84;728,135</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">732,204;732,255</XPD:ATTR>
 <XPD:REF name="Model">xEi/C57bnEKIspBdYDRxnAAA</XPD:REF>
 <XPD:REF name="Head">rNraNk51VE+Zp3pS0plrwgAA</XPD:REF>
 <XPD:REF name="Tail">E9os1GBm20mZ55GWvJfHlQAA</XPD:REF>
@@ -8495,7 +9025,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[13]" type="UMLDependencyView" guid="1MDngtp1LU+9ZKhYT/tP9gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">405,156;428,156</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">409,276;432,276</XPD:ATTR>
 <XPD:REF name="Model">VpTfLw58WkuahnT3IucsQwAA</XPD:REF>
 <XPD:REF name="Head">/GaiMXpMIE6vBEqHONaq4wAA</XPD:REF>
 <XPD:REF name="Tail">MC7No0if40mshRNOqEeQXAAA</XPD:REF>
@@ -8521,7 +9052,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:OBJ name="OwnedViews[14]" type="UMLDependencyView" guid="kcP8BdUO00eoFpULpt7PiwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">648,155;618,155</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">652,275;622,275</XPD:ATTR>
 <XPD:REF name="Model">aXg60e92ykGySLbycpCcRwAA</XPD:REF>
 <XPD:REF name="Head">/GaiMXpMIE6vBEqHONaq4wAA</XPD:REF>
 <XPD:REF name="Tail">rNraNk51VE+Zp3pS0plrwgAA</XPD:REF>
@@ -8544,9 +9076,66 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Model">aXg60e92ykGySLbycpCcRwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
+<XPD:OBJ name="OwnedViews[15]" type="UMLArtifactView" guid="UsgqMvWro0qtj9stw9berQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">20</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">56</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">160</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">42</XPD:ATTR>
+<XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkDecoration</XPD:ATTR>
+<XPD:REF name="Model">2OikUBBAw02yCufaAKMUiAAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="KTXFZVKf3E+9aBgoO1BOmwAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="OiBltPiLJEKY2PylyGKgMgAA">
+<XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">AvisameDelCocheWS</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="f1GIZQGBSUe+m2HzgnAf7gAA">
+<XPD:ATTR name="Text" type="string">&lt;&lt;artifact&gt;&gt;</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="TwdG1cq84kyLT7eYdiFRGgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:ATTR name="#OwnedElements" type="integer">21</XPD:ATTR>
+<XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="u3ZYYjbHQEWvndJ9sFNFhgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">2OikUBBAw02yCufaAKMUiAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="C5i4iBSRQUqf9GUJ/qaABwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:REF name="Model">2OikUBBAw02yCufaAKMUiAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[16]" type="UMLDependencyView" guid="sQBxZNvefU+NKEAMWMew1gAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">96,97;96,172;341,172</XPD:ATTR>
+<XPD:REF name="Model">e6uEZEeJJEuJaU74H8b5JAAA</XPD:REF>
+<XPD:REF name="Head">MSF0puhLjkq5zSx7KOa72wAA</XPD:REF>
+<XPD:REF name="Tail">UsgqMvWro0qtj9stw9berQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="ITOUoc6izEKbCElVhq6onQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">e6uEZEeJJEuJaU74H8b5JAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="98bh216VbUG0c4b1jNnzPwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">e6uEZEeJJEuJaU74H8b5JAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="Ig47mTmApEiYOUJd7apniQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">e6uEZEeJJEuJaU74H8b5JAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedElements" type="integer">23</XPD:ATTR>
 <XPD:OBJ name="OwnedElements[0]" type="UMLArtifact" guid="vBKpjf9fskmDiRmZI8oDFgAA">
 <XPD:ATTR name="Name" type="string">AvisameDelCocheServices</XPD:ATTR>
 <XPD:REF name="Namespace">bFM8UBEQsk++lTfbaLoShAAA</XPD:REF>
@@ -8579,9 +9168,10 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="ClientDependencies[1]">aHXvbmdsF0GUGssYBMz0SgAA</XPD:REF>
 <XPD:REF name="ClientDependencies[2]">FkayzXFDOEC2xS+RvdieBwAA</XPD:REF>
 <XPD:REF name="ClientDependencies[3]">g6LUqGn6rU+4KLmVsJid2QAA</XPD:REF>
-<XPD:ATTR name="#SupplierDependencies" type="integer">2</XPD:ATTR>
+<XPD:ATTR name="#SupplierDependencies" type="integer">3</XPD:ATTR>
 <XPD:REF name="SupplierDependencies[0]">jd9Y/AjADUCqAp/IOPXoewAA</XPD:REF>
 <XPD:REF name="SupplierDependencies[1]">apJcTBRftkGlxIg21xb2EgAA</XPD:REF>
+<XPD:REF name="SupplierDependencies[2]">e6uEZEeJJEuJaU74H8b5JAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[2]" type="UMLArtifact" guid="sLUhR5Z8j0ef+ql77dgCEQAA">
 <XPD:ATTR name="Name" type="string">AvisameDelCocheBusiness</XPD:ATTR>
@@ -8767,6 +9357,26 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Views[1]">HEuIVMIP/E2snk/Yo/GYdAAA</XPD:REF>
 <XPD:REF name="Views[2]">SBKf/pSP2EunGWQL8G3tEQAA</XPD:REF>
 <XPD:REF name="Views[3]">YEMHNtqmjEyYMwAMRd//rAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[21]" type="UMLArtifact" guid="2OikUBBAw02yCufaAKMUiAAA">
+<XPD:ATTR name="Name" type="string">AvisameDelCocheWS</XPD:ATTR>
+<XPD:REF name="Namespace">bFM8UBEQsk++lTfbaLoShAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">UsgqMvWro0qtj9stw9berQAA</XPD:REF>
+<XPD:REF name="Views[1]">u3ZYYjbHQEWvndJ9sFNFhgAA</XPD:REF>
+<XPD:REF name="Views[2]">C5i4iBSRQUqf9GUJ/qaABwAA</XPD:REF>
+<XPD:ATTR name="#ClientDependencies" type="integer">1</XPD:ATTR>
+<XPD:REF name="ClientDependencies[0]">e6uEZEeJJEuJaU74H8b5JAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[22]" type="UMLDependency" guid="e6uEZEeJJEuJaU74H8b5JAAA">
+<XPD:REF name="Namespace">bFM8UBEQsk++lTfbaLoShAAA</XPD:REF>
+<XPD:REF name="Client">2OikUBBAw02yCufaAKMUiAAA</XPD:REF>
+<XPD:REF name="Supplier">0m89ptUbEES5jUkUpQHe8wAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">sQBxZNvefU+NKEAMWMew1gAA</XPD:REF>
+<XPD:REF name="Views[1]">ITOUoc6izEKbCElVhq6onQAA</XPD:REF>
+<XPD:REF name="Views[2]">98bh216VbUG0c4b1jNnzPwAA</XPD:REF>
+<XPD:REF name="Views[3]">Ig47mTmApEiYOUJd7apniQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>

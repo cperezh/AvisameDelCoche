@@ -16,3 +16,6 @@ dev/AvisameDelCocheWAR/src/main/webapp/WEB-INF/lib/
 dev/AvisameDelCocheDao/target/
 dev/AvisameDelCocheDaoEJB/target/
 /dev/AvisameDelCocheHTML/nbproject/private/
+/dev/AvisameDelCocheWS/nbproject/private/
+/dev/AvisameDelCocheWS/target/
+/dev/AvisameDelCocheClienteWS/target/
