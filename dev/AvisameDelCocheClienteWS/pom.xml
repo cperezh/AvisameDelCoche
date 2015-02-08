@@ -44,7 +44,6 @@
                             <packageName>com.carlos.avisamedelcocheclientews.clienteWS</packageName>
                             <sourceDestDir>${basedir}/src/main/java</sourceDestDir>
                             <wsdlDirectory>${basedir}/src/wsdl</wsdlDirectory>
-                           
                         </configuration>
                     </execution>
                 </executions>
