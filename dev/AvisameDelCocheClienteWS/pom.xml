@@ -42,9 +42,9 @@
                         <configuration>
                             <!-- Paquete donde se generan las clases -->
                             <packageName>com.carlos.avisamedelcocheclientews.clienteWS</packageName>
-                            <wsdlUrls>
-                                <wsdlUrl>http://localhost:8081/AvisameDelCocheWS/AvisameDelCocheWSService?wsdl</wsdlUrl>
-                            </wsdlUrls>
+                            <sourceDestDir>${basedir}/src/main/java</sourceDestDir>
+                            <wsdlDirectory>${basedir}/src/wsdl</wsdlDirectory>
+                           
                         </configuration>
                     </execution>
                 </executions>

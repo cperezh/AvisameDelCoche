@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. -->
+<xs:schema xmlns:tns="http://avisamedelcochews.carlos.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://avisamedelcochews.carlos.com/">
+
+<xs:element name="buscarVehiculo" type="tns:buscarVehiculo"/>
+
+<xs:element name="buscarVehiculoResponse" type="tns:buscarVehiculoResponse"/>
+
+<xs:complexType name="buscarVehiculo">
+<xs:sequence>
+<xs:element name="matricula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarVehiculoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:coche" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="coche">
+<xs:sequence>
+<xs:element name="estadoComponentes" type="tns:estadoComponente" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="kilometraje" type="xs:int"/>
+<xs:element name="matricula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estadoComponente">
+<xs:sequence>
+<xs:element name="componente" type="tns:componente" minOccurs="0"/>
+<xs:element name="ultimaSustitucion" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="componente">
+<xs:restriction base="xs:string">
+<xs:enumeration value="NEUMATICOS"/>
+<xs:enumeration value="ACEITE_MOTOR"/>
+<xs:enumeration value="FILTRO_ACEITE"/>
+<xs:enumeration value="FILTRO_AIRE"/>
+<xs:enumeration value="FILTRO_HABITACULO"/>
+<xs:enumeration value="FILTRO_COMBUSTIBLE"/>
+<xs:enumeration value="LIQUIDO_FRENOS"/>
+<xs:enumeration value="PASTILLAS_FRENO"/>
+<xs:enumeration value="DISCO_FRENO"/>
+<xs:enumeration value="ALINEAR_DIRECCION"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
