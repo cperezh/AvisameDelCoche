@@ -62,10 +62,8 @@
 
                 //Ocultamos la capa de resultados.
                 $("#actualizarKilometraje").hide();
-                
+
                 $("#kilometraje").val($("#kilometros").val());
-                
-                alert($("#buscarCocheForm").serialize());
 
                 $.ajax({
                     type: "POST",
