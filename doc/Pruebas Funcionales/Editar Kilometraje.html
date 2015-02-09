@@ -17,11 +17,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Comprobar estado coche</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>link=Comprobar estado coche</td>
 	<td></td>
@@ -32,23 +27,28 @@
 	<td>4731dsd</td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>css=input[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Actualizar kilometraje']</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=matricula</td>
-	<td>4731dsd</td>
+	<td>id=kilometros</td>
+	<td>170002</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=input[type=&quot;button&quot;]</td>
+	<td>css=#actualizarKilometrajeCocheForm &gt; input[type=&quot;button&quot;]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=input[type=&quot;button&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=#resultado &gt; input[type=&quot;button&quot;]</td>
+	<td>assertAlert</td>
+	<td>matricula=4731DSD&amp;kilometraje=170002</td>
 	<td></td>
 </tr>
 <tr>
