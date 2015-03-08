@@ -6,41 +6,22 @@
 package com.carlos.avisamedelcochebusiness;
 
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.Embeddable;
 
 /**
  *
  * @author Pakno
  */
-@Entity
+@Embeddable
+@lombok.Data
 public class EstadoComponente implements Serializable {
 
-    @Id
     private Componente componente;
 
-    @Column
     private int ultimaSustitucion;
 
     public EstadoComponente() {
 
-    }
-
-    public int getUltimaSustitucion() {
-        return ultimaSustitucion;
-    }
-
-    public void setUltimaSustitucion(int ultimaSustitucion) {
-        this.ultimaSustitucion = ultimaSustitucion;
-    }
-
-    public Componente getComponente() {
-        return componente;
-    }
-
-    public void setComponente(Componente componente) {
-        this.componente = componente;
     }
 
 }

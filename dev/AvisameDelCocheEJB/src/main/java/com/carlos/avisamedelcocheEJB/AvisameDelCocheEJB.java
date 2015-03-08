@@ -24,9 +24,9 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
     DAOVehiculo daoVehiculo;
 
     @Override
-    public void comprobarEstadoVehiculo(Coche coche) {
+    public void comprobarEstadoVehiculo(String matricula) {
 
-        coche = daoVehiculo.buscarVehiculo(coche.getMatricula());
+        Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
         AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
 
@@ -39,23 +39,21 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
     }
 
     @Override
-    public Coche buscarVehiculo(Coche coche) {
+    public Coche buscarVehiculo(String matricula) {
 
-        coche = daoVehiculo.buscarVehiculo(coche.getMatricula());
+        Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
         return coche;
     }
 
     @Override
     @TransactionAttribute
-    public Coche actualizarKilometraje(Coche coche) {
+    public Coche actualizarKilometraje(String matricula, int kilometraje) {
 
-        Coche cocheOriginal;
+        Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
-        cocheOriginal = daoVehiculo.buscarVehiculo(coche.getMatricula());
+        coche.setKilometraje(kilometraje);
 
-        cocheOriginal.setKilometraje(coche.getKilometraje());
-
-        return cocheOriginal;
+        return coche;
     }
 }
