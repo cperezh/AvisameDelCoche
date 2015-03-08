@@ -11,6 +11,7 @@ import com.carlos.avisamedelcochebusiness.Coche;
 import com.carlos.avisamedelcochedao.DAOVehiculo;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
 
 /**
  *
@@ -18,44 +19,43 @@ import javax.ejb.Stateless;
  */
 @Stateless
 public class AvisameDelCocheEJB implements AvisameDelCocheService {
-    
-    @EJB(mappedName = "java:module/DAOVehiculoEJB!com.carlos.avisamedelcochedao.DAOVehiculo")
+
+    @EJB
     DAOVehiculo daoVehiculo;
 
     @Override
     public void comprobarEstadoVehiculo(Coche coche) {
 
         coche = daoVehiculo.buscarVehiculo(coche.getMatricula());
-        
+
         AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
 
     }
 
     @Override
     public void actualizarVehiculo(Coche coche) {
-       
+
         daoVehiculo.actualizarVehiculo(coche);
     }
 
     @Override
     public Coche buscarVehiculo(Coche coche) {
-       
+
         coche = daoVehiculo.buscarVehiculo(coche.getMatricula());
-       
-       return coche;
+
+        return coche;
     }
 
     @Override
+    @TransactionAttribute
     public Coche actualizarKilometraje(Coche coche) {
-        
+
         Coche cocheOriginal;
-        
+
         cocheOriginal = daoVehiculo.buscarVehiculo(coche.getMatricula());
-        
+
         cocheOriginal.setKilometraje(coche.getKilometraje());
-        
-        daoVehiculo.actualizarVehiculo(cocheOriginal);
-        
+
         return cocheOriginal;
     }
 }
