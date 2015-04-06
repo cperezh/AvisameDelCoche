@@ -6,19 +6,15 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html ng-app="phonecatApp"  ng-controller="PhoneListCtrl2">
+<html>
     <head>
-        <title>Avísame del Coche {{query}}</title>
+        <title>Avísame del Coche</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.js"></script>
-        
-        <script src = "../../js/controllers.js" ></script>
         <script>
 
-            $(document).ready(inicializa);
+                    $(document).ready(inicializa);
 
             function inicializa() {
                 $("#resultados").hide();
@@ -82,43 +78,6 @@
         </script>
     </head>
     <body>
-        <button ng-click="enviar2()">Enviar</button>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2">
-                    <!--Sidebar content-->
-
-                    Search: <input ng-model="query">
-
-                </div>
-                <div class="col-md-10">
-                    <!--Body content-->
-
-                    <ul class="phones">
-                        <li ng-repeat="phone in phones| filter:query">
-                            {{phone.name}}
-                            <p>{{phone.snippet}}</p>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        <p>{{query}}</p>
-         <p>{{name}}</p>
-        <ul>
-            <li ng-repeat="phone in phones">
-                <span>{{phone.name}}</span>
-                <p>{{phone.snippet}}</p>
-            </li>
-        </ul>
-        <p>Total number of phones: {{phones.length}}</p>
-       
-        <table>
-            <tr><th>row</th></tr>
-            <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td><th>column</th></td><td ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7]">{{i}}{{j}}</td></tr>
-        </table>
-        
         <form id="buscarCocheForm">
             <input type="text" id="matricula" name="matricula">
             <input type="hidden" id="kilometraje" name="kilometraje">

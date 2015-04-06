@@ -27,9 +27,7 @@ public class Coche implements Serializable {
     protected int kilometraje;
 
     @ElementCollection
-    @CollectionTable(
-            name="EstadoComponente",
-            joinColumns = @JoinColumn(name = "matricula"))
+    @CollectionTable(name = "EstadoComponente", joinColumns = @JoinColumn(name = "matricula"))
     protected Collection<EstadoComponente> estadoComponentes;
 
     public Coche() {
