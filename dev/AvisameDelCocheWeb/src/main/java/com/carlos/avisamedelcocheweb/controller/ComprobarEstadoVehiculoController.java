@@ -8,6 +8,9 @@ package com.carlos.avisamedelcocheweb.controller;
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 import javax.ejb.EJB;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +29,7 @@ public class ComprobarEstadoVehiculoController {
 
     @RequestMapping("/init")
     public void init() {
-
+        
     }
 
     @RequestMapping("/buscar")
