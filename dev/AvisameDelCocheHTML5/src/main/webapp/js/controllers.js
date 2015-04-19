@@ -13,8 +13,10 @@ catalogoTelefonos.controller('controladorCatalogo',function ($scope,$http){
     $scope.nombre ='Carlos';
     
     $scope.buscar = function(){
-        alert("buscando");
-        $http.get('http://localhost:8080/AvisameDelCocheWeb/main/comprobarEstadoVehiculo/init').
+       
+        var url = 'http://localhost:8080/AvisameDelCocheWeb/main/comprobarEstadoVehiculo/buscar';
+         alert("url: "+url);
+        $http.get(url).
             success(function(data, status, headers, config) {
             // this callback will be called asynchronously
             // when the response is available
