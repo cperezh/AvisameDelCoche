@@ -14,11 +14,12 @@ import java.io.Serializable;
  *
  * @author Pakno
  */
+
 public enum Componente implements Serializable{
 
     NEUMATICOS(20000),
-    ACEITE_MOTOR(15000),
-    FILTRO_ACEITE(15000),
+    ACEITE_MOTOR(10000),
+    FILTRO_ACEITE(10000),
     FILTRO_AIRE(30000),
     FILTRO_HABITACULO(10000),
     FILTRO_COMBUSTIBLE(30000),

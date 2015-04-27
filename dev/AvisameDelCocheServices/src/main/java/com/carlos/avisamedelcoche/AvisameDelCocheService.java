@@ -15,11 +15,11 @@ import javax.ejb.Local;
 @Local
 public interface AvisameDelCocheService{
 
-    Coche actualizarKilometraje(Coche coche);
+    Coche actualizarKilometraje(String matricula, int kilometraje);
     
-    void comprobarEstadoVehiculo(Coche coche);
+    void comprobarEstadoVehiculo(String matricula);
     
-    Coche buscarVehiculo(Coche coche);
+    Coche buscarVehiculo(String matricula);
     
     void actualizarVehiculo(Coche coche);
 }

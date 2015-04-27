@@ -20,12 +20,12 @@ import org.springframework.stereotype.Service;
 public class AvisameDelCocheSpringService implements AvisameDelCocheService{
 
     @Override
-    public void comprobarEstadoVehiculo(Coche coche) {
-        AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
+    public void comprobarEstadoVehiculo(String matricula){
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public Coche buscarVehiculo(Coche coche) {
+     public Coche buscarVehiculo(String matricula){
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -35,7 +35,7 @@ public class AvisameDelCocheSpringService implements AvisameDelCocheService{
     }
 
     @Override
-    public Coche actualizarKilometraje(Coche coche) {
+    public Coche actualizarKilometraje(String matricula, int kilometraje) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -19,18 +19,13 @@ import javax.jws.WebService;
 @WebService
 public class AvisameDelCocheWS {
 
-    @EJB(mappedName = "java:module/AvisameDelCocheEJB!com.carlos.avisamedelcoche.AvisameDelCocheService")
+    @EJB
     AvisameDelCocheService avisameDelCocheService;
 
     @WebMethod
-    public Coche buscarVehiculo(@WebParam(name="matricula") String matricula) {
-        
-        Coche coche;
-        
-        coche = new Coche();
-        coche.setMatricula(matricula);
-        
-        coche = avisameDelCocheService.buscarVehiculo(coche);
+    public Coche buscarVehiculo(@WebParam(name = "matricula") String matricula) {
+
+        Coche coche = avisameDelCocheService.buscarVehiculo(matricula);
 
         return coche;
     }

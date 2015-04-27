@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -7,8 +7,10 @@ package com.carlos.avisamedelcocheweb.controller;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
-import com.carlos.avisamedelcochebusiness.EstadoComponente;
 import javax.ejb.EJB;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,52 +29,31 @@ public class ComprobarEstadoVehiculoController {
 
     @RequestMapping("/init")
     public void init() {
-
+        
     }
 
     @RequestMapping("/buscar")
     @ResponseBody
     public Coche buscarCoche(@ModelAttribute Coche coche) {
 
-        coche = avisameDelCocheService.buscarVehiculo(coche);
+        coche = avisameDelCocheService.buscarVehiculo(coche.getMatricula());
 
         return coche;
     }
 
     @RequestMapping("/comprobarEstado")
     @ResponseBody
-    public Coche comprobarEstado(@ModelAttribute Coche coche) {
+    public void comprobarEstado(@ModelAttribute Coche coche) {
 
-        avisameDelCocheService.comprobarEstadoVehiculo(coche);
+        avisameDelCocheService.comprobarEstadoVehiculo(coche.getMatricula());
 
-        return coche;
     }
-    
+
     @RequestMapping("/actualizarKilometraje")
     @ResponseBody
-    public Coche actualizarKilometraje(@ModelAttribute Coche coche){
-        
-        avisameDelCocheService.actualizarKilometraje(coche);
-        
-        return coche;
-    }
+    public Coche actualizarKilometraje(@ModelAttribute Coche coche) {
 
-    @RequestMapping("/avisadorDelCocheModificar")
-    @ResponseBody
-    public Coche avisarDeReparacionModificar() {
-
-        Coche coche;
-
-        //coche = Coche.crearCocheDePrueba();
-        coche = new Coche();
-        coche.setMatricula("4731DSD");
-
-        coche = avisameDelCocheService.buscarVehiculo(coche);
-
-        coche.setKilometraje(190000);
-        ((EstadoComponente) (coche.getEstadoComponentes().get(0))).setUltimaSustitucion(100000);
-
-        avisameDelCocheService.actualizarVehiculo(coche);
+        coche = avisameDelCocheService.actualizarKilometraje(coche.getMatricula(), coche.getKilometraje());
 
         return coche;
     }
