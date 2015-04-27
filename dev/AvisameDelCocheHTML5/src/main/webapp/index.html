@@ -13,7 +13,11 @@ and open the template in the editor.
         <script src="js/controllers.js"></script>
     </head>
     <body ng-controller="controladorCatalogo">
-        <p>Nothing here {{'yet' + '!'}}</p>
-        <button type="button" ng-click="buscar()">{{nombre}}</button>
+        <input type="text" ng-model="matricula"/>
+        <button type="button" ng-click="buscar(matricula)">Buscar</button>
+        <p>Matricula: {{coche.matricula}}</p>
+        <p>Kilometraje {{coche.kilometraje}}</p>
+        <input type="text" ng-model="kilometraje"/>
+        <button type="button" ng-click="actualizarKilometraje(matricula,kilometraje)">Actualizar</button>
     </body>
 </html>

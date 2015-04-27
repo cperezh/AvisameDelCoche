@@ -8,6 +8,7 @@ package com.carlos.avisamedelcochers;
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 import javax.ejb.EJB;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
