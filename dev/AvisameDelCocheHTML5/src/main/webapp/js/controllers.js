@@ -1,23 +1,19 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/*REGISTRO EL MODULO*/
-var catalogoTelefonos = angular.module('catalogoTelefonos', []);
+
+/*Registro el módulo de controladores del catalogo*/
+var controladoresCatalogo = angular.module('controladoresCatalogo', []);
 
 /*CREO UN CONTROLADOR EN EL MODULO. 
  * El segundo parametro es la funcion constructora del controlador, donde se definen las
  * variables y metodos que estaran disponibles en el ambito definido para el controlador*/
-catalogoTelefonos.controller('controladorCatalogo', function ($scope, $http) {
+controladoresCatalogo.controller('controladorCatalogo', function ($scope, $http) {
 
     $scope.buscar = function (matricula) {
 
-        var url = '/AvisameDelCocheRS/resources/coches/' + matricula;
+        var url = '/AvisameDelCocheRS/resources/coches/a?matricula=' + matricula;
 
         $http.get(url).
                 success(function (data, status, headers, config) {
-                    $scope.coche = data;
+                    $scope.coches = data;
                 }).
                 error(function (data, status, headers, config) {
                     // called asynchronously if an error occurs

@@ -12,6 +12,8 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 /**
  *
@@ -19,6 +21,11 @@ import javax.persistence.JoinColumn;
  */
 @Entity
 @lombok.Data
+
+@NamedQueries({
+    @NamedQuery(name = "Coche.buscarCochesPorMatricula",
+            query = "SELECT c FROM Coche c WHERE c.matricula like :matricula")
+})
 public class Coche implements Serializable {
 
     @Id

@@ -9,6 +9,8 @@ import com.carlos.avisamedelcochedao.DAOVehiculo;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaQuery;
@@ -51,5 +53,13 @@ public class DAOVehiculoEJB implements DAOVehiculo {
     @Override
     public void insertarVehiculo(Coche coche) {
         entityManager.persist(coche);
+    }
+
+    @Override
+    public List<Coche> buscarVehiculos(String matricula) {
+        return entityManager.createNamedQuery("Coche.buscarCochesPorMatricula", Coche.class)
+                .setParameter("matricula", "%"+matricula+"%")
+                .getResultList();
+
     }
 }

@@ -6,6 +6,7 @@
 package com.carlos.avisamedelcoche;
 
 import com.carlos.avisamedelcochebusiness.Coche;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -22,4 +23,6 @@ public interface AvisameDelCocheService{
     Coche buscarVehiculo(String matricula);
     
     void actualizarVehiculo(Coche coche);
+    
+    List<Coche> buscarVehiculos(String matricula);
 }

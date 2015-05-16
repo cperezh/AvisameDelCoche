@@ -7,6 +7,7 @@
 package com.carlos.avisamedelcochedao;
 
 import com.carlos.avisamedelcochebusiness.Coche;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -21,4 +22,6 @@ public interface DAOVehiculo {
     void actualizarVehiculo(Coche coche);
     
     void insertarVehiculo(Coche coche);
+    
+    List<Coche> buscarVehiculos(String matricula);
 }

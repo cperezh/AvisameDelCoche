@@ -9,6 +9,7 @@ import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.AvisameDelCocheFacade;
 import com.carlos.avisamedelcochebusiness.Coche;
 import com.carlos.avisamedelcochedao.DAOVehiculo;
+import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
@@ -55,5 +56,10 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
         coche.setKilometraje(kilometraje);
 
         return coche;
+    }
+    
+    @Override
+    public List buscarVehiculos(String matricula){
+        return daoVehiculo.buscarVehiculos(matricula);
     }
 }

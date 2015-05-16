@@ -7,13 +7,14 @@ package com.carlos.avisamedelcochers;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
+import java.util.List;
 import javax.ejb.EJB;
-import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 
 /**
  *
@@ -30,10 +31,22 @@ public class CocheRS {
     public Coche buscarCoche(@PathParam("matricula") String matricula) {
         return avisameDelCoche.buscarVehiculo(matricula);
     }
-    
+
     @POST
     @Path("/{matricula}/kilometraje")
-    public Coche actualizarKilometraje(@PathParam("matricula") String matricula, @FormParam("kilometraje") Integer kilometraje ){
-        return avisameDelCoche.actualizarKilometraje(matricula,kilometraje);
+    public Coche actualizarKilometraje(@PathParam("matricula") String matricula, @FormParam("kilometraje") Integer kilometraje) {
+        return avisameDelCoche.actualizarKilometraje(matricula, kilometraje);
+    }
+
+    @GET
+    @Path("/{matricula}/estado")
+    public void comprobarEstado(@PathParam("matricula") String matricula) {
+        avisameDelCoche.comprobarEstadoVehiculo(matricula);
+    }
+
+    @GET
+    @Path("/a")
+    public List<Coche> buscarCoches(@QueryParam("matricula") String matricula) {
+        return avisameDelCoche.buscarVehiculos(matricula);
     }
 }
