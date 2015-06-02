@@ -22,7 +22,7 @@ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope
     };
 });
 
-controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams,$window) {
+controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {
 
     /*ON LOAD*/
     var url = '/AvisameDelCocheRS/resources/coches/' + $routeParams.matricula;
@@ -35,7 +35,7 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
                 // called asynchronously if an error occurs
                 // or server returns response with an error status.
             });
-            
+
     /*FIN ON LOAD*/
 
     $scope.actualizarKilometraje = function (matricula, kilometraje) {
@@ -55,8 +55,35 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
                     // or server returns response with an error status.
                 });
     };
+
+    $scope.back = function () {
+        $window.history.back();
+    };
+});
+
+controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $http, $routeParams, $window) {
+
+});
+
+controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {
     
-   $scope.back = function(){
-       $window.history.back();
-   };
+    $scope.alta = function () {
+
+        var url = '/AvisameDelCocheRS/resources/coches';
+
+        var parametros = 'matricula=' + $scope.matricula;
+        parametros+='&kilometraje='+$scope.kilometraje;
+
+        var config = {headers: {'Content-Type': 'application/x-www-form-urlencoded'}};
+
+        $http.put(url, parametros, config).
+                success(function (data, status, headers, config) {
+                    $scope.coche = data;
+                }).
+                error(function (data, status, headers, config) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                });
+    };
+
 });

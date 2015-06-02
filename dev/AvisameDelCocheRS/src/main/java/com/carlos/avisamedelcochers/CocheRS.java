@@ -7,11 +7,14 @@ package com.carlos.avisamedelcochers;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
+import com.carlos.avisamedelcochers.beans.CocheBean;
 import java.util.List;
 import javax.ejb.EJB;
+import javax.ws.rs.BeanParam;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
@@ -47,5 +50,11 @@ public class CocheRS {
     @GET
     public List<Coche> buscarCoches(@QueryParam("matricula") String matricula) {
         return avisameDelCoche.buscarVehiculos(matricula);
+    }
+    
+    @PUT
+    public Coche altaCoche(@BeanParam CocheBean cocheBean) {
+        
+        return avisameDelCoche.altaCoche(cocheBean.toCoche());
     }
 }

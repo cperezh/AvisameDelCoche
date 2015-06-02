@@ -62,4 +62,9 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
     public List buscarVehiculos(String matricula){
         return daoVehiculo.buscarVehiculos(matricula);
     }
+
+    @Override
+    public Coche altaCoche(Coche coche) {
+       return daoVehiculo.altaCoche(coche);
+    }
 }

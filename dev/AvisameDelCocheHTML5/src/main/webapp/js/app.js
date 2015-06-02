@@ -6,18 +6,26 @@ var catalogoTelefonos = angular.module('catalogoTelefonos', [
 ]);
 
 catalogoTelefonos.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/buscador', {
-        templateUrl: 'buscador.html',
-        controller: 'controladorBuscadorCatalogo'
-      }).
-      when('/detalle/:matricula', {
-        templateUrl: 'detalle.html',
-        controller: 'controladorDetalleCatalogo'
-      }).
-      otherwise({
-        redirectTo: '/buscador'
-      });
-  }]);
+    function ($routeProvider) {
+        $routeProvider.
+                when('/menu', {
+                    templateUrl: 'menu.html',
+                    controller: 'controladorMenuCatalogo'
+                }).
+                when('/buscador', {
+                    templateUrl: 'buscador.html',
+                    controller: 'controladorBuscadorCatalogo'
+                }).
+                when('/detalle/:matricula', {
+                    templateUrl: 'detalle.html',
+                    controller: 'controladorDetalleCatalogo'
+                }).
+                when('/alta', {
+                    templateUrl: 'alta.html',
+                    controller: 'controladorAltaCatalogo'
+                }).
+                otherwise({
+                    redirectTo: '/menu'
+                });
+    }]);
 

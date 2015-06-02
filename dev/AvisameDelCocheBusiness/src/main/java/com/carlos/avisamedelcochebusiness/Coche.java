@@ -15,6 +15,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
+
 /**
  *
  * @author Pakno

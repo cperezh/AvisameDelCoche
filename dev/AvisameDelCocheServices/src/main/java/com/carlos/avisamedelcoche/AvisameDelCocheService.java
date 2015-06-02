@@ -25,4 +25,6 @@ public interface AvisameDelCocheService{
     void actualizarVehiculo(Coche coche);
     
     List<Coche> buscarVehiculos(String matricula);
+    
+    Coche altaCoche(Coche coche);
 }
