@@ -10,11 +10,11 @@ catalogoTelefonos.config(['$routeProvider',
     $routeProvider.
       when('/buscador', {
         templateUrl: 'buscador.html',
-        controller: 'controladorCatalogo'
+        controller: 'controladorBuscadorCatalogo'
       }).
       when('/detalle/:matricula', {
         templateUrl: 'detalle.html',
-        controller: 'controladorCatalogo'
+        controller: 'controladorDetalleCatalogo'
       }).
       otherwise({
         redirectTo: '/buscador'

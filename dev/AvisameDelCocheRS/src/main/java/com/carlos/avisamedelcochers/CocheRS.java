@@ -45,7 +45,6 @@ public class CocheRS {
     }
 
     @GET
-    @Path("/a")
     public List<Coche> buscarCoches(@QueryParam("matricula") String matricula) {
         return avisameDelCoche.buscarVehiculos(matricula);
     }

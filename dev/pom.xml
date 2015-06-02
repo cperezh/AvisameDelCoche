@@ -15,7 +15,6 @@
         <module>AvisameDelCocheWeb</module>
         <module>AvisameDelCocheDaoEJB</module>
         <module>AvisameDelCocheDao</module>
-        <module>AvisameDelCocheSpringService</module>
     <module>AvisameDelCocheWS</module>
     <module>AvisameDelCocheClienteWS</module>
     <module>AvisameDelCocheHTML5</module>
