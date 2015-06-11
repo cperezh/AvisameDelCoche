@@ -12,6 +12,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaQuery;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  *
@@ -22,6 +24,8 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 
     @PersistenceContext
     EntityManager entityManager;
+
+    static final Logger logger = LogManager.getLogger(DAOVehiculoEJB.class.getName());
 
     @Override
     public Coche buscarVehiculo(String matricula) {
@@ -62,7 +66,8 @@ public class DAOVehiculoEJB implements DAOVehiculo {
     }
 
     @Override
-    public Coche altaCoche(Coche coche) {
+    public Coche altaCoche(Coche coche){
+
         entityManager.persist(coche);
 
         return coche;

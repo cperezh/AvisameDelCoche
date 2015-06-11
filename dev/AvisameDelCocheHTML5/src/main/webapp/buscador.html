@@ -1,21 +1,48 @@
-<!DOCTYPE html>
+
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<div>
-    <input type="text" ng-model="matricula"/>
-    <button type="button" ng-click="buscar(matricula)">Buscar</button>
-    <table ng-show="coches.length > 0">
-        <tr><td>Matricula</td><td>Kilometraje</td><td></td></tr>
-        <tr  ng-repeat="coche in coches">
-            <td>{{coche.matricula}}</td>
-            <td>{{coche.kilometraje}}</td>
-            <td><a ng-href="#/detalle/{{coche.matricula}}">detalle</a>
-            </td>
-        </tr>
-    </table>   
+<div class="jumbotron">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>Matricula</label>
+                    <input type="text" ng-model="matricula" class="form-control" placeholder="Matricula"/>
+                </div>
+                <div class="form-group">
+                    <button type="button" ng-click="buscar(matricula)" class="btn btn-default">Buscar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Resultados</div>
+
+        <!-- Table -->
+        <table class="table table-hover" ng-show="coches.length > 0">
+            <thead>
+                <tr>
+                    <th>Matricula</th>
+                    <th>Kilometraje</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="coche in coches">
+                    <td>{{coche.matricula}}</td>
+                    <td>{{coche.kilometraje}}</td>
+                    <td><a ng-href="#/detalle/{{coche.matricula}}">detalle</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 

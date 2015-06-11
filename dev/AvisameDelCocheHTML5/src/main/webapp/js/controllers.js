@@ -7,6 +7,7 @@ var controladoresCatalogo = angular.module('controladoresCatalogo', []);
  * variables y metodos que estaran disponibles en el ambito definido para el controlador*/
 controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {
 
+$scope.i=0;
     $scope.buscar = function (matricula) {
 
         var url = '/AvisameDelCocheRS/resources/coches?matricula=' + matricula;
@@ -66,23 +67,34 @@ controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $h
 });
 
 controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {
-    
+
     $scope.alta = function () {
 
-        var url = '/AvisameDelCocheRS/resources/coches';
+        var urlBuscar = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula;
 
-        var parametros = 'matricula=' + $scope.matricula;
-        parametros+='&kilometraje='+$scope.kilometraje;
+        parametros = $scope.coche;
 
-        var config = {headers: {'Content-Type': 'application/x-www-form-urlencoded'}};
-
-        $http.put(url, parametros, config).
+        $http.get(urlBuscar, parametros).
                 success(function (data, status, headers, config) {
-                    $scope.coche = data;
+
+                    //Si encuentro el coche con esa matricula
+                    if (data !== '') {
+                        $scope.mensaje = "El coche ya existe";
+                    }
+                    else {
+                        var urlInsertar = '/AvisameDelCocheRS/resources/coches';
+
+                        $http.put(urlInsertar, parametros).
+                                success(function (data, status, headers, config) {
+                                    $scope.mensaje = "Coche insertado";
+                                }).
+                                error(function (data, status, headers, config) {
+                                    $scope.mensaje = data;
+                                });
+                    }
                 }).
                 error(function (data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
+                    $scope.mensaje = data;
                 });
     };
 

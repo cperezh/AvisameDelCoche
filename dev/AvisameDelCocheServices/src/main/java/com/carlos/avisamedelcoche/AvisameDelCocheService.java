@@ -5,6 +5,7 @@
  */
 package com.carlos.avisamedelcoche;
 
+import com.carlos.avisamedelcoche.exceptions.ExisteCocheExcepcion;
 import com.carlos.avisamedelcochebusiness.Coche;
 import java.util.List;
 import javax.ejb.Local;

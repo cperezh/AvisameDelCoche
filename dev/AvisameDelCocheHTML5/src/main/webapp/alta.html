@@ -1,12 +1,15 @@
 
 
-<div>
-
-    <table>
-        <tr><td>matricula</td><td><input type="text" ng-model="matricula"/></td></tr>
-        <tr><td>kilometraje</td><td><input type="text" ng-model="kilometraje"/></td></tr>
-    </table>
-    <button type="button" ng-click="alta()">Aceptar</button>
-
+<div class="jumbotron">
+    <form ng-submit="alta()">
+        <table>
+            <tr><td>matricula</td><td><input type="text" ng-model="coche.matricula"/>
+                    <div class="alert alert-success" role="alert">
+                        <strong>{{mensaje}}</strong>
+                    </div></td></tr>
+            <tr><td>kilometraje</td><td><input type="text" ng-model="coche.kilometraje"/></td></tr>
+        </table>
+        <button type="submit">Aceptar</button>
+    </form>
 </div>
 

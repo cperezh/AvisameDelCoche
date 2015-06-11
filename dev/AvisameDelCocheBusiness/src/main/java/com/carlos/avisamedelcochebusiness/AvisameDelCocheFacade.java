@@ -8,8 +8,8 @@ package com.carlos.avisamedelcochebusiness;
 
 import java.util.List;
 import javax.mail.MessagingException;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 
 /**
  *
@@ -28,13 +28,12 @@ public class AvisameDelCocheFacade {
             Mensaje mensaje = Comprobador.componerMensaje(estadoComponentesNecesitanRaparacion);
             
             try {
-                //TODO Configurar el log
-                BasicConfigurator.configure();
-                Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("Entrando");
-                Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("Mensaje: "+mensaje.getTextoMensaje());
+              
+                LogManager.getLogger(AvisameDelCocheFacade.class.getName()).info("Entrando");
+                LogManager.getLogger(AvisameDelCocheFacade.class.getName()).info("Mensaje: "+mensaje.getTextoMensaje());
                 Avisador.avisarUsuario(mensaje);
             } catch (MessagingException ex) {
-                Logger.getLogger(AvisameDelCocheFacade.class.getName()).info("El info");
+                LogManager.getLogger(AvisameDelCocheFacade.class.getName()).info("El info");
             }
         }
 

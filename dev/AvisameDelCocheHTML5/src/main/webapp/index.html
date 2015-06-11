@@ -13,9 +13,31 @@ and open the template in the editor.
         <script src="js/libs/angular.js/angular-route.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controllers.js"></script>
+        <!--Bootstrap -->
+        <link href="js/libs/bootstrap-3.3.4-dist/css/starter-template.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div><h1>Avisame del coche</h1></div>
-        <div ng-view></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Avisame del coche</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a ng-href="#/buscador">Buscar vehículos</a></li>
+                        <li><a ng-href="#/alta">Alta vehículos</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div ng-view class="container theme-showcase" role="main"></div>
     </body>
 </html>

@@ -8,10 +8,6 @@ var catalogoTelefonos = angular.module('catalogoTelefonos', [
 catalogoTelefonos.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
-                when('/menu', {
-                    templateUrl: 'menu.html',
-                    controller: 'controladorMenuCatalogo'
-                }).
                 when('/buscador', {
                     templateUrl: 'buscador.html',
                     controller: 'controladorBuscadorCatalogo'
@@ -25,7 +21,7 @@ catalogoTelefonos.config(['$routeProvider',
                     controller: 'controladorAltaCatalogo'
                 }).
                 otherwise({
-                    redirectTo: '/menu'
+                    redirectTo: '/buscador'
                 });
     }]);
 
