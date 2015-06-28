@@ -13,7 +13,7 @@ import javax.persistence.Embeddable;
  * @author Pakno
  */
 @Embeddable
-@lombok.Data
+
 public class EstadoComponente implements Serializable {
 
     private Componente componente;
@@ -23,5 +23,21 @@ public class EstadoComponente implements Serializable {
     public EstadoComponente() {
 
     }
+
+	public Componente getComponente() {
+		return componente;
+	}
+
+	public void setComponente(Componente componente) {
+		this.componente = componente;
+	}
+
+	public int getUltimaSustitucion() {
+		return ultimaSustitucion;
+	}
+
+	public void setUltimaSustitucion(int ultimaSustitucion) {
+		this.ultimaSustitucion = ultimaSustitucion;
+	}
 
 }

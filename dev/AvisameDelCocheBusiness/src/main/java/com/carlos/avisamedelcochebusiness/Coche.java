@@ -21,7 +21,6 @@ import javax.persistence.NamedQuery;
  * @author Pakno
  */
 @Entity
-@lombok.Data
 
 @NamedQueries({
     @NamedQuery(name = "Coche.buscarCochesPorMatricula",
@@ -41,4 +40,29 @@ public class Coche implements Serializable {
     public Coche() {
 
     }
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public int getKilometraje() {
+		return kilometraje;
+	}
+
+	public void setKilometraje(int kilometraje) {
+		this.kilometraje = kilometraje;
+	}
+
+	public Collection<EstadoComponente> getEstadoComponentes() {
+		return estadoComponentes;
+	}
+
+	public void setEstadoComponentes(Collection<EstadoComponente> estadoComponentes) {
+		this.estadoComponentes = estadoComponentes;
+	}
+    
 }
