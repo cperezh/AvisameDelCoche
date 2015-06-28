@@ -4,13 +4,19 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="AvisameDelCocheSpringService-1.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvisameDelCocheSpringService/AvisameDelCocheSpringService">
+        <dependent-module archiveName="AvisameDelCocheEJB-1.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvisameDelCocheJar/AvisameDelCocheJar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="AvisameDelCocheServices-1.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvisameDelCocheServices/AvisameDelCocheServices">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="AvisameDelCocheBusiness-1.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvisameDelCocheBusiness/AvisameDelCocheBusiness">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AvisameDelCocheDaoEJB-1.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvisameDelCocheDaoEJB/AvisameDelCocheDaoEJB">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AvisameDelCocheDao-1.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvisameDelCocheDao/AvisameDelCocheDao">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="AvisameDelCocheWeb"/>
