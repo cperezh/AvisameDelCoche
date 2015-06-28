@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration status="WARN">
+<configuration>
     <appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %logger{36} - %msg%n"/>
         </Console>
 
-        <File name="MyFile" fileName="avisamedelcoche.log">
+        <File name="MyFile" fileName="C:\Users\Carlos\Documents\Proyectos\AvisameDelCoche\dev\log\avisamedelcoche.log">
             <PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] [%-5level] %logger{36} - %msg%n"/>
         </File>              
     </appenders>
@@ -13,7 +13,7 @@
     <loggers>     
         <root level="debug">
             <appender-ref ref="Console" level="info"/>
-            <appender-ref ref="MyFile" level="error"/>
+            <appender-ref ref="MyFile" level="info"/>
         </root>    
     </loggers>
 </configuration>

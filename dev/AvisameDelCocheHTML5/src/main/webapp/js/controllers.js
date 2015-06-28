@@ -7,7 +7,6 @@ var controladoresCatalogo = angular.module('controladoresCatalogo', []);
  * variables y metodos que estaran disponibles en el ambito definido para el controlador*/
 controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {
 
-$scope.i=0;
     $scope.buscar = function (matricula) {
 
         var url = '/AvisameDelCocheRS/resources/coches?matricula=' + matricula;
@@ -68,6 +67,9 @@ controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $h
 
 controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {
 
+
+    $scope.mensaje = '';
+    
     $scope.alta = function () {
 
         var urlBuscar = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula;

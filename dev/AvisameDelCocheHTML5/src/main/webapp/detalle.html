@@ -1,8 +1,25 @@
 <div class="jumbotron">
-    <p>Matricula: {{coche.matricula}}</p>
-    <p>Kilometraje {{coche.kilometraje}}</p>
-    <input type="text" ng-model="kilometraje"/>
-    <button type="button" ng-click="actualizarKilometraje(coche.matricula, kilometraje)">Actualizar</button>
-    <a href ng-click="back()">volver</a>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+
+        <div class="panel-body">
+            <div class="form-group">
+                <label>Matricula:</label> {{coche.matricula}}
+            </div>
+            <div class="form-group">
+
+                <label>Kilometraje:</label> {{coche.kilometraje}}
+            </div>
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" ng-model="kilometraje" class="form-control" placeholder="Kilometraje"/>
+                </div>
+                <div class="form-group">
+                    <button type="button" ng-click="actualizarKilometraje(coche.matricula, kilometraje)" class="btn btn-default">Actualizar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
 </div>
 

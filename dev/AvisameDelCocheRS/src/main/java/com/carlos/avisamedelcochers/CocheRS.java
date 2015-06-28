@@ -6,7 +6,6 @@
 package com.carlos.avisamedelcochers;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
-import com.carlos.avisamedelcoche.exceptions.ExisteCocheExcepcion;
 import com.carlos.avisamedelcochebusiness.Coche;
 import java.util.List;
 import javax.ejb.EJB;
@@ -58,7 +57,9 @@ public class CocheRS {
     @PUT
     public void altaCoche(Coche coche) {
 
+        logger.info("Entrando Alta Coche: "+coche.getMatricula());
         avisameDelCoche.altaCoche(coche);
+        logger.info("Saliendo Alta Coche: "+coche.getMatricula());
 
     }
 }

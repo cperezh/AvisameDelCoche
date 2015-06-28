@@ -1,15 +1,25 @@
 
 
 <div class="jumbotron">
-    <form ng-submit="alta()">
-        <table>
-            <tr><td>matricula</td><td><input type="text" ng-model="coche.matricula"/>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form ng-submit="alta()">
+                <div  class="form-group">
+                    <label>Matricula</label>
+                    <input type="text" ng-model="coche.matricula" class="form-control" placeholder="Matricula"/>
+                </div>
+                <div  class="form-group">
+                    <label>Kilometraje</label>
+                    <input type="text" ng-model="coche.kilometraje" class="form-control" placeholder="Kilometraje"/>
+                </div>
+                <div  class="form-group" ng-show="mensaje !== ''">
                     <div class="alert alert-success" role="alert">
                         <strong>{{mensaje}}</strong>
-                    </div></td></tr>
-            <tr><td>kilometraje</td><td><input type="text" ng-model="coche.kilometraje"/></td></tr>
-        </table>
-        <button type="submit">Aceptar</button>
-    </form>
+                    </div>
+                </div>
+                <button type="submit">Aceptar</button>
+            </form>
+        </div>
+    </div>
 </div>
 
