@@ -1,25 +1,44 @@
 <div class="jumbotron">
-    <div class="panel panel-default">
-        <!-- Default panel contents -->
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<form ng-submit="modificar()">
+			<div class="panel-body">
+				<div class="form-group">
+					<label>Matricula:</label> {{coche.matricula}}
+				</div>
+				<div class="form-group">
 
-        <div class="panel-body">
-            <div class="form-group">
-                <label>Matricula:</label> {{coche.matricula}}
-            </div>
-            <div class="form-group">
+					<label>Kilometraje:</label><input type="text"
+						ng-model="coche.kilometraje" class="form-control"
+						placeholder="Kilometraje" />
+				</div>
 
-                <label>Kilometraje:</label> {{coche.kilometraje}}
-            </div>
-            <form class="form-inline">
-                <div class="form-group">
-                    <input type="text" ng-model="kilometraje" class="form-control" placeholder="Kilometraje"/>
-                </div>
-                <div class="form-group">
-                    <button type="button" ng-click="actualizarKilometraje(coche.matricula, kilometraje)" class="btn btn-default">Actualizar</button>
-                </div>
-            </form>
-        </div>
+				<div class="panel panel-default"
+					ng-show="coche.estadoComponentes.length > 0">
+					<!-- Default panel contents -->
+					<div class="panel-heading">Componentes del coche</div>
 
-    </div>
+					<!-- Table -->
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Componente</th>
+								<th>Ultima sustitucion</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="estadoComponente in coche.estadoComponentes">
+								<td>{{estadoComponente.componente}}</td>
+								<td><input type="text"
+									ng-model="estadoComponente.ultimaSustitucion"
+									class="form-control" placeholder="Kilometraje" /></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<button type="submit">Modificar</button>
+			</div>
+		</form>
+	</div>
 </div>
 

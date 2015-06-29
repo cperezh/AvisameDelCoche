@@ -26,4 +26,6 @@ public interface DAOVehiculo {
     List<Coche> buscarVehiculos(String matricula);
     
     Coche altaCoche(Coche coche);
+
+	Coche modificarCoche(Coche coche);
 }

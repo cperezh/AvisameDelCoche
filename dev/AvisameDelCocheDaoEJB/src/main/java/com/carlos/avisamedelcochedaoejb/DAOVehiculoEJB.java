@@ -4,16 +4,19 @@
  */
 package com.carlos.avisamedelcochedaoejb;
 
-import com.carlos.avisamedelcochebusiness.Coche;
-import com.carlos.avisamedelcochedao.DAOVehiculo;
 import java.util.List;
+
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaQuery;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.carlos.avisamedelcochebusiness.Coche;
+import com.carlos.avisamedelcochedao.DAOVehiculo;
 
 /**
  *
@@ -22,54 +25,63 @@ import org.apache.logging.log4j.Logger;
 @Stateless
 public class DAOVehiculoEJB implements DAOVehiculo {
 
-    @PersistenceContext
-    EntityManager entityManager;
+	@PersistenceContext
+	EntityManager entityManager;
 
-    static final Logger logger = LogManager.getLogger(DAOVehiculoEJB.class.getName());
+	static final Logger logger = LogManager.getLogger(DAOVehiculoEJB.class
+			.getName());
 
-    @Override
-    public Coche buscarVehiculo(String matricula) {
+	@Override
+	public Coche buscarVehiculo(String matricula) {
 
-        Coche cocheEncontrado = entityManager.find(Coche.class, matricula);
+		Coche cocheEncontrado = entityManager.find(Coche.class, matricula);
 
-        return cocheEncontrado;
-    }
+		return cocheEncontrado;
+	}
 
-    public List<Coche> buscarTodos() {
+	public List<Coche> buscarTodos() {
 
-        CriteriaQuery cq = entityManager.getCriteriaBuilder().createQuery();
+		CriteriaQuery cq = entityManager.getCriteriaBuilder().createQuery();
 
-        cq.select(cq.from(Coche.class));
+		cq.select(cq.from(Coche.class));
 
-        Query q = entityManager.createQuery(cq);
+		Query q = entityManager.createQuery(cq);
 
-        return q.getResultList();
-    }
+		return q.getResultList();
+	}
 
-    @Override
-    public void actualizarVehiculo(Coche coche) {
+	@Override
+	public void actualizarVehiculo(Coche coche) {
 
-        entityManager.merge(coche);
-    }
+		entityManager.merge(coche);
+	}
 
-    @Override
-    public void insertarVehiculo(Coche coche) {
-        entityManager.persist(coche);
-    }
+	@Override
+	public void insertarVehiculo(Coche coche) {
+		entityManager.persist(coche);
+	}
 
-    @Override
-    public List<Coche> buscarVehiculos(String matricula) {
-        return entityManager.createNamedQuery("Coche.buscarCochesPorMatricula", Coche.class)
-                .setParameter("matricula", "%" + matricula + "%")
-                .getResultList();
+	@Override
+	public List<Coche> buscarVehiculos(String matricula) {
+		return entityManager
+				.createNamedQuery("Coche.buscarCochesPorMatricula", Coche.class)
+				.setParameter("matricula", "%" + matricula + "%")
+				.getResultList();
 
-    }
+	}
 
-    @Override
-    public Coche altaCoche(Coche coche){
+	@Override
+	public Coche altaCoche(Coche coche) {
 
-        entityManager.persist(coche);
+		entityManager.persist(coche);
 
-        return coche;
-    }
+		return coche;
+	}
+
+	@Override
+	public Coche modificarCoche(Coche coche) {
+		entityManager.merge(coche);
+
+		return coche;
+	}
 }

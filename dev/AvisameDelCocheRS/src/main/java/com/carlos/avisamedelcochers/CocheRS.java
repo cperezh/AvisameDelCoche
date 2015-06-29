@@ -36,11 +36,11 @@ public class CocheRS {
     public Coche buscarCoche(@PathParam("matricula") String matricula) {
         return avisameDelCoche.buscarVehiculo(matricula);
     }
-
+    
     @POST
-    @Path("/{matricula}/kilometraje")
-    public Coche actualizarKilometraje(@PathParam("matricula") String matricula, @FormParam("kilometraje") Integer kilometraje) {
-        return avisameDelCoche.actualizarKilometraje(matricula, kilometraje);
+    @Path("/{matricula}")
+    public Coche modificarCoche(Coche coche){
+    	return avisameDelCoche.modificar(coche);
     }
 
     @GET
@@ -62,4 +62,6 @@ public class CocheRS {
         logger.info("Saliendo Alta Coche: "+coche.getMatricula());
 
     }
+    
+   
 }

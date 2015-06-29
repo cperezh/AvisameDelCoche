@@ -5,10 +5,11 @@
  */
 package com.carlos.avisamedelcoche;
 
-import com.carlos.avisamedelcoche.exceptions.ExisteCocheExcepcion;
-import com.carlos.avisamedelcochebusiness.Coche;
 import java.util.List;
+
 import javax.ejb.Local;
+
+import com.carlos.avisamedelcochebusiness.Coche;
 
 /**
  *
@@ -28,4 +29,6 @@ public interface AvisameDelCocheService{
     List<Coche> buscarVehiculos(String matricula);
     
     Coche altaCoche(Coche coche);
+
+	Coche modificar(Coche coche);
 }

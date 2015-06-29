@@ -78,4 +78,11 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
 
         return coche;
     }
+
+	@Override
+	public Coche modificar(Coche coche) {
+		daoVehiculo.modificarCoche(coche);
+		
+		return coche;
+	}
 }

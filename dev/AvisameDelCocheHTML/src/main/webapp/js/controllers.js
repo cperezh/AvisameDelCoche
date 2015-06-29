@@ -38,15 +38,13 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
 
     /*FIN ON LOAD*/
 
-    $scope.actualizarKilometraje = function (matricula, kilometraje) {
+    $scope.modificar = function () {
 
-        var url = '/AvisameDelCocheRS/resources/coches/' + matricula + "/kilometraje";
+        var url = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula;
 
-        var parametros = 'kilometraje=' + kilometraje;
+        var parametros = $scope.coche;
 
-        var config = {headers: {'Content-Type': 'application/x-www-form-urlencoded'}};
-
-        $http.post(url, parametros, config).
+        $http.post(url, parametros).
                 success(function (data, status, headers, config) {
                     $scope.coche = data;
                 }).
