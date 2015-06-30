@@ -10,7 +10,7 @@ package com.carlos.avisamedelcochebusiness;
  *
  * @author Pakno
  */
-class Mensaje {
+public class Mensaje {
     
     private String textoMensaje = "";
 

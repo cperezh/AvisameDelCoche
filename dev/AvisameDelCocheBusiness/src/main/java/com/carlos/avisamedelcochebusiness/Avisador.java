@@ -7,6 +7,7 @@ package com.carlos.avisamedelcochebusiness;
 
 import java.util.Date;
 import java.util.Properties;
+
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -14,11 +15,16 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  *
  * @author Pakno
  */
-class Avisador {
+public class Avisador {
+	
+	static final Logger logger = LogManager.getLogger(Avisador.class.getName());
 
     /**
      * Envía un mensaje al usuario del sistema. Para ello, obtiene su email y le
@@ -27,13 +33,37 @@ class Avisador {
      * @param mensaje
      * @throws MessagingException
      */
-    static void avisarUsuario(Mensaje mensaje) throws MessagingException {
+    public static void avisarUsuario(Coche coche){
+    	
         String emailUsuario = Usuario.obtenerEmail();
+        
+        Mensaje mensaje = componerMensaje(coche);
 
         enviarEmail(emailUsuario, mensaje);
     }
+    
+    private static Mensaje componerMensaje(Coche coche) {
 
-    private static void enviarEmail(String emailUsuario, Mensaje mensaje) throws MessagingException {
+        Mensaje mensaje = new Mensaje();
+        String textoParcial = "";
+        String nuevalinea = System.getProperty("line.separator");
+
+        for (EstadoComponente estadoComponente : coche.getEstadoComponentes()) {
+
+            textoParcial = mensaje.getTextoMensaje().concat(estadoComponente.getComponente().name());
+
+            textoParcial = textoParcial.concat(nuevalinea);
+
+            mensaje.setTextoMensaje(textoParcial);
+        }
+
+        mensaje.setTextoMensaje(textoParcial);
+
+        return mensaje;
+    }
+
+
+    private static void enviarEmail(String emailUsuario, Mensaje mensaje){
 
         // create some properties and get the default Session
         Properties mailProps = new Properties();
@@ -45,6 +75,7 @@ class Avisador {
 
         MimeMessage msg = new MimeMessage(session);
 
+        try{
         msg.setFrom(new InternetAddress(emailUsuario));
         InternetAddress[] address = {new InternetAddress(emailUsuario)};
         msg.setRecipients(Message.RecipientType.TO, address);
@@ -57,6 +88,10 @@ class Avisador {
         Transport tr = session.getTransport();
         tr.connect("cperezh@gmail.com", "M0t1v377");
         tr.sendMessage(msg, address);
+        }
+        catch(MessagingException ex){
+        	logger.error("Error al enviar mensaje. Email: "+emailUsuario+" Mensaje: "+mensaje);
+        }
     }
 
 }

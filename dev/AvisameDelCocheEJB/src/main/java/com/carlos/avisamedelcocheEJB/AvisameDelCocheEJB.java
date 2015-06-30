@@ -5,17 +5,20 @@
  */
 package com.carlos.avisamedelcocheEJB;
 
-import com.carlos.avisamedelcoche.AvisameDelCocheService;
-import com.carlos.avisamedelcoche.exceptions.ExisteCocheExcepcion;
-import com.carlos.avisamedelcochebusiness.AvisameDelCocheFacade;
-import com.carlos.avisamedelcochebusiness.Coche;
-import com.carlos.avisamedelcochedao.DAOVehiculo;
 import java.util.List;
+
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.carlos.avisamedelcoche.AvisameDelCocheService;
+import com.carlos.avisamedelcochebusiness.Avisador;
+import com.carlos.avisamedelcochebusiness.Coche;
+import com.carlos.avisamedelcochebusiness.EstadoComponente;
+import com.carlos.avisamedelcochedao.DAOVehiculo;
 
 /**
  *
@@ -34,9 +37,16 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
 
         Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
-        AvisameDelCocheFacade.comprobarEstadoVehiculo(coche);
+        List<EstadoComponente> estadoComponentesNecesitanRaparacion = coche.obtenerComponentesNecesitanReparacion();
+
+		if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
+
+			Avisador.avisarUsuario(coche);
+
+		}
 
     }
+    
 
     @Override
     public void actualizarVehiculo(Coche coche) {
@@ -64,7 +74,7 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
     }
 
     @Override
-    public List buscarVehiculos(String matricula) {
+    public List<Coche> buscarVehiculos(String matricula) {
         return daoVehiculo.buscarVehiculos(matricula);
     }
 
