@@ -33,17 +33,19 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
     static final Logger logger = LogManager.getLogger(AvisameDelCocheEJB.class.getName());
 
     @Override
-    public void comprobarEstadoVehiculo(String matricula) {
+    public Coche comprobarEstadoVehiculo(String matricula) {
 
         Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
         List<EstadoComponente> estadoComponentesNecesitanRaparacion = coche.obtenerComponentesNecesitanReparacion();
+        
+        return coche;
 
-		if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
-
-			Avisador.avisarUsuario(coche);
-
-		}
+//		if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
+//
+//			Avisador.avisarUsuario(coche);
+//
+//		}
 
     }
     

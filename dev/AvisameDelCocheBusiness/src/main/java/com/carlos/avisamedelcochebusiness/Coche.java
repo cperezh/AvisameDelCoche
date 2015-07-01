@@ -53,13 +53,20 @@ public class Coche implements Serializable {
 	private void comprobarComponenteNecesitaReparacion() {
 	
 		int kilometrosUsoComponente;
+		int kilometrosDeMasComponente;
+		boolean necesitaReparacion;
 
 		for (EstadoComponente estadoComponente : this.getEstadoComponentes()) {
-			// Obtengo en numero de kilometros que ha hecho el componente
+			
 			kilometrosUsoComponente = this.kilometraje - estadoComponente.getUltimaSustitucion();
+			
+			kilometrosDeMasComponente = kilometrosUsoComponente - estadoComponente.getComponente().getLimiteKilometros();
+			
+			necesitaReparacion = kilometrosDeMasComponente > 0;
+			
+			estadoComponente.setKilometrosDeMas(kilometrosDeMasComponente);
 
-			// Compruebo si es mayor que el limite de vida del componente
-			estadoComponente.setNecesitaReparacion(kilometrosUsoComponente > estadoComponente.getComponente().getLimiteKilometros());
+			estadoComponente.setNecesitaReparacion(necesitaReparacion);
 		}
 
 	}

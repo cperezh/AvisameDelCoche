@@ -1,44 +1,42 @@
 <div class="jumbotron">
 	<div class="panel panel-default">
 		<!-- Default panel contents -->
-		<form ng-submit="modificar()">
-			<div class="panel-body">
-				<div class="form-group">
-					<label>Matricula:</label> {{coche.matricula}}
-				</div>
-				<div class="form-group">
 
-					<label>Kilometraje:</label><input type="text"
-						ng-model="coche.kilometraje" class="form-control"
-						placeholder="Kilometraje" />
-				</div>
-
-				<div class="panel panel-default"
-					ng-show="coche.estadoComponentes.length > 0">
-					<!-- Default panel contents -->
-					<div class="panel-heading">Componentes del coche</div>
-
-					<!-- Table -->
-					<table class="table table-hover">
-						<thead>
-							<tr>
-								<th>Componente</th>
-								<th>Ultima sustitucion</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr ng-repeat="estadoComponente in coche.estadoComponentes">
-								<td>{{estadoComponente.componente}}</td>
-								<td><input type="text"
-									ng-model="estadoComponente.ultimaSustitucion"
-									class="form-control" placeholder="Kilometraje" /></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<button type="submit">Modificar</button>
+		<div class="panel-body">
+			<div class="form-group">
+				<label>Matricula:</label> {{coche.matricula}}
 			</div>
-		</form>
+			<div class="form-group">
+
+				<label>Kilometraje:</label><input type="text" ng-model="coche.kilometraje" class="form-control" placeholder="Kilometraje" />
+			</div>
+
+			<div class="panel panel-default" ng-show="coche.estadoComponentes.length > 0">
+				<!-- Default panel contents -->
+				<div class="panel-heading">Componentes del coche</div>
+
+				<!-- Table -->
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>Componente</th>
+							<th>Ultima sustitucion</th>
+							<th>Kilometros de mas</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="estadoComponente in coche.estadoComponentes">
+							<td>{{estadoComponente.componente}}</td>
+							<td><input type="text" ng-model="estadoComponente.ultimaSustitucion" class="form-control" placeholder="Kilometraje" /></td>
+							<td>{{estadoComponente.kilometrosDeMas}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<button type="button" ng-click="comprobarEstado()">COMPROBAR ESTADO</button>
+			<button type="button" ng-click="modificar()">MODIFICAR</button>
+		</div>
+
 	</div>
 </div>
 

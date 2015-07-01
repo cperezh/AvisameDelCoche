@@ -35,7 +35,7 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
                 // called asynchronously if an error occurs
                 // or server returns response with an error status.
             });
-
+	
     /*FIN ON LOAD*/
 
     $scope.modificar = function () {
@@ -45,6 +45,22 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
         var parametros = $scope.coche;
 
         $http.post(url, parametros).
+                success(function (data, status, headers, config) {
+                    $scope.coche = data;
+                }).
+                error(function (data, status, headers, config) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                });
+    };
+    
+    $scope.comprobarEstado = function () {
+
+        var url = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula+"/estado";
+
+        var parametros = $scope.coche;
+
+        $http.get(url, parametros).
                 success(function (data, status, headers, config) {
                     $scope.coche = data;
                 }).

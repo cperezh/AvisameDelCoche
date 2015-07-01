@@ -22,6 +22,9 @@ public class EstadoComponente implements Serializable {
     private int ultimaSustitucion;
     
     @Transient
+    private int kilometrosDeMas;
+    
+    @Transient
 	private boolean necesitaReparacion;
 
     public EstadoComponente() {
@@ -51,6 +54,16 @@ public class EstadoComponente implements Serializable {
 	public void setNecesitaReparacion(boolean necesitaReparacion) {
 		this.necesitaReparacion = necesitaReparacion;
 	}
+
+	public int getKilometrosDeMas() {
+		return kilometrosDeMas;
+	}
+
+	public void setKilometrosDeMas(int kilometrosDeMas) {
+		this.kilometrosDeMas = kilometrosDeMas;
+	}
+	
+	
 	
 
 }

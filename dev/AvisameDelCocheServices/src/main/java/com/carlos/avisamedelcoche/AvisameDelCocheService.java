@@ -20,7 +20,7 @@ public interface AvisameDelCocheService{
 
     Coche actualizarKilometraje(String matricula, int kilometraje);
     
-    void comprobarEstadoVehiculo(String matricula);
+    Coche comprobarEstadoVehiculo(String matricula);
     
     Coche buscarVehiculo(String matricula);
     

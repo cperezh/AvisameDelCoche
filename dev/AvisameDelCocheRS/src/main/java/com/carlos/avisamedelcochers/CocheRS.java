@@ -45,8 +45,8 @@ public class CocheRS {
 
     @GET
     @Path("/{matricula}/estado")
-    public void comprobarEstado(@PathParam("matricula") String matricula) {
-        avisameDelCoche.comprobarEstadoVehiculo(matricula);
+    public Coche comprobarEstado(@PathParam("matricula") String matricula) {
+        return avisameDelCoche.comprobarEstadoVehiculo(matricula);
     }
 
     @GET
