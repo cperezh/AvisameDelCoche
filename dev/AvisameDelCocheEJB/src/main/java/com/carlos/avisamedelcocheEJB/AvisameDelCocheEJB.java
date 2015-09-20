@@ -27,74 +27,73 @@ import com.carlos.avisamedelcochedao.DAOVehiculo;
 @Stateless
 public class AvisameDelCocheEJB implements AvisameDelCocheService {
 
-    @EJB
-    DAOVehiculo daoVehiculo;
+	@EJB
+	DAOVehiculo daoVehiculo;
 
-    static final Logger logger = LogManager.getLogger(AvisameDelCocheEJB.class.getName());
+	static final Logger logger = LogManager.getLogger(AvisameDelCocheEJB.class.getName());
 
-    @Override
-    public Coche comprobarEstadoVehiculo(String matricula) {
+	@Override
+	public Coche comprobarEstadoVehiculo(String matricula) {
 
-        Coche coche = daoVehiculo.buscarVehiculo(matricula);
+		Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
-        List<EstadoComponente> estadoComponentesNecesitanRaparacion = coche.obtenerComponentesNecesitanReparacion();
-        
-        return coche;
+		List<EstadoComponente> estadoComponentesNecesitanRaparacion = coche.obtenerComponentesNecesitanReparacion();
 
-//		if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
-//
-//			Avisador.avisarUsuario(coche);
-//
-//		}
+		return coche;
 
-    }
-    
+		// if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
+		//
+		// Avisador.avisarUsuario(coche);
+		//
+		// }
 
-    @Override
-    public void actualizarVehiculo(Coche coche) {
+	}
 
-        daoVehiculo.actualizarVehiculo(coche);
-    }
+	@Override
+	public void actualizarVehiculo(Coche coche) {
 
-    @Override
-    public Coche buscarVehiculo(String matricula) {
+		daoVehiculo.actualizarVehiculo(coche);
+	}
 
-        Coche coche = daoVehiculo.buscarVehiculo(matricula);
+	@Override
+	public Coche buscarVehiculo(String matricula) {
 
-        return coche;
-    }
+		Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
-    @Override
-    @TransactionAttribute
-    public Coche actualizarKilometraje(String matricula, int kilometraje) {
+		return coche;
+	}
 
-        Coche coche = daoVehiculo.buscarVehiculo(matricula);
+	@Override
+	@TransactionAttribute
+	public Coche actualizarKilometraje(String matricula, int kilometraje) {
 
-        coche.setKilometraje(kilometraje);
+		Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
-        return coche;
-    }
+		coche.setKilometraje(kilometraje);
 
-    @Override
-    public List<Coche> buscarVehiculos(String matricula) {
-        return daoVehiculo.buscarVehiculos(matricula);
-    }
+		return coche;
+	}
 
-    @Override
-    /**
-     * @throws ExisteCocheRuntimeExcepcion
-     */
-    public Coche altaCoche(Coche coche){
+	@Override
+	public List<Coche> buscarVehiculos(String matricula) {
+		return daoVehiculo.buscarVehiculos(matricula);
+	}
 
-        coche = daoVehiculo.altaCoche(coche);
+	@Override
+	/**
+	 * @throws ExisteCocheRuntimeExcepcion
+	 */
+	public Coche altaCoche(Coche coche) {
 
-        return coche;
-    }
+		coche = daoVehiculo.altaCoche(coche);
+
+		return coche;
+	}
 
 	@Override
 	public Coche modificar(Coche coche) {
 		daoVehiculo.modificarCoche(coche);
-		
+
 		return coche;
 	}
 }
