@@ -3,5 +3,23 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<!-- Securización -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>AvisameDelCocheHTML</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>avisameDelCocheUsers</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>file</realm-name>
+		<form-login-config>
+			<form-login-page>/login/login.html</form-login-page>
+			<form-error-page>/login/error.html</form-error-page>
+		</form-login-config>
+	</login-config>
 </web-app>

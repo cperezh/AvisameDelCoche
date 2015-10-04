@@ -1,0 +1,13 @@
+<target name="create-forest-realm" depends="create-forest-resource"
+    description="create JDBC realm">
+    <antcall target="create-jdbc-realm">
+        <param name="jdbc.resource.name" value="jdbc/forest" />
+        <param name="jdbc.realm.name" value="jdbcRealm" />
+        <param name="user.table.name" value="forest.PERSON" />
+        <param name="user.name.column" value="email" />
+        <param name="password.column" value="password" />
+        <param name="group.table" value="forest.GROUPS" />
+        <param name="group.name.column" value="name" />
+        <param name="assign.groups" value="USERS,ADMINS" />
+        <param name="digest.algorithm" value="MD5" />
+    </antcall>
