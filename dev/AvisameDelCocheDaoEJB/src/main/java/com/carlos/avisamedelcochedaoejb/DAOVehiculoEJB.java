@@ -6,6 +6,7 @@ package com.carlos.avisamedelcochedaoejb;
 
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -27,9 +28,11 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 
 	@PersistenceContext
 	EntityManager entityManager;
+	
+	@EJB
+	AltaCocheJMS altaCocheJMS;
 
-	static final Logger logger = LogManager.getLogger(DAOVehiculoEJB.class
-			.getName());
+	static final Logger logger = LogManager.getLogger(DAOVehiculoEJB.class.getName());
 
 	@Override
 	public Coche buscarVehiculo(String matricula) {
@@ -63,10 +66,7 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 
 	@Override
 	public List<Coche> buscarVehiculos(String matricula) {
-		return entityManager
-				.createNamedQuery("Coche.buscarCochesPorMatricula", Coche.class)
-				.setParameter("matricula", "%" + matricula + "%")
-				.getResultList();
+		return entityManager.createNamedQuery("Coche.buscarCochesPorMatricula", Coche.class).setParameter("matricula", "%" + matricula + "%").getResultList();
 
 	}
 
@@ -74,6 +74,8 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 	public Coche altaCoche(Coche coche) {
 
 		entityManager.persist(coche);
+		
+		altaCocheJMS.altaCoche(coche);
 
 		return coche;
 	}

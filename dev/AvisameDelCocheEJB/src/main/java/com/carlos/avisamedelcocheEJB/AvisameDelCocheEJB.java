@@ -15,7 +15,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.carlos.avisamedelcoche.AvisameDelCocheService;
-import com.carlos.avisamedelcochebusiness.Avisador;
 import com.carlos.avisamedelcochebusiness.Coche;
 import com.carlos.avisamedelcochebusiness.EstadoComponente;
 import com.carlos.avisamedelcochedao.DAOVehiculo;
@@ -34,11 +33,15 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
 
 	@Override
 	public Coche comprobarEstadoVehiculo(String matricula) {
+		
+		logger.info("Entrando comprobarEstadoVehiculo: "+matricula);
 
 		Coche coche = daoVehiculo.buscarVehiculo(matricula);
 
 		List<EstadoComponente> estadoComponentesNecesitanRaparacion = coche.obtenerComponentesNecesitanReparacion();
 
+		logger.info("Saliendo comprobarEstadoVehiculo: "+matricula);
+		
 		return coche;
 
 		// if (!estadoComponentesNecesitanRaparacion.isEmpty()) {
@@ -85,6 +88,7 @@ public class AvisameDelCocheEJB implements AvisameDelCocheService {
 	 */
 	public Coche altaCoche(Coche coche) {
 
+		//Alta en la BD Relacional
 		coche = daoVehiculo.altaCoche(coche);
 
 		return coche;
