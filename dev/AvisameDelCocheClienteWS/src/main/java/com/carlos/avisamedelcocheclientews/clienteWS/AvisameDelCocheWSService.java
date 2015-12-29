@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "AvisameDelCocheWSService", targetNamespace = "http://avisamedelcochews.carlos.com/", wsdlLocation = "file:/C:/Users/Carlos/Documents/Proyectos/AvisameDelCoche/dev/AvisameDelCocheClienteWS/src/wsdl/AvisameDelCocheWSService.wsdl")
+@WebServiceClient(name = "AvisameDelCocheWSService", targetNamespace = "http://avisamedelcochews.carlos.com/", wsdlLocation = "file:/C:/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheClienteWS/src/wsdl/AvisameDelCocheWSService.wsdl")
 public class AvisameDelCocheWSService
     extends Service
 {
@@ -30,7 +30,7 @@ public class AvisameDelCocheWSService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/Carlos/Documents/Proyectos/AvisameDelCoche/dev/AvisameDelCocheClienteWS/src/wsdl/AvisameDelCocheWSService.wsdl");
+            url = new URL("file:/C:/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheClienteWS/src/wsdl/AvisameDelCocheWSService.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

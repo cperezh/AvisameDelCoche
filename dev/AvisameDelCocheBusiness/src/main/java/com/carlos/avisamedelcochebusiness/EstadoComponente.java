@@ -18,6 +18,7 @@ import javax.persistence.Transient;
 public class EstadoComponente implements Serializable {
 
 	private Componente componente;
+	
 
     private int ultimaSustitucion;
     

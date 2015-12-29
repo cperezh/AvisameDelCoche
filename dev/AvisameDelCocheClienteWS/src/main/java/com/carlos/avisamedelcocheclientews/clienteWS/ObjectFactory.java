@@ -35,14 +35,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BuscarVehiculoResponse }
-     * 
-     */
-    public BuscarVehiculoResponse createBuscarVehiculoResponse() {
-        return new BuscarVehiculoResponse();
-    }
-
-    /**
      * Create an instance of {@link BuscarVehiculo }
      * 
      */
@@ -51,11 +43,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EstadoComponente }
+     * Create an instance of {@link BuscarVehiculoResponse }
      * 
      */
-    public EstadoComponente createEstadoComponente() {
-        return new EstadoComponente();
+    public BuscarVehiculoResponse createBuscarVehiculoResponse() {
+        return new BuscarVehiculoResponse();
     }
 
     /**
@@ -64,6 +56,14 @@ public class ObjectFactory {
      */
     public Coche createCoche() {
         return new Coche();
+    }
+
+    /**
+     * Create an instance of {@link EstadoComponente }
+     * 
+     */
+    public EstadoComponente createEstadoComponente() {
+        return new EstadoComponente();
     }
 
     /**
