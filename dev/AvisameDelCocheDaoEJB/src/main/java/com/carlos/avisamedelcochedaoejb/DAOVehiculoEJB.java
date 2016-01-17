@@ -19,10 +19,6 @@ import org.apache.logging.log4j.Logger;
 import com.carlos.avisamedelcochebusiness.Coche;
 import com.carlos.avisamedelcochedao.DAOVehiculo;
 
-/**
- *
- * @author martin
- */
 @Stateless
 public class DAOVehiculoEJB implements DAOVehiculo {
 

@@ -27,7 +27,7 @@
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$0080FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">212</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">116</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">149</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="StereotypeDisplay" type="UMLStereotypeDisplayKind">sdkNone</XPD:ATTR>
@@ -445,7 +445,7 @@ el usuario actualiza el kilometraje
 <XPD:OBJ name="OwnedViews[15]" type="UMLExtendView" guid="CzYykf2/kk+EXmHUoBvh0gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">390,244;325,185</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">389,244;326,189</XPD:ATTR>
 <XPD:REF name="Model">uKMMArXEAkKwWXhH+/YGVwAA</XPD:REF>
 <XPD:REF name="Head">XzBuyGSN5UeE9ELwoGZhZwAA</XPD:REF>
 <XPD:REF name="Tail">tRH/Y14Tw029MrIrPbE0OgAA</XPD:REF>
@@ -471,7 +471,7 @@ el usuario actualiza el kilometraje
 <XPD:OBJ name="OwnedViews[16]" type="UMLExtendView" guid="9umANnBU8EmebPRHDM728AAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">388,41;284,44;285,116</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">388,41;284,44;285,120</XPD:ATTR>
 <XPD:REF name="Model">UWmiWd2XQka/NcYILHDeeQAA</XPD:REF>
 <XPD:REF name="Head">XzBuyGSN5UeE9ELwoGZhZwAA</XPD:REF>
 <XPD:REF name="Tail">qlgfdFAMMkSrlOLey3RMHQAA</XPD:REF>
@@ -497,7 +497,7 @@ el usuario actualiza el kilometraje
 <XPD:OBJ name="OwnedViews[17]" type="UMLAssociationView" guid="LmS2/EebZ0GNOm0cUwhUxwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">140,150;212,150</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">140,151;212,152</XPD:ATTR>
 <XPD:REF name="Model">CYbxlbXrukWCafbGH+rMQgAA</XPD:REF>
 <XPD:REF name="Head">XzBuyGSN5UeE9ELwoGZhZwAA</XPD:REF>
 <XPD:REF name="Tail">WxXuuvTIc0Gxbp4sqsWJWQAA</XPD:REF>
@@ -581,7 +581,7 @@ el usuario actualiza el kilometraje
 <XPD:OBJ name="OwnedViews[18]" type="UMLIncludeView" guid="WO2i19O8tEaiEcpazY96NAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">277,185;243,320</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">277,189;244,320</XPD:ATTR>
 <XPD:REF name="Model">pzy3NZ1RLEiLSo7c52GS2QAA</XPD:REF>
 <XPD:REF name="Head">p0UKA4BUEkCrshwuyqUZfQAA</XPD:REF>
 <XPD:REF name="Tail">XzBuyGSN5UeE9ELwoGZhZwAA</XPD:REF>
@@ -4509,8 +4509,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Participant">M7IBfymuoUqBnamS5ojDQAAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">fueqMc3tuUKqsvjCHdmRZQAA</XPD:REF>
-<XPD:REF name="Views[1]">h037jA+WikKP+uUQwLe7twAA</XPD:REF>
-<XPD:REF name="Views[2]">y3pRCk78mkqSr9KI327EqQAA</XPD:REF>
+<XPD:REF name="Views[1]">y3pRCk78mkqSr9KI327EqQAA</XPD:REF>
+<XPD:REF name="Views[2]">h037jA+WikKP+uUQwLe7twAA</XPD:REF>
 <XPD:REF name="Views[3]">zM9AzDVClE600levmB59sQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="iqNHniFxhkmeBO31SYk16QAA">
@@ -4518,8 +4518,8 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Participant">ZrLyf/ZV50qAWsjw8pQ+LQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">8pSrgo8kqkiou24A5n7I8AAA</XPD:REF>
-<XPD:REF name="Views[1]">sCwFRj5se0+rAvYgogJR6QAA</XPD:REF>
-<XPD:REF name="Views[2]">oy5JlW5cqkKpsiKDkCmEsQAA</XPD:REF>
+<XPD:REF name="Views[1]">oy5JlW5cqkKpsiKDkCmEsQAA</XPD:REF>
+<XPD:REF name="Views[2]">sCwFRj5se0+rAvYgogJR6QAA</XPD:REF>
 <XPD:REF name="Views[3]">ecwavonzY06hLRC2PX6u3wAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
