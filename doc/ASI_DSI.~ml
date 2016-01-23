@@ -14254,7 +14254,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[9]" type="UMLComponentView" guid="vo82waO0f067zBlOw+5/CAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$008080FF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">820</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">137</XPD:ATTR>
@@ -14279,7 +14279,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[10]" type="UMLInterfaceView" guid="kv94TQHKeEmMplyO71GLoQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$008080FF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">612</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">128</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">86</XPD:ATTR>
@@ -14593,7 +14593,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[17]" type="UMLInterfaceView" guid="NytXy3SshEOpmKzFMs5GewAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$008080FF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1044</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">128</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">90</XPD:ATTR>
@@ -14653,7 +14653,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[19]" type="UMLDependencyView" guid="ukzQGyeAvEuyFO+MYky0FgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$008080FF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">956,138;1078,138</XPD:ATTR>
 <XPD:REF name="Model">8JvRYX7FCk6kGJ84M3/KggAA</XPD:REF>
@@ -14680,7 +14680,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[20]" type="UMLComponentView" guid="X+WVZj9cB02nYgbKJHAw1QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$008080FF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1240</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">124</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">129</XPD:ATTR>
@@ -14705,7 +14705,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[21]" type="UMLRealizationView" guid="ry1e7O65VEGxhY6OBtWl0QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$008080FF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">1240,138;1099,138</XPD:ATTR>
 <XPD:REF name="Model">1ktQqbdR3Ua1iErUpqRLAwAA</XPD:REF>
