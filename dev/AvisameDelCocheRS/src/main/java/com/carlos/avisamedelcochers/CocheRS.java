@@ -5,7 +5,7 @@
  */
 package com.carlos.avisamedelcochers;
 
-import com.carlos.avisamedelcoche.AvisameDelCocheService;
+import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 import java.util.List;
 import javax.ejb.EJB;

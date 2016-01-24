@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.carlos.avisamedelcochedao;
+package com.carlos.avisamedelcoche.dao;
 
 import com.carlos.avisamedelcochebusiness.Coche;
 import java.util.List;

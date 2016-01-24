@@ -1,4 +1,4 @@
-package com.carlos.avisamedelcochedaoejb;
+package com.carlos.avisamedelcoche.dao.ejb;
 
 import javax.annotation.Resource;
 import javax.ejb.Stateless;

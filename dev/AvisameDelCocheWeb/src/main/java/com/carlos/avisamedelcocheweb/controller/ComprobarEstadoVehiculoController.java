@@ -5,7 +5,7 @@
  */
 package com.carlos.avisamedelcocheweb.controller;
 
-import com.carlos.avisamedelcoche.AvisameDelCocheService;
+import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 import javax.ejb.EJB;
 import org.springframework.http.HttpHeaders;

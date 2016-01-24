@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.carlos.avisamedelcocheejb;
+package com.carlos.avisamedelcoche.ejb;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ import javax.ejb.TransactionAttribute;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.carlos.avisamedelcoche.AvisameDelCocheService;
+import com.carlos.avisamedelcoche.dao.DAOVehiculo;
+import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 import com.carlos.avisamedelcochebusiness.EstadoComponente;
-import com.carlos.avisamedelcochedao.DAOVehiculo;
 
 /**
  *

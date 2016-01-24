@@ -48,3 +48,7 @@
 2015-31-29 19:31:42.902 [INFO ] com.carlos.avisamedelcocheejb.AvisameDelCocheEJB - Saliendo comprobarEstadoVehiculo: 4731dsd
 2015-10-29 22:10:59.206 [INFO ] com.carlos.avisamedelcocheejb.AvisameDelCocheEJB - Entrando comprobarEstadoVehiculo: 4731dsd
 2015-10-29 22:10:59.208 [INFO ] com.carlos.avisamedelcocheejb.AvisameDelCocheEJB - Saliendo comprobarEstadoVehiculo: 4731dsd
+2016-39-24 23:39:23.876 [INFO ] com.carlos.avisamedelcoche.ejb.AvisameDelCocheEJB - Entrando comprobarEstadoVehiculo: 4731dsd
+2016-39-24 23:39:23.883 [INFO ] com.carlos.avisamedelcoche.ejb.AvisameDelCocheEJB - Saliendo comprobarEstadoVehiculo: 4731dsd
+2016-03-25 00:03:18.787 [WARN ] com.carlos.avisamedelcochers.UtilidadesRS - Vaciando cache
+2016-03-25 00:03:18.813 [WARN ] com.carlos.avisamedelcochers.UtilidadesRS - Cache vaciada

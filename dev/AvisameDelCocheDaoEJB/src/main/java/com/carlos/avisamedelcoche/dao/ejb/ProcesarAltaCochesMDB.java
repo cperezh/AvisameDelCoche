@@ -1,4 +1,4 @@
-package com.carlos.avisamedelcochedaoejb;
+package com.carlos.avisamedelcoche.dao.ejb;
 
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.carlos.avisamedelcochedaoejb;
+package com.carlos.avisamedelcoche.dao.ejb;
 
 import java.util.List;
 
@@ -16,8 +16,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.carlos.avisamedelcoche.dao.DAOVehiculo;
 import com.carlos.avisamedelcochebusiness.Coche;
-import com.carlos.avisamedelcochedao.DAOVehiculo;
 
 @Stateless
 public class DAOVehiculoEJB implements DAOVehiculo {
