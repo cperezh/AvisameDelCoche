@@ -19,10 +19,12 @@ public class UtilidadesRS {
 	
 	@GET	
     @Path("/cache")
-    public void vaciarCacheSegundoNivel() {
+    public String vaciarCacheSegundoNivel() {
 		
 		logger.warn("Vaciando cache");
         utilidadesService.vaciarCacheSegundoNivel();
         logger.warn("Cache vaciada");
+        
+        return "OK!";
     }
 }
