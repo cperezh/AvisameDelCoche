@@ -1,4 +1,4 @@
-package com.carlos.avisamedelcochers;
+package com.carlos.avisamedelcoche.rs;
 
 import javax.ejb.EJB;
 import javax.ws.rs.GET;

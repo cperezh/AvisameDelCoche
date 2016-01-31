@@ -37,7 +37,18 @@
 		<realm-name>file</realm-name>
 		<!-- <form-login-config> <form-login-page>/login.xhtml</form-login-page> 
 			<form-error-page>/error.xhtml</form-error-page> </form-login-config> -->
-	</login-config>	
+	</login-config>
+
+	<!-- Filter Example 1 -->
+	<filter>
+		<filter-name>PruebaFiltro</filter-name>
+		<filter-class>com.carlos.avisamedelcoche.rs.filters.PruebaFiltro</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>PruebaFiltro</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- end Filter Example 1 -->
      
     
 </web-app>

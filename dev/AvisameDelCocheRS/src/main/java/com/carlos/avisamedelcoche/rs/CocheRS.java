@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.carlos.avisamedelcochers;
+package com.carlos.avisamedelcoche.rs;
 
 import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
 import com.carlos.avisamedelcochebusiness.Coche;

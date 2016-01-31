@@ -10,14 +10,19 @@ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope
     $scope.buscar = function (matricula) {
 
         var url = '/AvisameDelCocheRS/resources/coches?matricula=' + matricula;
+        var mensaje;
 
         $http.get(url).
                 success(function (data, status, headers, config) {
                     $scope.coches = data;
                 }).
                 error(function (data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
+                    switch (status){
+                    	case 500: 
+                    		mensaje = "Se ha producido un error general.";
+                    	default:;
+                    }
+                    alert(mensaje);
                 });
     };
 });
