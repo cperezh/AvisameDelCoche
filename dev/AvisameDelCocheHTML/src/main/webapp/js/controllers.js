@@ -19,8 +19,10 @@ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope
                 error(function (data, status, headers, config) {
                     switch (status){
                     	case 500: 
-                    		mensaje = "Se ha producido un error general.";
-                    	default:;
+                    		mensaje = data.error;
+                    		break;
+                    	default:
+                    		mensaje = data;
                     }
                     alert(mensaje);
                 });
