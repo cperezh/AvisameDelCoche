@@ -5,7 +5,6 @@
  */
 package com.carlos.avisamedelcoche.rs;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -16,9 +15,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -41,47 +38,36 @@ public class CocheRS {
 
 	@GET
 	@Path("/{matricula}")
-	public Response buscarCoche(@PathParam("matricula") String matricula) {
+	public Coche buscarCoche(@PathParam("matricula") String matricula) {
 
-		Coche coche = avisameDelCoche.buscarVehiculo(matricula);
-
-		return Response.ok(coche).build();
+		return avisameDelCoche.buscarVehiculo(matricula);
 
 	}
 
 	@POST
 	@Path("/{matricula}")
-	public Response modificarCoche(Coche coche) {
+	public Coche modificarCoche(Coche coche) {
 
-		avisameDelCoche.modificar(coche);
-
-		return Response.ok(coche).build();
+		return avisameDelCoche.modificar(coche);
 	}
 
 	@GET
 	@Path("/{matricula}/estado")
-	public Response comprobarEstado(@PathParam("matricula") String matricula) {
-		avisameDelCoche.comprobarEstadoVehiculo(matricula);
+	public Coche comprobarEstado(@PathParam("matricula") String matricula) {
 
-		return Response.ok().build();
+		return avisameDelCoche.comprobarEstadoVehiculo(matricula);
 	}
 
 	@GET
-	public Response buscarCoches(@QueryParam("matricula") String matricula) {
+	public List<Coche> buscarCoches(@QueryParam("matricula") String matricula) {
 
-		List<Coche> coches = new ArrayList<Coche>(avisameDelCoche.buscarVehiculos(matricula));
-		
-		GenericEntity<List<Coche>> entity = new GenericEntity<List<Coche>>(coches) {};
-
-		return Response.ok(entity).build();
+		return avisameDelCoche.buscarVehiculos(matricula);
 	}
 
 	@PUT
-	public Response altaCoche(Coche coche) {
+	public Coche altaCoche(Coche coche) {
 
-		avisameDelCoche.altaCoche(coche);
-
-		return Response.ok(coche).build();
+		return avisameDelCoche.altaCoche(coche);
 	}
 
 }
