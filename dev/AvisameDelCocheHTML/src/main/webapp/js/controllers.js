@@ -2,6 +2,8 @@
 /*Registro el módulo de controladores del catalogo*/
 var controladoresCatalogo = angular.module('controladoresCatalogo', []);
 
+var serverURL = '/AvisameDelCocheRS/resources';
+
 /*CREO UN CONTROLADOR EN EL MODULO. 
  * El segundo parametro es la funcion constructora del controlador, donde se definen las
  * variables y metodos que estaran disponibles en el ambito definido para el controlador*/
@@ -9,7 +11,7 @@ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope
 
     $scope.buscar = function (matricula) {
 
-        var url = '/AvisameDelCocheRS/resources/coches?matricula=' + matricula;
+        var url = serverURL+'/coches?matricula=' + matricula;
         var mensaje;
 
         $http.get(url).
@@ -32,7 +34,7 @@ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope
 controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {
 
     /*ON LOAD*/
-    var url = '/AvisameDelCocheRS/resources/coches/' + $routeParams.matricula;
+    var url = serverURL+'/coches/' + $routeParams.matricula;
 
     $http.get(url).
             success(function (data, status, headers, config) {
@@ -47,7 +49,7 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
 
     $scope.modificar = function () {
 
-        var url = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula;
+        var url = serverURL+'/coches/' + $scope.coche.matricula;
 
         var parametros = $scope.coche;
 
@@ -63,7 +65,7 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
     
     $scope.comprobarEstado = function () {
 
-        var url = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula+"/estado";
+        var url = serverURL+'/coches/' + $scope.coche.matricula+"/estado";
 
         var parametros = $scope.coche;
 
@@ -89,11 +91,25 @@ controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $h
 controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {
 
 
+	 /*ON LOAD*/
+    var url = serverURL+'/componentes';
+
+    $http.get(url).
+            success(function (data, status, headers, config) {
+                $scope.componentes = data;
+            }).
+            error(function (data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+            });
+	
+    /*FIN ON LOAD*/
+	
     $scope.mensaje = '';
     
     $scope.alta = function () {
 
-        var urlBuscar = '/AvisameDelCocheRS/resources/coches/' + $scope.coche.matricula;
+        var urlBuscar = serverURL+'/coches/' + $scope.coche.matricula;
 
         parametros = $scope.coche;
 
@@ -105,7 +121,7 @@ controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $h
                         $scope.mensaje = "El coche ya existe";
                     }
                     else {
-                        var urlInsertar = '/AvisameDelCocheRS/resources/coches';
+                        var urlInsertar = serverURL+'/coches';
 
                         $http.put(urlInsertar, parametros).
                                 success(function (data, status, headers, config) {
