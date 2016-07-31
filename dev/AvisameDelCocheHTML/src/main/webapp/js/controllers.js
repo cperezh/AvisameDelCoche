@@ -92,24 +92,32 @@ controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $h
 
 
 	 /*ON LOAD*/
-    var url = serverURL+'/componentes';
+    var url = serverURL+'/coches';
 
     $http.get(url).
             success(function (data, status, headers, config) {
-                $scope.componentes = data;
+                $scope.coche = data[0];
             }).
             error(function (data, status, headers, config) {
                 // called asynchronously if an error occurs
                 // or server returns response with an error status.
             });
-	
+    
+    //Inicializo objetos de pantalla
+    $scope.mensaje = '';
+//    $scope.coche = {
+//    		"matricula":"",
+//    		"kilometraje":"",
+//    		"estadoComponentes":[]
+//    };
+    
     /*FIN ON LOAD*/
 	
-    $scope.mensaje = '';
+    
     
     $scope.alta = function () {
-
-        var urlBuscar = serverURL+'/coches/' + $scope.coche.matricula;
+    	
+    	var urlBuscar = serverURL+'/coches/' + $scope.coche.matricula;
 
         parametros = $scope.coche;
 

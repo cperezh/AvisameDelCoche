@@ -25,8 +25,8 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 	@PersistenceContext
 	EntityManager entityManager;
 	
-	@EJB
-	AltaCocheJMS altaCocheJMS;
+	//@EJB
+	//AltaCocheJMS altaCocheJMS;
 
 	static final Logger logger = LogManager.getLogger(DAOVehiculoEJB.class.getName());
 
@@ -71,7 +71,7 @@ public class DAOVehiculoEJB implements DAOVehiculo {
 
 		entityManager.persist(coche);
 		
-		altaCocheJMS.altaCoche(coche);
+		//altaCocheJMS.altaCoche(coche);
 
 		return coche;
 	}

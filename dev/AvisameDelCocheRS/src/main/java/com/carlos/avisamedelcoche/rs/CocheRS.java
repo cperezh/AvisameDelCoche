@@ -5,6 +5,7 @@
  */
 package com.carlos.avisamedelcoche.rs;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -61,7 +62,14 @@ public class CocheRS {
 	@GET
 	public List<Coche> buscarCoches(@QueryParam("matricula") String matricula) {
 
-		return avisameDelCoche.buscarVehiculos(matricula);
+		List<Coche> coches = new ArrayList<Coche>();
+
+		if (matricula == null) {
+			coches.add(Coche.cocheVacio());
+		} else {
+			coches = avisameDelCoche.buscarVehiculos(matricula);
+		}
+		return coches;
 	}
 
 	@PUT

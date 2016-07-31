@@ -2,7 +2,8 @@
 /*Registro la aplicación y los módulos de los que depende*/
 var catalogoTelefonos = angular.module('catalogoTelefonos', [
     'controladoresCatalogo',
-    'ngRoute'
+    'ngRoute',
+    'ngMessages'
 ]);
 
 catalogoTelefonos.config(['$routeProvider',

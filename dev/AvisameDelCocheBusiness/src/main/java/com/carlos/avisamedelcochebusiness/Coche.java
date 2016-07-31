@@ -23,22 +23,43 @@ import javax.persistence.NamedQuery;
  * @author Pakno
  */
 @Entity
-@NamedQueries({ @NamedQuery(name = "Coche.buscarCochesPorMatricula", query = "SELECT c FROM Coche c WHERE c.matricula like :matricula") })
+@NamedQueries({
+		@NamedQuery(name = "Coche.buscarCochesPorMatricula", query = "SELECT c FROM Coche c WHERE c.matricula like :matricula") })
 public class Coche implements Serializable {
 
 	@Id
 	private String matricula;
 
 	private int kilometraje;
-	
+
 	@ElementCollection
-	@CollectionTable(name = "EstadoComponente", joinColumns = @JoinColumn(name = "matricula"))
+	@CollectionTable(name = "EstadoComponente", joinColumns = @JoinColumn(name = "matricula") )
 	private Collection<EstadoComponente> estadoComponentes;
-	
-	
 
 	public Coche() {
 
+	}
+
+	public static Coche cocheVacio() {
+
+		Coche coche = new Coche();
+
+		coche.setMatricula("");
+		coche.setKilometraje(0);
+		coche.estadoComponentes = new ArrayList<EstadoComponente>();
+
+		// Ahora inicializo los componentes
+		EstadoComponente estadoComponente;
+		int i = 0;
+
+		for (Componente Componente : Componente.values()) {
+
+			estadoComponente = new EstadoComponente();
+			estadoComponente.setComponente(Componente.values()[i++]);
+			coche.estadoComponentes.add(estadoComponente);
+		}
+
+		return coche;
 	}
 
 	/**
@@ -51,42 +72,43 @@ public class Coche implements Serializable {
 	 * 
 	 */
 	private void comprobarComponenteNecesitaReparacion() {
-	
+
 		int kilometrosUsoComponente;
 		int kilometrosDeMasComponente;
 		boolean necesitaReparacion;
 
 		for (EstadoComponente estadoComponente : this.getEstadoComponentes()) {
-			
+
 			kilometrosUsoComponente = this.kilometraje - estadoComponente.getUltimaSustitucion();
-			
-			kilometrosDeMasComponente = kilometrosUsoComponente - estadoComponente.getComponente().getLimiteKilometros();
-			
+
+			kilometrosDeMasComponente = kilometrosUsoComponente
+					- estadoComponente.getComponente().getLimiteKilometros();
+
 			necesitaReparacion = kilometrosDeMasComponente > 0;
-			
+
 			estadoComponente.setKilometrosDeMas(kilometrosDeMasComponente);
 
 			estadoComponente.setNecesitaReparacion(necesitaReparacion);
 		}
 
 	}
-	
+
 	public List<EstadoComponente> obtenerComponentesNecesitanReparacion() {
 
-        List<EstadoComponente> estadoComponentesNecesitanReparacion = new ArrayList<>();
-        
-        this.comprobarComponenteNecesitaReparacion();
+		List<EstadoComponente> estadoComponentesNecesitanReparacion = new ArrayList<>();
 
-        for (EstadoComponente estadoComponente : this.getEstadoComponentes()) {
+		this.comprobarComponenteNecesitaReparacion();
 
-            if (estadoComponente.isNecesitaReparacion()) {
-                estadoComponentesNecesitanReparacion.add(estadoComponente);
-            }
+		for (EstadoComponente estadoComponente : this.getEstadoComponentes()) {
 
-        }
+			if (estadoComponente.isNecesitaReparacion()) {
+				estadoComponentesNecesitanReparacion.add(estadoComponente);
+			}
 
-        return estadoComponentesNecesitanReparacion;
-    }
+		}
+
+		return estadoComponentesNecesitanReparacion;
+	}
 
 	public String getMatricula() {
 		return matricula;
