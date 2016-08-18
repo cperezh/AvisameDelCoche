@@ -6,9 +6,9 @@
 			<form ng-submit="alta()" name="altaForm">
 				<div class="form-group">
 					<label>Matricula</label> <input type="text" name="matricula"
-						ng-model="coche.matricula" required
-						ng-pattern="/\d{4}\w{3}$|\w{1,2}-?\d{4}-?\w{2}$/"
-						class="form-control" placeholder="4731DSD" />
+					ng-model="coche.matricula" required
+					ng-pattern="/\d{4}\w{3}$|\w{1,2}-?\d{4}-?\w{2}$/"
+					class="form-control" placeholder="4731DSD" />
 					<div ng-messages="altaForm.matricula.$error" role="alert">
 						<div ng-message="required">* Campo requerido</div>
 						<div ng-message="pattern">* Matricula no valida</div>
@@ -16,23 +16,25 @@
 				</div>
 				<div class="form-group">
 					<label>Kilometraje</label> <input type="text"
-						ng-model="coche.kilometraje" class="form-control"
-						placeholder="Kilometraje" />
+					ng-model="coche.kilometraje" required
+					ng-pattern="/\d+/"
+					class="form-control"
+					placeholder="15000" />
 				</div>
 				<div ng-repeat="estadoComponente in coche.estadoComponentes"
-					class="form-group">
-					<label>{{estadoComponente.componente}}</label> <input type="text"
-						ng-model="estadoComponente.ultimaSustitucion" class="form-control"
-						placeholder="{{estadoComponente.componente}}" />
+				class="form-group">
+				<label>{{estadoComponente.componente}}</label> <input type="text"
+				ng-model="estadoComponente.ultimaSustitucion" class="form-control"
+				placeholder="{{estadoComponente.componente}}" />
+			</div>
+			<div class="form-group" ng-show="mensaje !== ''">
+				<div class="alert alert-success" role="alert">
+					<strong>{{mensaje}}</strong>
 				</div>
-				<div class="form-group" ng-show="mensaje !== ''">
-					<div class="alert alert-success" role="alert">
-						<strong>{{mensaje}}</strong>
-					</div>
-				</div>
-				<button type="submit">Aceptar</button>
-			</form>
-		</div>
+			</div>
+			<button type="submit">Aceptar</button>
+		</form>
 	</div>
+</div>
 </div>
 

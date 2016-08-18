@@ -1,0 +1,254 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "alta.html",
+			"settings":
+			{
+				"buffer_size": 1318,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n/*Registro el módulo de controladores del catalogo*/\nvar controladoresCatalogo = angular.module('controladoresCatalogo', []);\n\nvar serverURL = '/AvisameDelCocheRS/resources';\n\n    /*CREO UN CONTROLADOR EN EL MODULO. \n     * El segundo parametro es la funcion constructora del controlador, donde se definen las\n     * variables y metodos que estaran disponibles en el ambito definido para el controlador*/\n     controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {\n\n        $scope.buscar = function (matricula) {\n\n            var url = serverURL+'/coches?matricula=' + matricula;\n            var mensaje;\n\n            $http.get(url).\n            success(function (data, status, headers, config) {\n                $scope.coches = data;\n            }).\n            error(function (data, status, headers, config) {\n                switch (status){\n                   case 500: \n                   mensaje = data.error;\n                   break;\n                   default:\n                   mensaje = data;\n               }\n               alert(mensaje);\n           });\n        };\n    });\n\n     controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {\n\n        /*ON LOAD*/\n        var url = serverURL+'/coches/' + $routeParams.matricula;\n\n        $http.get(url).\n        success(function (data, status, headers, config) {\n            $scope.coche = data;\n        }).\n        error(function (data, status, headers, config) {\n                    // called asynchronously if an error occurs\n                    // or server returns response with an error status.\n                });\n        \n        /*FIN ON LOAD*/\n\n        $scope.modificar = function () {\n\n            var url = serverURL+'/coches/' + $scope.coche.matricula;\n\n            var parametros = $scope.coche;\n\n            $http.post(url, parametros).\n            success(function (data, status, headers, config) {\n                $scope.coche = data;\n            }).\n            error(function (data, status, headers, config) {\n                        // called asynchronously if an error occurs\n                        // or server returns response with an error status.\n                    });\n        };\n        \n        $scope.comprobarEstado = function () {\n\n            var url = serverURL+'/coches/' + $scope.coche.matricula+\"/estado\";\n\n            var parametros = $scope.coche;\n\n            $http.get(url, parametros).\n            success(function (data, status, headers, config) {\n                $scope.coche = data;\n            }).\n            error(function (data, status, headers, config) {\n                        // called asynchronously if an error occurs\n                        // or server returns response with an error status.\n                    });\n        };\n\n        $scope.back = function () {\n            $window.history.back();\n        };\n    });\n\n     controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $http, $routeParams, $window) {\n\n     });\n\n     controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {\n\n\n      /*ON LOAD*/\n      $http.get(serverURL+'/coches').\n      success(function (data, status, headers, config) {\n        $scope.coche = data[0];\n    }).\n      error(function (data, status, headers, config) {\n                    // called asynchronously if an error occurs\n                    // or server returns response with an error status.\n                });\n      \n        //Inicializo objetos de pantalla\n        $scope.mensaje = '';\n        \n        /*FIN ON LOAD*/\n        \n        \n        \n        $scope.alta = function () {\n        	\n            parametros = $scope.coche;\n\n            $http.get(serverURL+'/coches/' + $scope.coche.matricula, parametros).\n            success(function (data, status, headers, config) {\n\n                        //Si encuentro el coche con esa matricula\n                        if (data !== '') {\n                            $scope.mensaje = \"El coche ya existe\";\n                        }\n                        else {\n                            var urlInsertar = serverURL+'/coches';\n\n                            $http.put(urlInsertar, parametros).\n                            success(function (data, status, headers, config) {\n                                $scope.mensaje = \"Coche insertado\";\n                            }).\n                            error(function (data, status, headers, config) {\n                                $scope.mensaje = data;\n                            });\n                        }\n                    }).\n            error(function (data, status, headers, config) {\n                $scope.mensaje = data;\n            });\n        };\n\n    });\n",
+			"file": "js/controllers.js",
+			"file_size": 4775,
+			"file_write_time": 131156599983252509,
+			"settings":
+			{
+				"buffer_size": 4798,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheHTML/src/main/webapp",
+		"/C/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheHTML/src/main/webapp/js"
+	],
+	"file_history":
+	[
+		"/C/Users/Carlos/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-completions.sublime-settings",
+		"/C/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheHTML/src/main/webapp/index.html",
+		"/C/Users/Carlos/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Carlos/Desktop/ACTIVO_ORIG.XML",
+		"/C/Users/Carlos/Desktop/ACTIVO.XML"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"     "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "alta.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "avisame_del_coche_sublime.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

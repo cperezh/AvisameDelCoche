@@ -7,7 +7,7 @@ var serverURL = '/AvisameDelCocheRS/resources';
 /*CREO UN CONTROLADOR EN EL MODULO. 
  * El segundo parametro es la funcion constructora del controlador, donde se definen las
  * variables y metodos que estaran disponibles en el ambito definido para el controlador*/
-controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {
+ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {
 
     $scope.buscar = function (matricula) {
 
@@ -15,36 +15,32 @@ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope
         var mensaje;
 
         $http.get(url).
-                success(function (data, status, headers, config) {
-                    $scope.coches = data;
-                }).
-                error(function (data, status, headers, config) {
-                    switch (status){
-                    	case 500: 
-                    		mensaje = data.error;
-                    		break;
-                    	default:
-                    		mensaje = data;
-                    }
-                    alert(mensaje);
-                });
+        then(
+            function success(response) {
+                $scope.coches = response.data;
+            },
+            function error(response) {
+                mensaje = response.data;
+            } 
+        );
     };
 });
 
-controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {
+ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {
 
     /*ON LOAD*/
     var url = serverURL+'/coches/' + $routeParams.matricula;
 
     $http.get(url).
-            success(function (data, status, headers, config) {
-                $scope.coche = data;
-            }).
-            error(function (data, status, headers, config) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
-            });
-	
+    then(
+        function succes(response) {
+            $scope.coche = response.data; 
+        },
+        function error(response) {
+
+        }
+    );
+    
     /*FIN ON LOAD*/
 
     $scope.modificar = function () {
@@ -54,13 +50,13 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
         var parametros = $scope.coche;
 
         $http.post(url, parametros).
-                success(function (data, status, headers, config) {
-                    $scope.coche = data;
-                }).
-                error(function (data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                });
+        then(
+            function success(response) {
+                $scope.coche = response.data;
+            },
+            function error (response) {
+            }
+        );
     };
     
     $scope.comprobarEstado = function () {
@@ -70,13 +66,15 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
         var parametros = $scope.coche;
 
         $http.get(url, parametros).
-                success(function (data, status, headers, config) {
-                    $scope.coche = data;
-                }).
-                error(function (data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                });
+        then(
+            function success(response) {
+                $scope.coche = response.data;
+            },
+            function error(response) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+            }
+        );
     };
 
     $scope.back = function () {
@@ -84,65 +82,61 @@ controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope,
     };
 });
 
-controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $http, $routeParams, $window) {
+ controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $http, $routeParams, $window) {
 
-});
+ });
 
-controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {
+ controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {
 
 
-	 /*ON LOAD*/
-    var url = serverURL+'/coches';
-
-    $http.get(url).
-            success(function (data, status, headers, config) {
-                $scope.coche = data[0];
-            }).
-            error(function (data, status, headers, config) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
-            });
-    
+    /*ON LOAD*/
+    $http.get(serverURL+'/coches').
+    then(
+        function success(response) {
+            $scope.coche = response.data[0];
+        },
+        function error(response) {
+                   
+        }
+    );
+  
     //Inicializo objetos de pantalla
     $scope.mensaje = '';
-//    $scope.coche = {
-//    		"matricula":"",
-//    		"kilometraje":"",
-//    		"estadoComponentes":[]
-//    };
     
     /*FIN ON LOAD*/
-	
+    
     
     
     $scope.alta = function () {
     	
-    	var urlBuscar = serverURL+'/coches/' + $scope.coche.matricula;
-
         parametros = $scope.coche;
 
-        $http.get(urlBuscar, parametros).
-                success(function (data, status, headers, config) {
+        $http.get(serverURL+'/coches/' + $scope.coche.matricula).
+        then(
+            function success(response) {
 
                     //Si encuentro el coche con esa matricula
-                    if (data !== '') {
+                    if (response.data !== '') {
                         $scope.mensaje = "El coche ya existe";
                     }
                     else {
                         var urlInsertar = serverURL+'/coches';
 
                         $http.put(urlInsertar, parametros).
-                                success(function (data, status, headers, config) {
-                                    $scope.mensaje = "Coche insertado";
-                                }).
-                                error(function (data, status, headers, config) {
-                                    $scope.mensaje = data;
-                                });
+                        then(
+                            function success(response) {
+                                $scope.mensaje = "Coche insertado";
+                            },
+                            function error(response) {
+                                $scope.mensaje = response.data;
+                            }
+                        );
                     }
-                }).
-                error(function (data, status, headers, config) {
-                    $scope.mensaje = data;
-                });
+            },
+            function error(response) {
+                $scope.mensaje = response.data;
+            }
+        );
     };
 
 });
