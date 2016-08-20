@@ -8,7 +8,10 @@
 	"buffers":
 	[
 		{
+			"contents": "\n\n<div class=\"jumbotron\">\n	<div class=\"panel panel-default\">\n		<div class=\"panel-body\">\n			<form ng-submit=\"alta()\" name=\"altaForm\">\n				<div class=\"form-group\">\n					<label>Matricula</label> <input type=\"text\" name=\"matricula\"\n					ng-model=\"coche.matricula\" required\n					ng-pattern=\"/\\d{4}\\w{3}$|\\w{1,2}-?\\d{4}-?\\w{2}$/\"\n					class=\"form-control\" placeholder=\"4731DSD\" />\n					<div ng-messages=\"altaForm.matricula.$error\" role=\"alert\">\n						<div ng-message=\"required\">* Campo requerido</div>\n						<div ng-message=\"pattern\">* Matricula no valida</div>\n					</div>\n				</div>\n				<div class=\"form-group\">\n					<label>Kilometraje</label> <input type=\"text\"\n					ng-model=\"coche.kilometraje\" required\n					ng-pattern=\"/\\d+/\"\n					class=\"form-control\"\n					placeholder=\"15000\" />\n				</div>\n				<div ng-repeat=\"estadoComponente in coche.estadoComponentes\"\n				class=\"form-group\">\n				<label>{{estadoComponente.componente}}</label> <input type=\"text\"\n				ng-model=\"estadoComponente.ultimaSustitucion\" class=\"form-control\"\n				placeholder=\"{{estadoComponente.componente}}\" />\n			</div>\n			<div class=\"form-group\" ng-show=\"mensaje !== ''\">\n				<div class=\"alert alert-success\" role=\"alert\">\n					<strong>{{mensaje}}</strong>\n				</div>\n			</div>\n			<button type=\"submit\">Aceptar</button>\n		</form>\n	</div>\n</div>\n</div>\n\n",
 			"file": "alta.html",
+			"file_size": 1358,
+			"file_write_time": 131156622495945108,
 			"settings":
 			{
 				"buffer_size": 1318,
@@ -16,13 +19,32 @@
 			}
 		},
 		{
-			"contents": "\n/*Registro el módulo de controladores del catalogo*/\nvar controladoresCatalogo = angular.module('controladoresCatalogo', []);\n\nvar serverURL = '/AvisameDelCocheRS/resources';\n\n    /*CREO UN CONTROLADOR EN EL MODULO. \n     * El segundo parametro es la funcion constructora del controlador, donde se definen las\n     * variables y metodos que estaran disponibles en el ambito definido para el controlador*/\n     controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {\n\n        $scope.buscar = function (matricula) {\n\n            var url = serverURL+'/coches?matricula=' + matricula;\n            var mensaje;\n\n            $http.get(url).\n            success(function (data, status, headers, config) {\n                $scope.coches = data;\n            }).\n            error(function (data, status, headers, config) {\n                switch (status){\n                   case 500: \n                   mensaje = data.error;\n                   break;\n                   default:\n                   mensaje = data;\n               }\n               alert(mensaje);\n           });\n        };\n    });\n\n     controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {\n\n        /*ON LOAD*/\n        var url = serverURL+'/coches/' + $routeParams.matricula;\n\n        $http.get(url).\n        success(function (data, status, headers, config) {\n            $scope.coche = data;\n        }).\n        error(function (data, status, headers, config) {\n                    // called asynchronously if an error occurs\n                    // or server returns response with an error status.\n                });\n        \n        /*FIN ON LOAD*/\n\n        $scope.modificar = function () {\n\n            var url = serverURL+'/coches/' + $scope.coche.matricula;\n\n            var parametros = $scope.coche;\n\n            $http.post(url, parametros).\n            success(function (data, status, headers, config) {\n                $scope.coche = data;\n            }).\n            error(function (data, status, headers, config) {\n                        // called asynchronously if an error occurs\n                        // or server returns response with an error status.\n                    });\n        };\n        \n        $scope.comprobarEstado = function () {\n\n            var url = serverURL+'/coches/' + $scope.coche.matricula+\"/estado\";\n\n            var parametros = $scope.coche;\n\n            $http.get(url, parametros).\n            success(function (data, status, headers, config) {\n                $scope.coche = data;\n            }).\n            error(function (data, status, headers, config) {\n                        // called asynchronously if an error occurs\n                        // or server returns response with an error status.\n                    });\n        };\n\n        $scope.back = function () {\n            $window.history.back();\n        };\n    });\n\n     controladoresCatalogo.controller('controladorMenuCatalogo', function ($scope, $http, $routeParams, $window) {\n\n     });\n\n     controladoresCatalogo.controller('controladorAltaCatalogo', function ($scope, $http, $routeParams, $window) {\n\n\n      /*ON LOAD*/\n      $http.get(serverURL+'/coches').\n      success(function (data, status, headers, config) {\n        $scope.coche = data[0];\n    }).\n      error(function (data, status, headers, config) {\n                    // called asynchronously if an error occurs\n                    // or server returns response with an error status.\n                });\n      \n        //Inicializo objetos de pantalla\n        $scope.mensaje = '';\n        \n        /*FIN ON LOAD*/\n        \n        \n        \n        $scope.alta = function () {\n        	\n            parametros = $scope.coche;\n\n            $http.get(serverURL+'/coches/' + $scope.coche.matricula, parametros).\n            success(function (data, status, headers, config) {\n\n                        //Si encuentro el coche con esa matricula\n                        if (data !== '') {\n                            $scope.mensaje = \"El coche ya existe\";\n                        }\n                        else {\n                            var urlInsertar = serverURL+'/coches';\n\n                            $http.put(urlInsertar, parametros).\n                            success(function (data, status, headers, config) {\n                                $scope.mensaje = \"Coche insertado\";\n                            }).\n                            error(function (data, status, headers, config) {\n                                $scope.mensaje = data;\n                            });\n                        }\n                    }).\n            error(function (data, status, headers, config) {\n                $scope.mensaje = data;\n            });\n        };\n\n    });\n",
 			"file": "js/controllers.js",
-			"file_size": 4775,
-			"file_write_time": 131156599983252509,
 			"settings":
 			{
-				"buffer_size": 4798,
+				"buffer_size": 3872,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n/*Registro la aplicación y los módulos de los que depende*/\nvar catalogoTelefonos = angular.module('catalogoTelefonos', [\n    'controladoresCatalogo',\n    'ngRoute',\n    'ngMessages'\n]);\n\ncatalogoTelefonos.config(['$routeProvider',\n    function ($routeProvider) {\n        $routeProvider.\n                when('/buscador', {\n                    templateUrl: 'buscador.html',\n                    controller: 'controladorBuscadorCatalogo'\n                }).\n                when('/detalle/:matricula', {\n                    templateUrl: 'detalle.html',\n                    controller: 'controladorDetalleCatalogo'\n                }).\n                when('/alta', {\n                    templateUrl: 'alta.html',\n                    controller: 'controladorAltaCatalogo'\n                }).\n                otherwise({\n                    redirectTo: '/buscador'\n                });\n    }]);\n\n",
+			"file": "js/app.js",
+			"file_size": 893,
+			"file_write_time": 131140908889154593,
+			"settings":
+			{
+				"buffer_size": 891,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<!--\nTo change this license header, choose License Headers in Project Properties.\nTo change this template file, choose Tools | Templates\nand open the template in the editor.\n-->\n<html ng-app=\"catalogoTelefonos\">\n    <head>\n        <title>TODO supply a title</title>\n        <meta charset=\"UTF-8\">\n        <!--Angular 1.5.8 -->\n        <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js\"></script>\n        <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js\"></script>\n        <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js\"></script>\n        <script src=\"js/app.js\"></script>\n        <script src=\"js/controllers.js\"></script>\n        <!--Bootstrap -->\n        <link href=\"js/libs/bootstrap-3.3.4-dist/css/starter-template.css\" rel=\"stylesheet\" type=\"text/css\"/>\n        <link href=\"js/libs/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css\" rel=\"stylesheet\" type=\"text/css\"/>\n        <link href=\"js/libs/bootstrap-3.3.4-dist/css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\"/>\n    </head>\n    <body>\n        <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n            <div class=\"container\">\n                <div class=\"navbar-header\">\n                    <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-controls=\"navbar\">\n                        <span class=\"sr-only\">Toggle navigation</span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                    </button>\n                    <a class=\"navbar-brand\" href=\"#\">Avisame del coche</a>\n                </div>\n                <div id=\"navbar\" class=\"collapse navbar-collapse\">\n                    <ul class=\"nav navbar-nav\">\n                        <li class=\"active\"><a ng-href=\"#/buscador\">Buscar vehículos</a></li>\n                        <li><a ng-href=\"#/alta\">Alta vehículos</a></li>\n                    </ul>\n                </div><!--/.nav-collapse -->\n            </div>\n        </nav>\n        <div ng-view class=\"container theme-showcase\" role=\"main\"></div>\n    </body>\n</html>\n",
+			"file": "index.html",
+			"file_size": 2304,
+			"file_write_time": 131140906562156113,
+			"settings":
+			{
+				"buffer_size": 2258,
 				"line_ending": "Windows"
 			}
 		}
@@ -59,8 +81,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheHTML/src/main/webapp",
-		"/C/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheHTML/src/main/webapp/js"
+		"/C/Users/Carlos/Documents/Proyectos/avisamedelcoche/dev/AvisameDelCocheHTML/src/main/webapp"
 	],
 	"file_history":
 	[
@@ -133,7 +154,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -142,15 +163,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4798,
+						"buffer_size": 3872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								978,
-								978
+								192,
+								192
 							]
 						],
 						"settings":
@@ -164,6 +185,66 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
