@@ -2,7 +2,9 @@
 /*Registro el módulo de controladores del catalogo*/
 var controladoresCatalogo = angular.module('controladoresCatalogo', []);
 
-var serverURL = '/AvisameDelCocheRS/resources';
+var serverURL = '/AvisameDelCocheRS/resources'; 
+
+var prueba;
 
 /*CREO UN CONTROLADOR EN EL MODULO. 
  * El segundo parametro es la funcion constructora del controlador, donde se definen las
