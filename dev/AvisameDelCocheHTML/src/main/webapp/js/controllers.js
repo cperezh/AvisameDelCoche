@@ -4,7 +4,7 @@ var controladoresCatalogo = angular.module('controladoresCatalogo', []);
 
 var serverURL = '/AvisameDelCocheRS/resources'; 
 
-var prueba;
+var prueba2;
 
 /*CREO UN CONTROLADOR EN EL MODULO. 
  * El segundo parametro es la funcion constructora del controlador, donde se definen las
