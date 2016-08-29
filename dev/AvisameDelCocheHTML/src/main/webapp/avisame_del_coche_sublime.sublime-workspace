@@ -8,10 +8,7 @@
 	"buffers":
 	[
 		{
-			"contents": "\n\n<div class=\"jumbotron\">\n	<div class=\"panel panel-default\">\n		<div class=\"panel-body\">\n			<form ng-submit=\"alta()\" name=\"altaForm\">\n				<div class=\"form-group\">\n					<label>Matricula</label> <input type=\"text\" name=\"matricula\"\n					ng-model=\"coche.matricula\" required\n					ng-pattern=\"/\\d{4}\\w{3}$|\\w{1,2}-?\\d{4}-?\\w{2}$/\"\n					class=\"form-control\" placeholder=\"4731DSD\" />\n					<div ng-messages=\"altaForm.matricula.$error\" role=\"alert\">\n						<div ng-message=\"required\">* Campo requerido</div>\n						<div ng-message=\"pattern\">* Matricula no valida</div>\n					</div>\n				</div>\n				<div class=\"form-group\">\n					<label>Kilometraje</label> <input type=\"text\"\n					ng-model=\"coche.kilometraje\" required\n					ng-pattern=\"/\\d+/\"\n					class=\"form-control\"\n					placeholder=\"15000\" />\n				</div>\n				<div ng-repeat=\"estadoComponente in coche.estadoComponentes\"\n				class=\"form-group\">\n				<label>{{estadoComponente.componente}}</label> <input type=\"text\"\n				ng-model=\"estadoComponente.ultimaSustitucion\" class=\"form-control\"\n				placeholder=\"{{estadoComponente.componente}}\" />\n			</div>\n			<div class=\"form-group\" ng-show=\"mensaje !== ''\">\n				<div class=\"alert alert-success\" role=\"alert\">\n					<strong>{{mensaje}}</strong>\n				</div>\n			</div>\n			<button type=\"submit\">Aceptar</button>\n		</form>\n	</div>\n</div>\n</div>\n\n",
 			"file": "alta.html",
-			"file_size": 1358,
-			"file_write_time": 131156622495945108,
 			"settings":
 			{
 				"buffer_size": 1318,
@@ -27,21 +24,15 @@
 			}
 		},
 		{
-			"contents": "\n/*Registro la aplicación y los módulos de los que depende*/\nvar catalogoTelefonos = angular.module('catalogoTelefonos', [\n    'controladoresCatalogo',\n    'ngRoute',\n    'ngMessages'\n]);\n\ncatalogoTelefonos.config(['$routeProvider',\n    function ($routeProvider) {\n        $routeProvider.\n                when('/buscador', {\n                    templateUrl: 'buscador.html',\n                    controller: 'controladorBuscadorCatalogo'\n                }).\n                when('/detalle/:matricula', {\n                    templateUrl: 'detalle.html',\n                    controller: 'controladorDetalleCatalogo'\n                }).\n                when('/alta', {\n                    templateUrl: 'alta.html',\n                    controller: 'controladorAltaCatalogo'\n                }).\n                otherwise({\n                    redirectTo: '/buscador'\n                });\n    }]);\n\n",
 			"file": "js/app.js",
-			"file_size": 893,
-			"file_write_time": 131140908889154593,
 			"settings":
 			{
 				"buffer_size": 891,
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<!--\nTo change this license header, choose License Headers in Project Properties.\nTo change this template file, choose Tools | Templates\nand open the template in the editor.\n-->\n<html ng-app=\"catalogoTelefonos\">\n    <head>\n        <title>TODO supply a title</title>\n        <meta charset=\"UTF-8\">\n        <!--Angular 1.5.8 -->\n        <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js\"></script>\n        <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js\"></script>\n        <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js\"></script>\n        <script src=\"js/app.js\"></script>\n        <script src=\"js/controllers.js\"></script>\n        <!--Bootstrap -->\n        <link href=\"js/libs/bootstrap-3.3.4-dist/css/starter-template.css\" rel=\"stylesheet\" type=\"text/css\"/>\n        <link href=\"js/libs/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css\" rel=\"stylesheet\" type=\"text/css\"/>\n        <link href=\"js/libs/bootstrap-3.3.4-dist/css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\"/>\n    </head>\n    <body>\n        <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n            <div class=\"container\">\n                <div class=\"navbar-header\">\n                    <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-controls=\"navbar\">\n                        <span class=\"sr-only\">Toggle navigation</span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                    </button>\n                    <a class=\"navbar-brand\" href=\"#\">Avisame del coche</a>\n                </div>\n                <div id=\"navbar\" class=\"collapse navbar-collapse\">\n                    <ul class=\"nav navbar-nav\">\n                        <li class=\"active\"><a ng-href=\"#/buscador\">Buscar vehículos</a></li>\n                        <li><a ng-href=\"#/alta\">Alta vehículos</a></li>\n                    </ul>\n                </div><!--/.nav-collapse -->\n            </div>\n        </nav>\n        <div ng-view class=\"container theme-showcase\" role=\"main\"></div>\n    </body>\n</html>\n",
 			"file": "index.html",
-			"file_size": 2304,
-			"file_write_time": 131140906562156113,
 			"settings":
 			{
 				"buffer_size": 2258,
@@ -170,8 +161,8 @@
 						"selection":
 						[
 							[
-								192,
-								192
+								189,
+								189
 							]
 						],
 						"settings":
