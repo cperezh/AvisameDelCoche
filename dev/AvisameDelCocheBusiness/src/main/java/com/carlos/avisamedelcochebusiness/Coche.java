@@ -30,7 +30,7 @@ public class Coche implements Serializable {
 	@Id
 	private String matricula;
 
-	private int kilometraje;
+	private Integer kilometraje;
 
 	@ElementCollection
 	@CollectionTable(name = "EstadoComponente", joinColumns = @JoinColumn(name = "matricula") )
@@ -44,8 +44,8 @@ public class Coche implements Serializable {
 
 		Coche coche = new Coche();
 
-		coche.setMatricula("");
-		coche.setKilometraje(0);
+		coche.setMatricula(null);
+		coche.setKilometraje(null);
 		coche.estadoComponentes = new ArrayList<EstadoComponente>();
 
 		// Ahora inicializo los componentes
@@ -118,11 +118,11 @@ public class Coche implements Serializable {
 		this.matricula = matricula;
 	}
 
-	public int getKilometraje() {
+	public Integer getKilometraje() {
 		return kilometraje;
 	}
 
-	public void setKilometraje(int kilometraje) {
+	public void setKilometraje(Integer kilometraje) {
 		this.kilometraje = kilometraje;
 	}
 
