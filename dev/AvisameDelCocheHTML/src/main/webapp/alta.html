@@ -7,7 +7,7 @@
 				<div class="form-group">
 					<label>Matricula</label> <input type="text" name="matricula"
 						ng-model="coche.matricula" required
-						ng-pattern="/^\d{4}\w{3}$|^\w{1,2}-?\d{4}-?\w{2}$/"
+						ng-pattern="/^\d{4}[a-bA-B]{3}$|^[a-bA-B]{1,2}-?\d{4}-?[a-bA-B]{2}$/"
 						class="form-control" placeholder="4731DSD" />
 					<div ng-messages="altaForm.matricula.$error" role="alert">
 						<div ng-message="required">* Campo requerido</div>
