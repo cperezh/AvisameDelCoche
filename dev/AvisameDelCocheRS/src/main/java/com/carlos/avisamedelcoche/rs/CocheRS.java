@@ -59,6 +59,11 @@ public class CocheRS {
 		return avisameDelCoche.comprobarEstadoVehiculo(matricula);
 	}
 
+	/**
+	 * Busca un coche por su matricula. Si no lo encuentra, devuelve un coche vacio
+	 * @param matricula
+	 * @return
+	 */
 	@GET
 	public List<Coche> buscarCoches(@QueryParam("matricula") String matricula) {
 

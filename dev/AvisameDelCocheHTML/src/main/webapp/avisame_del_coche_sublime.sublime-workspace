@@ -11,7 +11,7 @@
 			"file": "alta.html",
 			"settings":
 			{
-				"buffer_size": 2452,
+				"buffer_size": 2533,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,15 +127,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2452,
+						"buffer_size": 2533,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								591,
-								591
+								1934,
+								1934
 							]
 						],
 						"settings":
@@ -144,7 +144,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 837.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
