@@ -20,13 +20,13 @@ public class EstadoComponente implements Serializable {
 	private Componente componente;
 	
 
-    private int ultimaSustitucion;
+    private Integer ultimaSustitucion;
     
     @Transient
-    private int kilometrosDeMas;
+    private Integer kilometrosDeMas;
     
     @Transient
-	private boolean necesitaReparacion;
+	private Boolean necesitaReparacion;
 
     public EstadoComponente() {
 
@@ -40,27 +40,27 @@ public class EstadoComponente implements Serializable {
 		this.componente = componente;
 	}
 
-	public int getUltimaSustitucion() {
+	public Integer getUltimaSustitucion() {
 		return ultimaSustitucion;
 	}
 
-	public void setUltimaSustitucion(int ultimaSustitucion) {
+	public void setUltimaSustitucion(Integer ultimaSustitucion) {
 		this.ultimaSustitucion = ultimaSustitucion;
 	}
 
-	public boolean isNecesitaReparacion() {
+	public Boolean isNecesitaReparacion() {
 		return necesitaReparacion;
 	}
 
-	public void setNecesitaReparacion(boolean necesitaReparacion) {
+	public void setNecesitaReparacion(Boolean necesitaReparacion) {
 		this.necesitaReparacion = necesitaReparacion;
 	}
 
-	public int getKilometrosDeMas() {
+	public Integer getKilometrosDeMas() {
 		return kilometrosDeMas;
 	}
 
-	public void setKilometrosDeMas(int kilometrosDeMas) {
+	public void setKilometrosDeMas(Integer kilometrosDeMas) {
 		this.kilometrosDeMas = kilometrosDeMas;
 	}
 	

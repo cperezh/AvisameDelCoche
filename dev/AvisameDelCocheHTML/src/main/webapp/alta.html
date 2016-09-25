@@ -6,35 +6,70 @@
 			<form ng-submit="alta()" name="altaForm">
 				<div class="form-group">
 					<label>Matricula</label> <input type="text" name="matricula"
-					ng-model="coche.matricula" required
-					ng-pattern="/\d{4}\w{3}$|\w{1,2}-?\d{4}-?\w{2}$/"
-					class="form-control" placeholder="4731DSD" />
+						ng-model="coche.matricula" required
+						ng-pattern="/^\d{4}[a-zA-Z]{3}$|^[a-zA-Z]{1,2}-?\d{4}-?[a-zA-Z]{2}$/"
+						ng-trim = "true"
+						maxlength="9"
+						class="form-control" placeholder="4731DSD M1845ZT M-1845-ZT" />
 					<div ng-messages="altaForm.matricula.$error" role="alert">
 						<div ng-message="required">* Campo requerido</div>
-						<div ng-message="pattern">* Matricula no valida</div>
+						<div ng-message="pattern">* Campo no valido</div>
+						<div ng-message="maxlength">* Campo demasiado largo</div>
 					</div>
 				</div>
 				<div class="form-group">
-					<label>Kilometraje</label> <input type="text"
-					ng-model="coche.kilometraje" required
-					ng-pattern="/\d+/"
-					class="form-control"
-					placeholder="15000" />
+					<label>Kilometraje</label> <input type="text" name="kilometraje"
+						ng-model="coche.kilometraje" required 
+						ng-pattern="/^\d+$/"
+						ng-trim = "true"
+						maxlength="9"
+						class="form-control" placeholder="15000" />
+					<div ng-messages="altaForm.kilometraje.$error" role="alert">
+						<div ng-message="required">* Campo requerido</div>
+						<div ng-message="pattern">* Campo no valido</div>
+						<div ng-message="maxlength">* Campo demasiado largo</div>
+					</div>
 				</div>
-				<div ng-repeat="estadoComponente in coche.estadoComponentes"
-				class="form-group">
-				<label>{{estadoComponente.componente}}</label> <input type="text"
-				ng-model="estadoComponente.ultimaSustitucion" class="form-control"
-				placeholder="{{estadoComponente.componente}}" />
-			</div>
-			<div class="form-group" ng-show="mensaje !== ''">
-				<div class="alert alert-success" role="alert">
-					<strong>{{mensaje}}</strong>
+
+				<div class="panel panel-default"
+					ng-show="coche.estadoComponentes.length > 0">
+					<!-- Default panel contents -->
+					<div class="panel-heading">Componentes del coche</div>
+
+					<!-- Table -->
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Componente</th>
+								<th>Kilometraje &uacute;ltima sustituci&oacute;n</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="estadoComponente in coche.estadoComponentes">
+								<td>{{estadoComponente.componente}}</td>
+								<td><input type="text"
+									name="componente{{$index}}"
+									ng-model="estadoComponente.ultimaSustitucion"
+									ng-pattern="/^\d+$/"
+									ng-trim = "true"
+									maxlength="9" 
+									class="form-control"
+									placeholder="15000" />
+									<div ng-messages="altaForm['componente'+$index].$error" role="alert">
+										<div ng-message="pattern">*	Kilometraje no valido</div>
+									</div></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-			</div>
-			<button type="submit">Aceptar</button>
-		</form>
+				<div class="form-group" ng-show="mensaje !== ''">
+					<div class="alert alert-success" role="alert">
+						<strong>{{mensaje}}</strong>
+					</div>
+				</div>
+				<button type="submit" ng-disabled="altaForm.$invalid">Aceptar</button>
+			</form>
+		</div>
 	</div>
-</div>
 </div>
 
