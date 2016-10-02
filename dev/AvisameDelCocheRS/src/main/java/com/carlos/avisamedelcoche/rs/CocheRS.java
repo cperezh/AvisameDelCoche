@@ -27,6 +27,7 @@ import com.carlos.avisamedelcochebusiness.Coche;
 /**
  *
  * Servicio REST para Coches
+ * 
  * @author Carlos
  */
 @Path("/coches")
@@ -38,30 +39,10 @@ public class CocheRS {
 
 	static final Logger logger = LogManager.getLogger(CocheRS.class.getName());
 
-	@GET
-	@Path("/{matricula}")
-	public Coche buscarCoche(@PathParam("matricula") String matricula) {
-
-		return avisameDelCoche.buscarVehiculo(matricula);
-
-	}
-
-	@POST
-	@Path("/{matricula}")
-	public Coche modificarCoche(Coche coche) {
-
-		return avisameDelCoche.modificar(coche);
-	}
-
-	@GET
-	@Path("/{matricula}/estado")
-	public Coche comprobarEstado(@PathParam("matricula") String matricula) {
-
-		return avisameDelCoche.comprobarEstadoVehiculo(matricula);
-	}
-
 	/**
-	 * Busca un coche por su matricula. Si no lo encuentra, devuelve un coche vacio
+	 * Busca una lista de coche por su matricula. Si no lo encuentra, devuelve
+	 * un coche vacio
+	 * 
 	 * @param matricula
 	 * @return
 	 */
@@ -78,11 +59,32 @@ public class CocheRS {
 		return coches;
 	}
 
-	
+	@GET
+	@Path("/{matricula}")
+	public Coche buscarCoche(@PathParam("matricula") String matricula) {
+
+		return avisameDelCoche.buscarVehiculo(matricula);
+
+	}
+
+	@GET
+	@Path("/{matricula}/estado")
+	public Coche comprobarEstado(@PathParam("matricula") String matricula) {
+
+		return avisameDelCoche.comprobarEstadoVehiculo(matricula);
+	}
+
 	@PUT
 	public Coche altaCoche(Coche coche) {
 
 		return avisameDelCoche.altaCoche(coche);
+	}
+
+	@POST
+	@Path("/{matricula}")
+	public Coche modificarCoche(Coche coche) {
+
+		return avisameDelCoche.modificar(coche);
 	}
 
 }
