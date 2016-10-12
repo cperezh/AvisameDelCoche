@@ -21,7 +21,7 @@ import javax.ws.rs.core.MediaType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
+import com.carlos.avisamedelcoche.service.CocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 
 /**
@@ -35,7 +35,7 @@ import com.carlos.avisamedelcochebusiness.Coche;
 public class CocheRS {
 
 	@EJB
-	AvisameDelCocheService avisameDelCoche;
+	CocheService avisameDelCoche;
 
 	static final Logger logger = LogManager.getLogger(CocheRS.class.getName());
 
@@ -52,7 +52,7 @@ public class CocheRS {
 		List<Coche> coches = new ArrayList<Coche>();
 
 		if (matricula == null) {
-			coches.add(Coche.cocheVacio());
+			coches.add(avisameDelCoche.cocheVacio());
 		} else {
 			coches = avisameDelCoche.buscarVehiculos(matricula);
 		}

@@ -40,28 +40,6 @@ public class Coche implements Serializable {
 
 	}
 
-	public static Coche cocheVacio() {
-
-		Coche coche = new Coche();
-
-		coche.setMatricula(null);
-		coche.setKilometraje(null);
-		coche.estadoComponentes = new ArrayList<EstadoComponente>();
-
-		// Ahora inicializo los componentes
-		EstadoComponente estadoComponente;
-		int i = 0;
-
-		for (Componente Componente : Componente.values()) {
-
-			estadoComponente = new EstadoComponente();
-			estadoComponente.setComponente(Componente.values()[i++]);
-			coche.estadoComponentes.add(estadoComponente);
-		}
-
-		return coche;
-	}
-
 	/**
 	 * La reparacion de un componente es necesaria si ha alcanzado el limite de
 	 * kilometros que se pueden hacer con el.

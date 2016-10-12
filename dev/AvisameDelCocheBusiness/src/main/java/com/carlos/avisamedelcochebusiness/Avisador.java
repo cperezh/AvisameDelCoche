@@ -50,7 +50,7 @@ public class Avisador {
 
         for (EstadoComponente estadoComponente : coche.getEstadoComponentes()) {
 
-            textoParcial = mensaje.getTextoMensaje().concat(estadoComponente.getComponente().name());
+            textoParcial = mensaje.getTextoMensaje().concat(estadoComponente.getComponente().getNombre());
 
             textoParcial = textoParcial.concat(nuevalinea);
 

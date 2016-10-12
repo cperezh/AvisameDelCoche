@@ -16,7 +16,7 @@ import com.carlos.avisamedelcochebusiness.Coche;
  * @author Carlos
  */
 @Local
-public interface AvisameDelCocheService{
+public interface CocheService{
 
     Coche actualizarKilometraje(String matricula, int kilometraje);
     
@@ -31,4 +31,6 @@ public interface AvisameDelCocheService{
     Coche altaCoche(Coche coche);
 
 	Coche modificar(Coche coche);
+	
+	Coche cocheVacio();
 }

@@ -5,7 +5,7 @@
  */
 package com.carlos.avisamedelcochews;
 
-import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
+import com.carlos.avisamedelcoche.service.CocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 import javax.ejb.EJB;
 import javax.jws.WebMethod;
@@ -20,7 +20,7 @@ import javax.jws.WebService;
 public class AvisameDelCocheWS {
 
     @EJB
-    AvisameDelCocheService avisameDelCocheService;
+    CocheService avisameDelCocheService;
 
     @WebMethod
     public Coche buscarVehiculo(@WebParam(name = "matricula") String matricula) {
