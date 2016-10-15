@@ -27,7 +27,7 @@
 					</thead>
 					<tbody>
 						<tr ng-repeat="estadoComponente in coche.estadoComponentes">
-							<td>{{estadoComponente.componente}}</td>
+							<td>{{estadoComponente.componente.nombre}}</td>
 							<td><input type="text"
 								ng-model="estadoComponente.ultimaSustitucion"
 								class="form-control" placeholder="Kilometraje" /></td>

@@ -46,7 +46,7 @@
 						</thead>
 						<tbody>
 							<tr ng-repeat="estadoComponente in coche.estadoComponentes">
-								<td>{{estadoComponente.componente}}</td>
+								<td>{{estadoComponente.componente.nombre}}</td>
 								<td><input type="text"
 									name="componente{{$index}}"
 									ng-model="estadoComponente.ultimaSustitucion"

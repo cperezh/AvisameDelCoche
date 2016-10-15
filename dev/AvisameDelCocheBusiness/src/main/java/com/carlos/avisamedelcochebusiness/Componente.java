@@ -8,6 +8,7 @@ package com.carlos.avisamedelcochebusiness;
 import java.io.Serializable;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
@@ -30,7 +31,7 @@ public class Componente implements Serializable {
 	private int id_componente;
 
 	@Column
-	private String nombre;
+	public String nombre;
 
 	@Column(name = "KILOMETROS_DURACION")
 	private int limiteKilometros;

@@ -10,13 +10,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.OrderBy;
 
 /**
  *
@@ -32,8 +31,8 @@ public class Coche implements Serializable {
 
 	private Integer kilometraje;
 
-	@ElementCollection
-	@CollectionTable(name = "EstadoComponente", joinColumns = @JoinColumn(name = "matricula") )
+	@OneToMany(mappedBy = "coche")
+	@OrderBy("ultimaSustitucion")
 	private Collection<EstadoComponente> estadoComponentes;
 
 	public Coche() {
