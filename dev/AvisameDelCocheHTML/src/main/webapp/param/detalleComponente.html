@@ -8,7 +8,7 @@
 					<label>Componente:</label> <input type="text" name="nombre"
 					ng-model="componente.nombre" required
 					ng-change="verificarNombreNoRepetido(componente)"
-					ng-pattern="/^[a-zA-Z ]+$/"
+					ng-pattern="/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]+$/"
 					maxlength="50"
 					placeholder="Nombre" 
 					class="form-control"/>
