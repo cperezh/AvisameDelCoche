@@ -36,4 +36,16 @@ public class DAOConmponenteEJB implements DAOComponente{
 		return componentes;
 	}
 
+	@Override
+	public Componente getComponente(int idComponente) {
+		
+		return entityManager.find(Componente.class,idComponente);
+	}
+
+	@Override
+	public Componente modificarComponente(Componente componente) {
+		
+		return entityManager.merge(componente);
+	}
+
 }

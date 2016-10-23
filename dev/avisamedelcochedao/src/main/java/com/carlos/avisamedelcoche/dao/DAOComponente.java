@@ -11,4 +11,8 @@ public interface DAOComponente {
 	 * @return
 	 */
 	List<Componente> getComponentes();
+	
+	Componente getComponente(int idComponente);
+	
+	Componente modificarComponente(Componente componente);
 }

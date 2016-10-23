@@ -6864,25 +6864,25 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="ContainerState">jj1iFP+bVkq2m7nm76OeygAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
 <XPD:REF name="Views[0]">jWo+MeXX5kevuHrKOfBfmgAA</XPD:REF>
-<XPD:ATTR name="#Incomings" type="integer">2</XPD:ATTR>
+<XPD:ATTR name="#Incomings" type="integer">3</XPD:ATTR>
 <XPD:REF name="Incomings[0]">2WpYvTXYIEaVAQCGVeRzhAAA</XPD:REF>
 <XPD:REF name="Incomings[1]">pPWvpk4Zg0CL/Zca0Med4wAA</XPD:REF>
+<XPD:REF name="Incomings[2]">o1oH31s5tkii9n23Q+8dnQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Subvertices[8]" type="UMLActionState" guid="lmyG0zD3tEanQjAreMxlqQAA">
 <XPD:ATTR name="Name" type="string">Modifica componente</XPD:ATTR>
 <XPD:REF name="ContainerState">jj1iFP+bVkq2m7nm76OeygAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
 <XPD:REF name="Views[0]">lcwp9hfUWU2icPHePEAjbwAA</XPD:REF>
-<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="#Outgoings" type="integer">2</XPD:ATTR>
 <XPD:REF name="Outgoings[0]">BhBA4J8hDkSguqSEZ1HeyQAA</XPD:REF>
+<XPD:REF name="Outgoings[1]">o1oH31s5tkii9n23Q+8dnQAA</XPD:REF>
 <XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
 <XPD:REF name="Incomings[0]">9Ya7+wwWnU+XQ9t9tYFqMwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Subvertices[9]" type="UMLActionState" guid="lWLRO4Pw1UifXru7/eMrywAA">
 <XPD:ATTR name="Name" type="string">Actualiza los componentes de los coches existentes</XPD:ATTR>
 <XPD:REF name="ContainerState">jj1iFP+bVkq2m7nm76OeygAA</XPD:REF>
-<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
-<XPD:REF name="Views[0]">M53sb9E+ZUecXd4Gwc1D1QAA</XPD:REF>
 <XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
 <XPD:REF name="Outgoings[0]">pPWvpk4Zg0CL/Zca0Med4wAA</XPD:REF>
 <XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
@@ -6895,7 +6895,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="DiagramOwner">DEAqO2KgZEamsEHERKhIcAAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLActivityDiagramView" guid="mvljGQoJg0G7fNdflb22UQAA">
 <XPD:REF name="Diagram">KSVDF1AeoUKIfb6RtyTD3wAA</XPD:REF>
-<XPD:ATTR name="#OwnedViews" type="integer">25</XPD:ATTR>
+<XPD:ATTR name="#OwnedViews" type="integer">22</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLSwimlaneView" guid="QnTOctEDWUKNzERRVoFtTwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
@@ -7296,82 +7296,7 @@ El propietario envía los kilómetros de su coche. El sistema los recibe y los p
 <XPD:REF name="Model">9Ya7+wwWnU+XQ9t9tYFqMwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedViews[19]" type="UMLActionStateView" guid="M53sb9E+ZUecXd4Gwc1D1QAA">
-<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">460</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">528</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">125</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">49</XPD:ATTR>
-<XPD:ATTR name="WordWrap" type="boolean">True</XPD:ATTR>
-<XPD:REF name="Model">lWLRO4Pw1UifXru7/eMrywAA</XPD:REF>
-<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="NpuVdbzFBU6V4GVq5IKC7gAA">
-<XPD:OBJ name="NameLabel" type="LabelView" guid="DLRgyT5ViE28d0TpZwy8LAAA">
-<XPD:ATTR name="Width" type="integer">115</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">Actualiza los componentes de los coches existentes</XPD:ATTR>
-</XPD:OBJ>
-<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="xaDVSgsAPEKW+biOkeEfGwAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-</XPD:OBJ>
-<XPD:OBJ name="PropertyLabel" type="LabelView" guid="AwMS7MK6xUubKZHlnIr2rwAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-</XPD:OBJ>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedViews[20]" type="UMLTransitionView" guid="7N/SdwOR5EWqUpb0AMdfKAAA">
-<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">520,487;521,528</XPD:ATTR>
-<XPD:REF name="Model">BhBA4J8hDkSguqSEZ1HeyQAA</XPD:REF>
-<XPD:REF name="Head">M53sb9E+ZUecXd4Gwc1D1QAA</XPD:REF>
-<XPD:REF name="Tail">lcwp9hfUWU2icPHePEAjbwAA</XPD:REF>
-<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="lPF1NShowUSVzO7jFNullQAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
-<XPD:REF name="Model">BhBA4J8hDkSguqSEZ1HeyQAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="xS9mJn0U7kuORjeutgwW5QAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
-<XPD:REF name="Model">BhBA4J8hDkSguqSEZ1HeyQAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="9xVLNeAUukeFCqvj79iX8AAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
-<XPD:REF name="Model">BhBA4J8hDkSguqSEZ1HeyQAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedViews[21]" type="UMLTransitionView" guid="6pnvyi2KoUyfOtJONLXHzAAA">
-<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">524,576;524,624;465,624</XPD:ATTR>
-<XPD:REF name="Model">pPWvpk4Zg0CL/Zca0Med4wAA</XPD:REF>
-<XPD:REF name="Head">jWo+MeXX5kevuHrKOfBfmgAA</XPD:REF>
-<XPD:REF name="Tail">M53sb9E+ZUecXd4Gwc1D1QAA</XPD:REF>
-<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="rvduB69SaUaaH6LiKgBo7gAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
-<XPD:REF name="Model">pPWvpk4Zg0CL/Zca0Med4wAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="ZsENxpHZNkSzspuZo3FONAAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
-<XPD:REF name="Model">pPWvpk4Zg0CL/Zca0Med4wAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="vtgXHVRfMUWfZmZq37ZQkAAA">
-<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
-<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
-<XPD:REF name="Model">pPWvpk4Zg0CL/Zca0Med4wAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="OwnedViews[22]" type="UMLNoteView" guid="gmuL1wmWR02m5sg3qj7adAAA">
+<XPD:OBJ name="OwnedViews[19]" type="UMLNoteView" guid="gmuL1wmWR02m5sg3qj7adAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">592</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">480</XPD:ATTR>
@@ -7382,23 +7307,43 @@ se informa al usuario
 del error y se hace rollback
 </XPD:ATTR>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedViews[23]" type="UMLNoteLinkView" guid="kxqO84B1VESn8Zd9RA8kbgAA">
+<XPD:OBJ name="OwnedViews[20]" type="UMLNoteLinkView" guid="kxqO84B1VESn8Zd9RA8kbgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">565,480;592,487</XPD:ATTR>
 <XPD:REF name="Head">gmuL1wmWR02m5sg3qj7adAAA</XPD:REF>
 <XPD:REF name="Tail">lcwp9hfUWU2icPHePEAjbwAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="OwnedViews[24]" type="UMLNoteLinkView" guid="qg6Z6VIsTEeJkBE/G1KsIAAA">
+<XPD:OBJ name="OwnedViews[21]" type="UMLTransitionView" guid="z3hhxctRv0ePaQ92zxWWMQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">584,533;592,531</XPD:ATTR>
-<XPD:REF name="Head">gmuL1wmWR02m5sg3qj7adAAA</XPD:REF>
-<XPD:REF name="Tail">M53sb9E+ZUecXd4Gwc1D1QAA</XPD:REF>
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">511,487;511,624;465,624</XPD:ATTR>
+<XPD:REF name="Model">o1oH31s5tkii9n23Q+8dnQAA</XPD:REF>
+<XPD:REF name="Head">jWo+MeXX5kevuHrKOfBfmgAA</XPD:REF>
+<XPD:REF name="Tail">lcwp9hfUWU2icPHePEAjbwAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="Lhlv+q5nfEWmoDcyGqXF6QAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">o1oH31s5tkii9n23Q+8dnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="V5WR36Yp1keMXUxW83UHFQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">o1oH31s5tkii9n23Q+8dnQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="9VWEXZNAw0iXsdHMUq6aBQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">o1oH31s5tkii9n23Q+8dnQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:ATTR name="#Transitions" type="integer">10</XPD:ATTR>
+</XPD:OBJ>
+<XPD:ATTR name="#Transitions" type="integer">11</XPD:ATTR>
 <XPD:OBJ name="Transitions[0]" type="UMLTransition" guid="hGTbuN0mzky4xqancSw9BQAA">
 <XPD:REF name="StateMachine">DEAqO2KgZEamsEHERKhIcAAA</XPD:REF>
 <XPD:REF name="Source">fntEy1sXGkqiNDSb/7cZigAA</XPD:REF>
@@ -7486,21 +7431,21 @@ del error y se hace rollback
 <XPD:REF name="StateMachine">DEAqO2KgZEamsEHERKhIcAAA</XPD:REF>
 <XPD:REF name="Source">lmyG0zD3tEanQjAreMxlqQAA</XPD:REF>
 <XPD:REF name="Target">lWLRO4Pw1UifXru7/eMrywAA</XPD:REF>
-<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
-<XPD:REF name="Views[0]">7N/SdwOR5EWqUpb0AMdfKAAA</XPD:REF>
-<XPD:REF name="Views[1]">lPF1NShowUSVzO7jFNullQAA</XPD:REF>
-<XPD:REF name="Views[2]">xS9mJn0U7kuORjeutgwW5QAA</XPD:REF>
-<XPD:REF name="Views[3]">9xVLNeAUukeFCqvj79iX8AAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Transitions[9]" type="UMLTransition" guid="pPWvpk4Zg0CL/Zca0Med4wAA">
 <XPD:REF name="StateMachine">DEAqO2KgZEamsEHERKhIcAAA</XPD:REF>
 <XPD:REF name="Source">lWLRO4Pw1UifXru7/eMrywAA</XPD:REF>
 <XPD:REF name="Target">kRfAvSJ5gUyIYJiY+HyGSwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[10]" type="UMLTransition" guid="o1oH31s5tkii9n23Q+8dnQAA">
+<XPD:REF name="StateMachine">DEAqO2KgZEamsEHERKhIcAAA</XPD:REF>
+<XPD:REF name="Source">lmyG0zD3tEanQjAreMxlqQAA</XPD:REF>
+<XPD:REF name="Target">kRfAvSJ5gUyIYJiY+HyGSwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
-<XPD:REF name="Views[0]">6pnvyi2KoUyfOtJONLXHzAAA</XPD:REF>
-<XPD:REF name="Views[1]">rvduB69SaUaaH6LiKgBo7gAA</XPD:REF>
-<XPD:REF name="Views[2]">ZsENxpHZNkSzspuZo3FONAAA</XPD:REF>
-<XPD:REF name="Views[3]">vtgXHVRfMUWfZmZq37ZQkAAA</XPD:REF>
+<XPD:REF name="Views[0]">z3hhxctRv0ePaQ92zxWWMQAA</XPD:REF>
+<XPD:REF name="Views[1]">Lhlv+q5nfEWmoDcyGqXF6QAA</XPD:REF>
+<XPD:REF name="Views[2]">V5WR36Yp1keMXUxW83UHFQAA</XPD:REF>
+<XPD:REF name="Views[3]">9VWEXZNAw0iXsdHMUq6aBQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#Partitions" type="integer">2</XPD:ATTR>
 <XPD:OBJ name="Partitions[0]" type="UMLPartition" guid="kLtAlUkqvkS3ru0hXAVvKgAA">
@@ -8008,8 +7953,8 @@ del error y se hace rollback
 <XPD:REF name="Participant">RhSiEqjHGkSlTMemFbSBzwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">T9JH1Llu90ebf6LIMKm3JgAA</XPD:REF>
-<XPD:REF name="Views[1]">RPzBbVKxIkOWJQvr05khEAAA</XPD:REF>
-<XPD:REF name="Views[2]">p9/8IhDiuEObOYIJnyna3wAA</XPD:REF>
+<XPD:REF name="Views[1]">p9/8IhDiuEObOYIJnyna3wAA</XPD:REF>
+<XPD:REF name="Views[2]">RPzBbVKxIkOWJQvr05khEAAA</XPD:REF>
 <XPD:REF name="Views[3]">U3b8pjiv3kCk9cf5SVESMwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="LPtb2HItmkaz1+78/RoalQAA">
@@ -8019,8 +7964,8 @@ del error y se hace rollback
 <XPD:REF name="Participant">EpqNQVcUWUiHBFJ/PtmWZQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">Mc2w0A7nGUaPr6GP9Q9IEAAA</XPD:REF>
-<XPD:REF name="Views[1]">CMAb7T5hNES7u5a8u9BvCQAA</XPD:REF>
-<XPD:REF name="Views[2]">20oO80L140+QYwkb9YzsSAAA</XPD:REF>
+<XPD:REF name="Views[1]">20oO80L140+QYwkb9YzsSAAA</XPD:REF>
+<XPD:REF name="Views[2]">CMAb7T5hNES7u5a8u9BvCQAA</XPD:REF>
 <XPD:REF name="Views[3]">+2oMYmGBcEWC6LwcUJ+e1AAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>

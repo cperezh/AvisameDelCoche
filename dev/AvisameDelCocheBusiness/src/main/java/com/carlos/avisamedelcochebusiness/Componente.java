@@ -28,7 +28,8 @@ import javax.persistence.NamedQuery;
 public class Componente implements Serializable {
 
 	@Id
-	private int id_componente;
+	@Column(name = "ID_COMPONENTE")
+	private int idComponente;
 
 	@Column
 	public String nombre;
@@ -40,12 +41,12 @@ public class Componente implements Serializable {
 		
 	}
 
-	public int getId_componente() {
-		return id_componente;
+	public int getIdcomponente() {
+		return idComponente;
 	}
 
-	public void setId_componente(int id_componente) {
-		this.id_componente = id_componente;
+	public void setIdcomponente(int id_componente) {
+		this.idComponente = id_componente;
 	}
 
 	public String getNombre() {

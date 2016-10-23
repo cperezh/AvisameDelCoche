@@ -1,4 +1,6 @@
 
+var serverURL = '/AvisameDelCocheRS/resources';
+
 /*Registro la aplicación y los módulos de los que depende*/
 var catalogoTelefonos = angular.module('catalogoTelefonos', [
     'controladoresCatalogo',
@@ -22,7 +24,7 @@ catalogoTelefonos.config(['$routeProvider',
                     templateUrl: 'alta.html',
                     controller: 'controladorAltaCatalogo'
                 }).
-                 when('/detalleComponente/:componente', {
+                 when('/detalleComponente/:idComponente', {
                     templateUrl: 'param/detalleComponente.html',
                     controller: 'controladorDetalleComponente'
                 }).
@@ -31,5 +33,5 @@ catalogoTelefonos.config(['$routeProvider',
                 });
     }]);
 
-var serverURL = '/AvisameDelCocheRS/resources';
+
 

@@ -29,6 +29,8 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
 		
 		logger.fatal(ex);
 		
+		ex.printStackTrace();
+		
 		ResourceBundle errores = ResourceBundle.getBundle(Recursos.ERRORES.getPropertiesFile());
 
 		return Response.status(Status.INTERNAL_SERVER_ERROR).entity(new ErrorMessage(errores.getString("errorGenerico")))

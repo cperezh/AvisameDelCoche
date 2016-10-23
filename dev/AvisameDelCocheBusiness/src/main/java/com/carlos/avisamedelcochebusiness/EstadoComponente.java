@@ -13,6 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 
+import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
+
 /**
  *
  * @author Pakno
@@ -23,6 +25,7 @@ public class EstadoComponente implements Serializable {
 	@Id
 	@ManyToOne
 	@JoinColumn(name = "MATRICULA")
+	@XmlInverseReference(mappedBy="estadoComponentes")
 	private Coche coche;
 
 	@Id
@@ -40,6 +43,14 @@ public class EstadoComponente implements Serializable {
 
 	public EstadoComponente() {
 
+	}
+
+	public Coche getCoche() {
+		return coche;
+	}
+
+	public void setCoche(Coche coche) {
+		this.coche = coche;
 	}
 
 	public Componente getComponente() {

@@ -1,58 +1,78 @@
 /*Registro el módulo de controladores del catalogo*/
 var controladoresParametrizacion = angular.module('controladoresParametrizacion', []);
 
-controladoresParametrizacion.controller('controladorDetalleComponente', function ($scope, $http, $routeParams, $window) {
+var urlComponentes = serverURL+'/componentes/'
 
-    /*ON LOAD*/
-    var url = serverURL+'/componentes/' + $routeParams.componente;
+controladoresParametrizacion.controller('controladorDetalleComponente', function ($scope, $http, $routeParams, $window,$filter) {
 
-    $http.get(url).
-    then(
-        function succes(response) {
-            $scope.coche = response.data; 
-        },
-        function error(response) {
+	/*ON LOAD*/
+	var url = urlComponentes + $routeParams.idComponente;
+	$scope.mensaje = "";
 
-        }
-    );
-    
-    /*FIN ON LOAD*/
+	$http.get(url).
+	then(
+		function succes(response) {
+			$scope.componente = response.data; 
+		},
+		function error(response) {
 
-    $scope.modificar = function () {
+		}
+		);
 
-        var url = serverURL+'/coches/' + $scope.coche.matricula;
+	/*FIN ON LOAD*/
 
-        var parametros = $scope.coche;
+	$scope.modificar = function () {
 
-        $http.post(url, parametros).
-        then(
-            function success(response) {
-                $scope.coche = response.data;
-            },
-            function error (response) {
-            }
-        );
-    };
-    
-    $scope.comprobarEstado = function () {
+		var url = urlComponentes + $scope.componente.idcomponente;
 
-        var url = serverURL+'/coches/' + $scope.coche.matricula+"/estado";
+		$http.post(url, $scope.componente).
+		then(
+			function success(response) {
+				$scope.mensaje = "Componente modificado";
+			},
+			function error (response) {
+			}
+			);
+	};
 
-        var parametros = $scope.coche;
+	/*Verifica si hay otro componente con el mismo nombre */
+	$scope.verificarNombreNoRepetido = function (componente){
 
-        $http.get(url, parametros).
-        then(
-            function success(response) {
-                $scope.coche = response.data;
-            },
-            function error(response) {
-                        // called asynchronously if an error occurs
-                        // or server returns response with an error status.
-            }
-        );
-    };
+		var url = urlComponentes + "?q=all";
 
-    $scope.back = function () {
-        $window.history.back();
-    };
+		$http.get(url).
+		then(
+			function success(response) {
+
+				var componentes = response.data;
+
+				$scope.modificarComponenteForm.nombre.$setValidity("nombreRepetido",!buscarDuplicado(componente,componentes));
+
+			},
+			function error (response) {
+			}
+			);
+	}
+
+	/*Busca un duplicado del componente por nombre, en la lista de componentes*/
+	function buscarDuplicado(componente,componentes){
+
+		var componenteAux;
+
+		var componenteMayuscula = $filter('uppercase')(componente.nombre);
+		var componeneAuxMayuscula;
+
+		for (i=0;i<componentes.length;i++){
+
+			componenteAux = componentes[i];
+
+			componeneAuxMayuscula = $filter('uppercase')(componenteAux.nombre);
+
+			if (componenteMayuscula == componeneAuxMayuscula && componenteAux.idcomponente != componente.idcomponente){
+				return true;
+			}
+		}
+
+		return false;
+	}
 });
