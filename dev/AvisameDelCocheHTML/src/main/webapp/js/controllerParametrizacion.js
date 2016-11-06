@@ -15,7 +15,7 @@ controladoresParametrizacion.controller('controladorDetalleComponente', function
 			$scope.componente = response.data; 
 		},
 		function error(response) {
-
+			$scope.mensaje = response.data.error;
 		}
 		);
 
@@ -23,14 +23,15 @@ controladoresParametrizacion.controller('controladorDetalleComponente', function
 
 	$scope.modificar = function () {
 
-		var url = urlComponentes + $scope.componente.idcomponente;
+		var url = urlComponentes + $routeParams.idComponente;
 
-		$http.post(url, $scope.componente).
+		$http.put(url, $scope.componente).
 		then(
 			function success(response) {
 				$scope.mensaje = "Componente modificado";
 			},
 			function error (response) {
+				$scope.mensaje = response.data.error;
 			}
 			);
 	};

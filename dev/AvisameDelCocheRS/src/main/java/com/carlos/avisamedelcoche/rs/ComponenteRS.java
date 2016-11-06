@@ -5,13 +5,14 @@ import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
+import com.carlos.avisamedelcoche.rs.filters.exception.NotFoundException;
 import com.carlos.avisamedelcoche.service.ComponenteService;
 import com.carlos.avisamedelcochebusiness.Componente;
 
@@ -33,24 +34,36 @@ public class ComponenteRS {
 	public List<Componente> getTodosComponentes(@QueryParam("q") String q) {
 
 		List<Componente> componentes = new ArrayList<Componente>();
-		
+
 		if (q.equals("all")) {
 			componentes = componenteService.getComponentes();
 		}
-		
+
 		return componentes;
+	}
+
+	@PUT
+	@Path("/{idComponente}")
+	public Componente modificarComponente(@PathParam("idComponente") int idComponente,Componente componente) throws NotFoundException{
+
+		if (componenteService.getComponente(idComponente) == null) {
+			throw new NotFoundException("/componentes -->" + idComponente);
+		} else {
+			return componenteService.modificarComponente(componente);
+		}
+
 	}
 
 	@GET
 	@Path("/{idComponente}")
-	public Componente getComponente(@PathParam("idComponente") int idComponente, @QueryParam("q") String q) {
+	public Componente getComponente(@PathParam("idComponente") int idComponente) throws NotFoundException {
 
-		return componenteService.getComponente(idComponente);
+		if (componenteService.getComponente(idComponente) == null) {
+			throw new NotFoundException("/componentes/" + idComponente);
+		} else {
+			return componenteService.getComponente(idComponente);
+		}
+
 	}
 
-	@POST
-	@Path("/{idComponente}")
-	public Componente modificarComponente(Componente componente) {
-		return componenteService.modificarComponente(componente);
-	}
 }
