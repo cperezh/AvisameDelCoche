@@ -5,7 +5,7 @@ var controladoresCatalogo = angular.module('controladoresCatalogo', []);
 /*CREO UN CONTROLADOR EN EL MODULO. 
  * El segundo parametro es la funcion constructora del controlador, donde se definen las
  * variables y metodos que estaran disponibles en el ambito definido para el controlador*/
- controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http) {
+ controladoresCatalogo.controller('controladorBuscadorCatalogo', function ($scope, $http,$location) {
 
     $scope.buscar = function (matricula) {
 
@@ -22,6 +22,10 @@ var controladoresCatalogo = angular.module('controladoresCatalogo', []);
             } 
         );
     };
+
+    $scope.nav = function(url){
+        $location.url(url);
+    }
 });
 
  controladoresCatalogo.controller('controladorDetalleCatalogo', function ($scope, $http, $routeParams, $window) {

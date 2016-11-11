@@ -32,14 +32,12 @@ and open the template in the editor.
                 <tr>
                     <th>Matricula</th>
                     <th>Kilometraje</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="coche in coches">
+                <tr ng-repeat="coche in coches" ng-click="nav('detalle/'+coche.matricula)" role="button">
                     <td>{{coche.matricula}}</td>
                     <td>{{coche.kilometraje}}</td>
-                    <td><a ng-href="#/detalle/{{coche.matricula}}">detalle</td>
                 </tr>
             </tbody>
         </table>

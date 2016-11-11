@@ -47,7 +47,7 @@ public class ComponenteRS {
 	public Componente modificarComponente(@PathParam("idComponente") int idComponente,Componente componente) throws NotFoundException{
 
 		if (componenteService.getComponente(idComponente) == null) {
-			throw new NotFoundException("/componentes -->" + idComponente);
+			throw new NotFoundException("modificarComponente -->" + idComponente);
 		} else {
 			return componenteService.modificarComponente(componente);
 		}
@@ -59,7 +59,7 @@ public class ComponenteRS {
 	public Componente getComponente(@PathParam("idComponente") int idComponente) throws NotFoundException {
 
 		if (componenteService.getComponente(idComponente) == null) {
-			throw new NotFoundException("/componentes/" + idComponente);
+			throw new NotFoundException("getComponente -->" + idComponente);
 		} else {
 			return componenteService.getComponente(idComponente);
 		}
