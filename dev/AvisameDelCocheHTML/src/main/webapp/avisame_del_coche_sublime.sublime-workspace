@@ -31,7 +31,7 @@
 			"file": "detalle.html",
 			"settings":
 			{
-				"buffer_size": 1405,
+				"buffer_size": 1390,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -40,7 +40,7 @@
 			"file": "alta.html",
 			"settings":
 			{
-				"buffer_size": 2540,
+				"buffer_size": 2574,
 				"line_ending": "Windows"
 			}
 		},
@@ -84,7 +84,7 @@
 			"file": "buscador.html",
 			"settings":
 			{
-				"buffer_size": 1447,
+				"buffer_size": 1546,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -143,7 +143,7 @@
 	],
 	"find":
 	{
-		"height": 50.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -177,7 +177,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -186,15 +186,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1405,
+						"buffer_size": 1390,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								1405
+								129,
+								129
 							]
 						],
 						"settings":
@@ -206,7 +206,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -215,7 +215,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2540,
+						"buffer_size": 2574,
 						"regions":
 						{
 						},
@@ -361,15 +361,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1447,
+						"buffer_size": 1546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								333,
-								364
+								661,
+								661
 							]
 						],
 						"settings":
@@ -379,10 +379,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 65.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

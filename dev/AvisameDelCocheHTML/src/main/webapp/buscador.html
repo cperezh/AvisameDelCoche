@@ -9,21 +9,20 @@ and open the template in the editor.
     <div class="panel panel-default">
         <!-- Default panel contents -->
         <div class="panel-body">
-            <form class="navbar-form navbar-left" role="search">
+            <form class="form-inline">
                 <div class="form-group">
-                    <label>Matricula</label>
-                    <input type="text" ng-model="matricula" class="form-control" placeholder="Matricula"/>
+                    <label>Matricula</label>    
+                    <input type="text" ng-model="matricula" class="form-control" placeholder="Matricula" ng-keypress="$event.keyCode == 13 && buscar(matricula)"/>
                     <button type="button" ng-click="buscar(matricula)" class="btn btn-default">Buscar</button>
                 </div>
             </form>
-
         </div>
     </div>
-    <div class="panel panel-default" ng-show="coches.length > 0">
+    <div class="panel panel-default" ng-show="coches.length > 0" >
         <!-- Default panel contents -->
         <div class="panel-heading">Resultados</div>
         <!-- Table -->
-        <table class="table table-hover" >
+        <table class="table table-hover table-bordered" >
             <thead>
                 <tr>
                     <th>Matricula</th>
@@ -32,11 +31,12 @@ and open the template in the editor.
             </thead>
             <tbody>
                 <tr ng-repeat="coche in coches" ng-click="nav('detalle/'+coche.matricula)" role="button">
-                    <td>{{coche.matricula}}</td>
-                    <td>{{coche.kilometraje}}</td>
+                    <td class="col-md-2">{{coche.matricula}}</td>
+                    <td class="col-md-10">{{coche.kilometraje}}</td>
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
 </div>
 
