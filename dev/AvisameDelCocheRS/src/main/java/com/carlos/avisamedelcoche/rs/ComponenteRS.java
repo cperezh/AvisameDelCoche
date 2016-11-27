@@ -31,12 +31,15 @@ public class ComponenteRS {
 	 *            componentes
 	 * @return
 	 */
-	public List<Componente> getTodosComponentes(@QueryParam("q") String q) {
+	public List<Componente> getComponentes(@QueryParam("nombre") String nombre) {
 
 		List<Componente> componentes = new ArrayList<Componente>();
 
-		if (q.equals("all")) {
+		if (nombre.equals("")) {
 			componentes = componenteService.getComponentes();
+		}
+		else{
+			componentes = componenteService.buscarComponentes(nombre);
 		}
 
 		return componentes;

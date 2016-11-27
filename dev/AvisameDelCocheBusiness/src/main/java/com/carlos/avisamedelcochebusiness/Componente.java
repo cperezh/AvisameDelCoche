@@ -24,7 +24,9 @@ import javax.persistence.NamedQuery;
 
 @Entity
 @NamedQueries({
-	@NamedQuery(name = "Componente.buscarTodosComponentes", query = "SELECT c FROM Componente c ORDER BY c.nombre") })
+		@NamedQuery(name = "Componente.buscarTodosComponentes", query = "SELECT c FROM Componente c ORDER BY c.nombre"),
+		@NamedQuery(name = "Componente.buscarComponentes", query = "SELECT c FROM Componente c WHERE c.nombre like :componente ORDER BY c.nombre") 
+})
 public class Componente implements Serializable {
 
 	@Id
@@ -38,7 +40,7 @@ public class Componente implements Serializable {
 	private int limiteKilometros;
 
 	private Componente() {
-		
+
 	}
 
 	public int getIdcomponente() {

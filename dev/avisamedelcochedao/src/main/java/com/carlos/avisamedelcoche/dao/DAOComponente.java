@@ -12,6 +12,8 @@ public interface DAOComponente {
 	 */
 	List<Componente> getComponentes();
 	
+	List<Componente> buscarComponentes(String nombre);
+	
 	Componente getComponente(int idComponente);
 	
 	Componente modificarComponente(Componente componente);

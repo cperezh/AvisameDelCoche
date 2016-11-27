@@ -26,12 +26,9 @@ public class DAOConmponenteEJB implements DAOComponente{
 	@Override
 	public List<Componente> getComponentes() {
 		
-		Query query;
 		List<Componente> componentes;
 		
-		query = entityManager.createNamedQuery("Componente.buscarTodosComponentes");
-		
-		componentes = query.getResultList();
+		componentes = entityManager.createNamedQuery("Componente.buscarTodosComponentes",Componente.class).getResultList();
 		
 		return componentes;
 	}
@@ -46,6 +43,14 @@ public class DAOConmponenteEJB implements DAOComponente{
 	public Componente modificarComponente(Componente componente) {
 		
 		return entityManager.merge(componente);
+	}
+
+	@Override
+	public List<Componente> buscarComponentes(String nombre) {
+		
+		return entityManager.createNamedQuery("Componente.buscarComponentes",Componente.class)
+				.setParameter("componente", "%"+nombre+"%")
+				.getResultList();
 	}
 
 }

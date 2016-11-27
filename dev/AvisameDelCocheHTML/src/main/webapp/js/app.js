@@ -28,7 +28,7 @@ catalogoTelefonos.config(['$routeProvider',
                     templateUrl: 'param/buscador.html',
                     controller: 'controladorBuscarComponente'
                 }).
-                when('/detalleComponente/:componente', {
+                when('/detalleComponente/:idComponente', {
                     templateUrl: 'param/detalleComponente.html',
                     controller: 'controladorDetalleComponente'
                 }).

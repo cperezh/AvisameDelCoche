@@ -31,4 +31,10 @@ public class ComponenteServiceEJB implements ComponenteService {
 		
 		return daoComponente.modificarComponente(componente);
 	}
+
+	@Override
+	public List<Componente> buscarComponentes(String nombre) {
+		
+		return daoComponente.buscarComponentes(nombre);
+	}
 }

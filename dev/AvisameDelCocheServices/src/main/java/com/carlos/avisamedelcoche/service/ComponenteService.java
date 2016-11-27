@@ -8,6 +8,8 @@ public interface ComponenteService {
 
 	List<Componente> getComponentes();
 	
+	List<Componente> buscarComponentes(String nombre);
+	
 	Componente getComponente(int idComponente);
 	
 	Componente modificarComponente(Componente componente);
