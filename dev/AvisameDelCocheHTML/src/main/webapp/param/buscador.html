@@ -1,0 +1,42 @@
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<div class="jumbotron">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>Componente</label>    
+                    <input type="text" ng-model="conmponente" class="form-control" placeholder="Componente" ng-keypress="$event.keyCode == 13 && buscar(componente)"/>
+                    <button type="button" ng-click="buscar(componente)" class="btn btn-default">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="panel panel-default" ng-show="coches.length > 0" >
+        <!-- Default panel contents -->
+        <div class="panel-heading">Resultados</div>
+        <!-- Table -->
+        <table class="table table-hover table-bordered" >
+            <thead>
+                <tr>
+                    <th>Componente</th>
+                    <th>Limite kilometraje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="coche in coches" ng-click="nav('detalle/'componente.idComponente" role="button">
+                    <td class="col-md-2">{{componente.nombre}}</td>
+                    <td class="col-md-10">{{componente.limiteKilometros}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+

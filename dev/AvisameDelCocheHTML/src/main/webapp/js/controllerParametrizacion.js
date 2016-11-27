@@ -1,3 +1,4 @@
+
 /*Registro el módulo de controladores del catalogo*/
 var controladoresParametrizacion = angular.module('controladoresParametrizacion', []);
 
@@ -76,4 +77,10 @@ controladoresParametrizacion.controller('controladorDetalleComponente', function
 
 		return false;
 	}
+});
+
+controladoresParametrizacion.controller('controladorBuscarComponente', function ($scope, $http, $routeParams, $window,$filter) {
+
+
+
 });

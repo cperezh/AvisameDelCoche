@@ -24,14 +24,18 @@ catalogoTelefonos.config(['$routeProvider',
                     templateUrl: 'alta.html',
                     controller: 'controladorAltaCatalogo'
                 }).
-                 when('/detalleComponente/:idComponente', {
+                 when('/buscarComponente', {
+                    templateUrl: 'param/buscador.html',
+                    controller: 'controladorBuscarComponente'
+                }).
+                when('/detalleComponente/:componente', {
                     templateUrl: 'param/detalleComponente.html',
                     controller: 'controladorDetalleComponente'
                 }).
                 otherwise({
                     redirectTo: '/buscador'
                 });
-    }]);
+    }])
 
 
 
