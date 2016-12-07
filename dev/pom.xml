@@ -9,27 +9,16 @@
 	<packaging>pom</packaging>
 	<name>AvisameDelCoche</name>
 
-	<profiles>
-		<profile>
-			<id>compile</id>
-			<modules>
-				<module>AvisameDelCocheBusiness</module>
-				<module>AvisameDelCocheEJB</module>
-				<module>AvisameDelCocheServices</module>
-				<module>AvisameDelCocheDaoEJB</module>
-				<module>AvisameDelCocheDao</module>
-				<module>AvisameDelCocheRS</module>
-				<module>AvisameDelCocheHTML</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>deploy</id>
-			<modules>
-				<module>AvisameDelCocheRS</module>
-				<module>AvisameDelCocheHTML</module>
-			</modules>
-		</profile>
-	</profiles>
+	<modules>
+		<module>AvisameDelCocheBusiness</module>
+		<module>AvisameDelCocheEJB</module>
+		<module>AvisameDelCocheServices</module>
+		<module>AvisameDelCocheDaoEJB</module>
+		<module>AvisameDelCocheDao</module>
+		<module>AvisameDelCocheRS</module>
+		<module>AvisameDelCocheHTML</module>
+	</modules>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>3.2.8.RELEASE</spring.version>
