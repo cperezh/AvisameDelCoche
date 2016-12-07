@@ -40,20 +40,22 @@
 						<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
 					</vmArgs>
 				</configuration>
-				<executions>
-					<execution>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>wsimport</goal>
-						</goals>
-						<configuration>
-							<!-- Paquete donde se generan las clases -->
-							<packageName>com.carlos.avisamedelcocheclientews.clienteWS</packageName>
-							<sourceDestDir>${basedir}/src/main/java</sourceDestDir>
-							<wsdlDirectory>${basedir}/src/wsdl</wsdlDirectory>
-						</configuration>
-					</execution>
-				</executions>
+				
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<phase>generate-sources</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>wsimport</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							Paquete donde se generan las clases -->
+<!-- 							<packageName>com.carlos.avisamedelcocheclientews.clienteWS</packageName> -->
+<!-- 							<sourceDestDir>${basedir}/src/main/java</sourceDestDir> -->
+<!-- 							<wsdlDirectory>${basedir}/src/wsdl</wsdlDirectory> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+
 			</plugin>
 		</plugins>
 	</build>

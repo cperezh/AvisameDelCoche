@@ -38,6 +38,8 @@ public class Coche implements Serializable {
 	public Coche() {
 
 	}
+	
+	
 
 	/**
 	 * La reparacion de un componente es necesaria si ha alcanzado el limite de

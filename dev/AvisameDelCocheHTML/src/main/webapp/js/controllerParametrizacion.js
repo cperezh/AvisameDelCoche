@@ -7,7 +7,8 @@ var urlComponentes = serverURL + '/componentes'
 controladoresParametrizacion
 		.controller(
 				'controladorDetalleComponente',
-				function($scope, $http, $routeParams, $window, $filter,$location) {
+				function($scope, $http, $routeParams, $window, $filter,
+						$location) {
 
 					/* ON LOAD */
 					var url = urlComponentes + "/" + $routeParams.idComponente;
@@ -81,22 +82,21 @@ controladoresParametrizacion
 
 						return false;
 					}
-					
+
 					$scope.volver = function() {
-						
+
 						var busqueda = $routeParams.search;
-						
-						var url = "buscarComponente?nombre="+busqueda;
-						
+
+						var url = "buscarComponente?nombre=" + busqueda;
+
 						$location.url(url);
 					}
-					
-					
-				});
 
+				});
 
 controladoresParametrizacion.controller('controladorBuscarComponente',
 		function($scope, $http, $routeParams, $location, $filter) {
+
 
 			$scope.buscar = function(nombreComponente) {
 
@@ -112,5 +112,16 @@ controladoresParametrizacion.controller('controladorBuscarComponente',
 			$scope.nav = function(url) {
 				$location.url(url);
 			}
+			
+
+			/* ON LOAD */
+			var busqueda =  $routeParams.nombre;
+			if (busqueda != ""){
+				$scope.componenteBusqueda = busqueda;
+				$scope.buscar(busqueda);
+			}
+			
+			
+			/* FIN ON LOAD */
 
 		});

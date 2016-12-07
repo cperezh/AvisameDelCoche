@@ -31,7 +31,7 @@
 			"file": "js/controllerParametrizacion.js",
 			"settings":
 			{
-				"buffer_size": 2330,
+				"buffer_size": 3082,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -67,7 +67,7 @@
 			"file": "param/buscador.html",
 			"settings":
 			{
-				"buffer_size": 1578,
+				"buffer_size": 1657,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -76,7 +76,7 @@
 			"file": "param/detalleComponente.html",
 			"settings":
 			{
-				"buffer_size": 1713,
+				"buffer_size": 1787,
 				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows"
 			}
@@ -178,7 +178,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2330,
+						"buffer_size": 3082,
 						"regions":
 						{
 						},
@@ -294,7 +294,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1578,
+						"buffer_size": 1657,
 						"regions":
 						{
 						},
@@ -324,15 +324,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1713,
+						"buffer_size": 1787,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								997,
-								998
+								0,
+								0
 							]
 						],
 						"settings":
