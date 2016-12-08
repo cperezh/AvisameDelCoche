@@ -99,6 +99,10 @@ controladoresParametrizacion.controller('controladorBuscarComponente',
 
 
 			$scope.buscar = function(nombreComponente) {
+				
+				if (nombreComponente == null){
+					nombreComponente = '';
+				}
 
 				var url = urlComponentes + "?nombre=" + nombreComponente;
 
