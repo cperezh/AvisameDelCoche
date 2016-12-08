@@ -1,5 +1,5 @@
 
-var serverURL = '/AvisameDelCocheRS-1.0.0/resources';
+var serverURL = '/AvisameDelCocheRS/resources';
 
 /*Registro la aplicación y los módulos de los que depende*/
 var catalogoTelefonos = angular.module('catalogoTelefonos', [
