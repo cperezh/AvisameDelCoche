@@ -120,7 +120,7 @@ controladoresParametrizacion.controller('controladorBuscarComponente',
 
 			/* ON LOAD */
 			var busqueda =  $routeParams.nombre;
-			if (busqueda != ""){
+			if (busqueda != 'init'){
 				$scope.componenteBusqueda = busqueda;
 				$scope.buscar(busqueda);
 			}
