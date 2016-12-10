@@ -1,0 +1,1 @@
+mysqldump.exe --user avisamedelcoche --password --no-create-db --no-create-info avisamedelcoche > c:/users/carlos/prueba.sql

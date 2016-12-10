@@ -5,16 +5,15 @@
  */
 package com.carlos.avisamedelcocheweb.controller;
 
-import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
-import com.carlos.avisamedelcochebusiness.Coche;
 import javax.ejb.EJB;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.carlos.avisamedelcoche.service.CocheService;
+import com.carlos.avisamedelcochebusiness.Coche;
 
 /**
  *
@@ -25,7 +24,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ComprobarEstadoVehiculoController {
 
     @EJB(mappedName = "java:module/AvisameDelCocheEJB!com.carlos.avisamedelcoche.AvisameDelCocheService")
-    AvisameDelCocheService avisameDelCocheService;
+    CocheService avisameDelCocheService;
 
     @RequestMapping("/init")
     public void init() {

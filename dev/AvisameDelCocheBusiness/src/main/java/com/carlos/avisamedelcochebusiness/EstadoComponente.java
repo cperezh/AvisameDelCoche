@@ -7,30 +7,51 @@ package com.carlos.avisamedelcochebusiness;
 
 import java.io.Serializable;
 
-import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
+
+import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
 
 /**
  *
  * @author Pakno
  */
-@Embeddable
+@Entity
 public class EstadoComponente implements Serializable {
 
-	private Componente componente;
-	
+	@Id
+	@ManyToOne
+	@JoinColumn(name = "MATRICULA")
+	@XmlInverseReference(mappedBy="estadoComponentes")
+	private Coche coche;
 
-    private Integer ultimaSustitucion;
-    
-    @Transient
-    private Integer kilometrosDeMas;
-    
-    @Transient
+	@Id
+	@ManyToOne
+	@JoinColumn(name = "ID_COMPONENTE")
+	private Componente componente;
+
+	private Integer ultimaSustitucion;
+
+	@Transient
+	private Integer kilometrosDeMas;
+
+	@Transient
 	private Boolean necesitaReparacion;
 
-    public EstadoComponente() {
+	public EstadoComponente() {
 
-    }
+	}
+
+	public Coche getCoche() {
+		return coche;
+	}
+
+	public void setCoche(Coche coche) {
+		this.coche = coche;
+	}
 
 	public Componente getComponente() {
 		return componente;
@@ -63,8 +84,5 @@ public class EstadoComponente implements Serializable {
 	public void setKilometrosDeMas(Integer kilometrosDeMas) {
 		this.kilometrosDeMas = kilometrosDeMas;
 	}
-	
-	
-	
 
 }

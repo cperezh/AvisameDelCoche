@@ -11,28 +11,28 @@ and open the template in the editor.
         <div class="panel-body">
             <form class="form-inline">
                 <div class="form-group">
-                    <label>Matricula</label>    
-                    <input type="text" ng-model="matricula" class="form-control" placeholder="Matricula" ng-keypress="$event.keyCode == 13 && buscar(matricula)"/>
-                    <button type="button" ng-click="buscar(matricula)" class="btn btn-default">Buscar</button>
+                    <label>Componente</label>    
+                    <input type="text" ng-model="componenteBusqueda" class="form-control" placeholder="Componente" ng-keypress="$event.keyCode == 13 && buscar(componenteBusqueda)"/>
+                    <button type="button" ng-click="buscar(componenteBusqueda)" class="btn btn-default">Buscar</button>
                 </div>
             </form>
         </div>
     </div>
-    <div class="panel panel-default" ng-show="coches.length > 0" >
+    <div class="panel panel-default" ng-show="componentes.length > 0" >
         <!-- Default panel contents -->
         <div class="panel-heading">Resultados</div>
         <!-- Table -->
         <table class="table table-hover table-bordered" >
             <thead>
                 <tr>
-                    <th>Matricula</th>
-                    <th>Kilometraje</th>
+                    <th>Componente</th>
+                    <th>Limite kilometraje</th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="coche in coches" ng-click="nav('detalle/'+coche.matricula)" role="button">
-                    <td class="col-md-2">{{coche.matricula}}</td>
-                    <td class="col-md-10">{{coche.kilometraje}}</td>
+                <tr ng-repeat="componente in componentes" ng-click="nav('detalleComponente/'+componente.idcomponente+'?search='+componenteBusqueda)" role="button">
+                    <td class="col-md-4">{{componente.nombre}}</td>
+                    <td class="col-md-8">{{componente.limiteKilometros}}</td>
                 </tr>
             </tbody>
         </table>

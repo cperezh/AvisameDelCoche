@@ -1,0 +1,45 @@
+<div class="jumbotron">
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+
+		<div class="panel-body">
+			<form ng-submit="modificar()" name="modificarComponenteForm">
+				<div class="form-group">
+					<label>Componente:</label> <input type="text" name="nombre"
+					ng-model="componente.nombre" required
+					ng-change="verificarNombreNoRepetido(componente)"
+					ng-pattern="/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]+$/"
+					maxlength="50"
+					placeholder="Nombre" 
+					class="form-control"/>
+					<div ng-messages="modificarComponenteForm.nombre.$error" role="alert">
+						<div ng-message="required">* Campo requerido</div>
+						<div ng-message="pattern">* Campo no valido</div>
+						<div ng-message="maxlength">* Campo demasiado largo</div>
+						<div ng-message="nombreRepetido">* Nombre de componente repetido</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>L&iacutemite kil&oacutemetros:</label><input type="text" name="limiteKilometros"
+					ng-model="componente.limiteKilometros" required
+					ng-pattern="/^\d+$/"
+					maxlength="9"
+					class="form-control"
+					placeholder="Limite kilometros" />
+					<div ng-messages="modificarComponenteForm.limiteKilometros.$error" role="alert">
+						<div ng-message="required">* Campo requerido</div>
+						<div ng-message="pattern">* Campo no valido</div>
+						<div ng-message="maxlength">* Campo demasiado largo</div>
+					</div>
+				</div>
+				<div class="form-group" ng-show="mensaje !== ''">
+					<div class="alert alert-success" role="alert">
+						<strong>{{mensaje}}</strong>
+					</div>
+				</div>
+				<button type="button" ng-click="volver()">Volver</button>
+				<button type="submit" ng-disabled="modificarComponenteForm.$invalid">Modificar</button>
+			</div>
+		</form>
+	</div>
+</div>

@@ -3,15 +3,17 @@
 		<!-- Default panel contents -->
 
 		<div class="panel-body">
-			<div class="form-group">
-				<label>Matricula:</label> {{coche.matricula}}
-			</div>
-			<div class="form-group">
-				<label>Kilometraje:</label><input type="text"
+			<form>
+				<div class="form-group">
+					<label>Matricula:</label>
+					<div>{{coche.matricula}}</div> 
+				</div>
+				<div class="form-group">
+					<label>Kilometraje:</label><input type="text"
 					ng-model="coche.kilometraje" class="form-control"
 					placeholder="Kilometraje" />
-			</div>
-			<div class="panel panel-default"
+				</div>
+				<div class="panel panel-default"
 				ng-show="coche.estadoComponentes.length > 0">
 				<!-- Default panel contents -->
 				<div class="panel-heading">Componentes del coche</div>
@@ -27,20 +29,21 @@
 					</thead>
 					<tbody>
 						<tr ng-repeat="estadoComponente in coche.estadoComponentes">
-							<td>{{estadoComponente.componente}}</td>
+							<td>{{estadoComponente.componente.nombre}}</td>
 							<td><input type="text"
 								ng-model="estadoComponente.ultimaSustitucion"
 								class="form-control" placeholder="Kilometraje" /></td>
-							<td>{{estadoComponente.kilometrosDeMas}}</td>
-						</tr>
-					</tbody>
-				</table>
+								<td>{{estadoComponente.kilometrosDeMas}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<button type="button" ng-click="comprobarEstado()">COMPROBAR
+					ESTADO</button>
+					<button type="button" ng-click="modificar()">MODIFICAR</button>
+				</form>
 			</div>
-			<button type="button" ng-click="comprobarEstado()">COMPROBAR
-				ESTADO</button>
-			<button type="button" ng-click="modificar()">MODIFICAR</button>
-		</div>
 
+		</div>
 	</div>
-</div>
 

@@ -1,0 +1,22 @@
+
+alter table estadocomponente
+DROP PRIMARY KEY;
+
+update estadocomponente set id_componente = id_componente + 1;
+
+alter table estadocomponente
+ADD PRIMARY KEY (`MATRICULA`, `ID_COMPONENTE`);
+
+ALTER TABLE `avisamedelcoche`.`estadocomponente` 
+ADD INDEX `fk_estadocomp_id_comp_idx` (`ID_COMPONENTE` ASC);
+ALTER TABLE `avisamedelcoche`.`estadocomponente` 
+ADD CONSTRAINT `fk_estadocomp_id_comp`
+  FOREIGN KEY (`ID_COMPONENTE`)
+  REFERENCES `avisamedelcoche`.`componente` (`ID_COMPONENTE`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_estadocomp_matricula`
+  FOREIGN KEY (`MATRICULA`)
+  REFERENCES `avisamedelcoche`.`coche` (`MATRICULA`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;

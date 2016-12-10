@@ -10,13 +10,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.OrderBy;
 
 /**
  *
@@ -32,35 +31,15 @@ public class Coche implements Serializable {
 
 	private Integer kilometraje;
 
-	@ElementCollection
-	@CollectionTable(name = "EstadoComponente", joinColumns = @JoinColumn(name = "matricula") )
+	@OneToMany(mappedBy = "coche")
+	@OrderBy("ultimaSustitucion")
 	private Collection<EstadoComponente> estadoComponentes;
 
 	public Coche() {
 
 	}
-
-	public static Coche cocheVacio() {
-
-		Coche coche = new Coche();
-
-		coche.setMatricula(null);
-		coche.setKilometraje(null);
-		coche.estadoComponentes = new ArrayList<EstadoComponente>();
-
-		// Ahora inicializo los componentes
-		EstadoComponente estadoComponente;
-		int i = 0;
-
-		for (Componente Componente : Componente.values()) {
-
-			estadoComponente = new EstadoComponente();
-			estadoComponente.setComponente(Componente.values()[i++]);
-			coche.estadoComponentes.add(estadoComponente);
-		}
-
-		return coche;
-	}
+	
+	
 
 	/**
 	 * La reparacion de un componente es necesaria si ha alcanzado el limite de

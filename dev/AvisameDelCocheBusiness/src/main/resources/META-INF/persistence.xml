@@ -5,7 +5,7 @@
 	<persistence-unit
 		name="com.carlos_AvisameDelCocheBusiness_jar_1.0.1-SNAPSHOTPU"
 		transaction-type="JTA">
-		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> 
 		<jta-data-source>jdbc/avisameDelCocheDS</jta-data-source>
 		<properties>
 			<property name="eclipselink.logging.level" value="FINE" />

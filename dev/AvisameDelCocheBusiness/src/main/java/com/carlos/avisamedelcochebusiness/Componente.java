@@ -7,6 +7,13 @@ package com.carlos.avisamedelcochebusiness;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+
 /**
  * Describe componentes de un coche. Cada componente tiene un vida útil antes
  * del cambio, que es lo que indice la propiedad limiteKilometros de cada
@@ -15,33 +22,49 @@ import java.io.Serializable;
  * @author Pakno
  */
 
-public enum Componente implements Serializable{
+@Entity
+@NamedQueries({
+		@NamedQuery(name = "Componente.buscarTodosComponentes", query = "SELECT c FROM Componente c ORDER BY c.nombre"),
+		@NamedQuery(name = "Componente.buscarComponentes", query = "SELECT c FROM Componente c WHERE c.nombre like :componente ORDER BY c.nombre") 
+})
+public class Componente implements Serializable {
 
-    NEUMATICOS(20000),
-    ACEITE_MOTOR(10000),
-    FILTRO_ACEITE(10000),
-    FILTRO_AIRE(30000),
-    FILTRO_HABITACULO(10000),
-    FILTRO_COMBUSTIBLE(30000),
-    LIQUIDO_FRENOS(30000),
-    PASTILLAS_FRENO(15000),
-    DISCO_FRENO(30000),
-    ALINEAR_DIRECCION(20000),
-	LIQUIDO_SERDIRECCION(80000),
-	CORREA_DISTIBUCION(120000),
-	LIMPIEZA_EGR(130000),
-	LIMIPIEZA_COLECTOR_ADMISION(130000),
-	LIQUIDO_REFRIGERANTE(60000);
-    
+	@Id
+	@Column(name = "ID_COMPONENTE")
+	private int idComponente;
 
-    private final int limiteKilometros;
+	@Column
+	public String nombre;
 
-    private Componente(int _limiteKilometros) {
-        this.limiteKilometros = _limiteKilometros;
-    }
+	@Column(name = "KILOMETROS_DURACION")
+	private int limiteKilometros;
 
-    public int getLimiteKilometros() {
-        return limiteKilometros;
-    }
+	private Componente() {
+
+	}
+
+	public int getIdcomponente() {
+		return idComponente;
+	}
+
+	public void setIdcomponente(int id_componente) {
+		this.idComponente = id_componente;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getLimiteKilometros() {
+		return limiteKilometros;
+	}
+
+	public void setLimiteKilometros(int limiteKilometros) {
+		this.limiteKilometros = limiteKilometros;
+	}
 
 }

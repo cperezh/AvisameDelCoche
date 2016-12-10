@@ -21,12 +21,13 @@ import javax.ws.rs.core.MediaType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.carlos.avisamedelcoche.service.AvisameDelCocheService;
+import com.carlos.avisamedelcoche.service.CocheService;
 import com.carlos.avisamedelcochebusiness.Coche;
 
 /**
  *
  * Servicio REST para Coches
+ * 
  * @author Carlos
  */
 @Path("/coches")
@@ -34,34 +35,14 @@ import com.carlos.avisamedelcochebusiness.Coche;
 public class CocheRS {
 
 	@EJB
-	AvisameDelCocheService avisameDelCoche;
+	CocheService avisameDelCoche;
 
 	static final Logger logger = LogManager.getLogger(CocheRS.class.getName());
 
-	@GET
-	@Path("/{matricula}")
-	public Coche buscarCoche(@PathParam("matricula") String matricula) {
-
-		return avisameDelCoche.buscarVehiculo(matricula);
-
-	}
-
-	@POST
-	@Path("/{matricula}")
-	public Coche modificarCoche(Coche coche) {
-
-		return avisameDelCoche.modificar(coche);
-	}
-
-	@GET
-	@Path("/{matricula}/estado")
-	public Coche comprobarEstado(@PathParam("matricula") String matricula) {
-
-		return avisameDelCoche.comprobarEstadoVehiculo(matricula);
-	}
-
 	/**
-	 * Busca un coche por su matricula. Si no lo encuentra, devuelve un coche vacio
+	 * Busca una lista de coche por su matricula. Si no lo encuentra, devuelve
+	 * un coche vacio
+	 * 
 	 * @param matricula
 	 * @return
 	 */
@@ -71,18 +52,39 @@ public class CocheRS {
 		List<Coche> coches = new ArrayList<Coche>();
 
 		if (matricula == null) {
-			coches.add(Coche.cocheVacio());
+			coches.add(avisameDelCoche.cocheVacio());
 		} else {
 			coches = avisameDelCoche.buscarVehiculos(matricula);
 		}
 		return coches;
 	}
 
-	
+	@GET
+	@Path("/{matricula}")
+	public Coche buscarCoche(@PathParam("matricula") String matricula) {
+
+		return avisameDelCoche.buscarVehiculo(matricula);
+
+	}
+
+	@GET
+	@Path("/{matricula}/estado")
+	public Coche comprobarEstado(@PathParam("matricula") String matricula) {
+
+		return avisameDelCoche.comprobarEstadoVehiculo(matricula);
+	}
+
 	@PUT
 	public Coche altaCoche(Coche coche) {
 
 		return avisameDelCoche.altaCoche(coche);
+	}
+
+	@POST
+	@Path("/{matricula}")
+	public Coche modificarCoche(Coche coche) {
+
+		return avisameDelCoche.modificar(coche);
 	}
 
 }
