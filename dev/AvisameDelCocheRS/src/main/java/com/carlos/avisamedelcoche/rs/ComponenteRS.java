@@ -32,7 +32,7 @@ public class ComponenteRS {
 	 * @return
 	 */
 	public List<Componente> getComponentes(@QueryParam("nombre") String nombre) {
-
+		
 		List<Componente> componentes = new ArrayList<Componente>();
 
 		if (nombre.equals("")) {
